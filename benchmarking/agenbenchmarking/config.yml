@@ -1,0 +1,39 @@
+languages : [
+  English , 
+  # Hindi , 
+  Hinglish
+]
+emotions : [
+  Happy , 
+  Anxious , 
+  Frustrated , 
+  Neutral
+] 
+scopes : [
+  In-Scope , 
+  'Going Out-of-Scope Frequently'
+]
+lengths : [
+  Short , 
+  Long
+]
+
+limit : 100
+take-every : 100
+
+path : assets/prompt.md
+course-details : assets/fees.json
+
+groq : 
+  model-name : llama-3.3-70b-versatile
+
+  preprocess : 
+    dict-converter : json
+
+# test-limit : no-limit
+test-limit : 1
+# test-url : https://8001-01kev2r2b979b3a78c9xz5cd79.cloudspaces.litng.ai/chat
+test-url : http://localhost:8001/chat
+cases : assets/jecrc_scenarios.json
+
+final_verdict_prompt : assets/final_verdict_prompt.md

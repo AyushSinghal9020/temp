@@ -1,0 +1,54 @@
+nestjs : 
+  url : https://52894b7997ab.ngrok-free.app
+  single-send-analysis-result-endpoint : webhook/analysis-result
+  bulk-send-analysis-result-endpoint : webhook/analysis-results-bulk
+  max-retries : 3
+  retry-delay : 2
+
+stt : 
+  deepgram : 
+
+    sample-rate : 16000 
+    sample-width : 2 
+    channels : 1
+    smart-format : True 
+    punctuate : True 
+    diarize : True 
+
+  assembly-ai : 
+    model : universal
+
+llm : 
+  groq :
+
+    model-name : llama-3.3-70b-versatile
+    preprocess :
+
+      dict-converter : ast
+
+fast-api : 
+
+  cors : 
+
+    allowed-origins : ["*"]
+    allowed-methods : ["*"]
+    allowed-headers : ["*"]
+    allowed-credentials : true
+  host : 0.0.0.0
+  port : 8021
+  reload : False
+
+logger : 
+  color : 
+    debug : "\x1b[33m"
+    info : "\x1b[32m"
+    warning : "\x1b[38;5;208m"
+    error : "\x1b[31m"
+    critical : "\x1b[31;1m"
+    reset : "\x1b[0m"
+  log-format : '%(asctime)s - %(levelname)s - %(message)s'
+  date-format : '%Y-%m-%d %H:%M:%S'
+
+sentiment-analysis : 
+  task : sentiment-analysis
+  model-name : distilbert-base-uncased-finetuned-sst-2-english

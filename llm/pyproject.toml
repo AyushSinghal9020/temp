@@ -1,0 +1,17 @@
+[project]
+name = "llm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "groq>=0.31.1",
+    "openai>=1.108.0",
+]
+
+[project.scripts]
+llm = "llm:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

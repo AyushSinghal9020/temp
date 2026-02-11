@@ -1,0 +1,186 @@
+You are generating a test-case for a JECRC University AI Agent named Riya.
+Generate a realistic exchange where the student asks something and the Agent responds.
+
+### RIYA'S BACKEND RULES:
+1. NO DIGITS: Never use numbers like '12th' or '85%'. Use 'Class Twelfth' or 'Eighty-Five Percent'.
+2. ACRONYMS: Use phonetic spelling: J-E-C-R-C, B-Tech, M-B-A.
+3. HINGLISH RULE: Use English Roman for complex/technical nouns (Admission, Course, Fee, Percentage, Hostel, Bus). Use Hindi Devanagari for simple words and grammar (है, करना, आपका, क्या).
+4. LOGIC FLOW: Name -> Interest -> Course -> Eligibility -> Location.
+5. Riya shall ask these questions directly / indirectly at all cost in the chronological order
+6. After getting all of the information riya shall say : **English Version:**
+"Thank you [Name]. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+
+**Hinglish Version:**
+"धन्यवाद [Name]। मैंने आपकी information record कर ली है। हमारे counselors जल्द ही आपसे संपर्क करेंगे। क्या आपका कोई और question है जिसमें मैं आपकी help कर सकूं?"
+7. In longer conversation, student might ask questions after flow completions as well, which riya shall answer
+8. ELIGIBILITY LOGIC: If course is {level}, ask for {qual_type} marks.
+9. LOCATION LOGIC: If from Jaipur, suggest Bus. If outside, suggest Hostel.
+
+### TEST PARAMETERS:
+- Course: {course_name} (Fee: {fee})
+- Language: {language}
+- Emotion: {emotion}
+- Scope: {scope} (If Out-of-Scope, student asks about weather/movies; Agent gives fallback answer).
+- Response Length: {length}
+
+Ground Truth Fees 
+
+```json
+{
+  "B.Tech Computer Science and Engineering": 245000,
+  "B.Tech CSE: Artificial Intelligence & Data Science": 255000,
+  "B.Tech CSE with Microsoft: Cloud Computing": 275000,
+  "B.Tech CSE with Amazon-AWS: Cloud Computing": 275000,
+  "B.Tech CSE with Xebia: AI and Machine Learning": 275000,
+  "B.Tech CSE with IBM: AI and Machine Learning": 275000,
+  "B.Tech CSE with Samatrix: AI and Machine Learning": 275000,
+  "B.Tech CSE with Xebia: Full Stack Web Design": 275000,
+  "B.Tech CSE with EC Council: Cyber Security": 275000,
+  "B.Tech CSE with Samatrix: Data Science & Analytics": 275000,
+  "B.Tech CSE with TCS: Computer Science and Business Systems": 275000,
+  "B.Tech CSE with upGrad: Block Chain": 275000,
+  "B.Tech CSE with L&T EduTech: Generative AI": 275000,
+  "B.Tech CSE with Kalvium: Software Product Engineering": 325000,
+  "B.Tech Civil Engineering (L&T EduTech)": 175000,
+  "B.Tech Electronics & Communication (L&T EduTech)": 175000,
+  "B.Tech Mechanical Engineering (L&T EduTech)": 175000,
+  "B.Tech Lateral Entry: CSE": 220000,
+  "B.Tech Lateral Entry: Civil": 175000,
+  "B.Tech Lateral Entry: ECE": 175000,
+  "B.Tech Lateral Entry: Mechanical": 175000,
+  "M.Tech Civil: Structural Engineering": 75000,
+  "M.Tech Civil: Transportation Engineering": 75000,
+  "M.Tech Civil: Environmental Engineering": 75000,
+  "M.Tech Civil: Construction Engineering & Management": 75000,
+  "M.Tech CSE: Artificial Intelligence": 75000,
+  "M.Tech CSE: Computer Science & Engineering": 75000,
+  "M.Tech CSE: Data Analytics": 75000,
+  "M.Tech CSE: Cyber Security": 75000,
+  "M.Tech CSE: Cloud Computing": 75000,
+  "M.Tech ECE: VLSI and Embedded Systems": 75000,
+  "M.Tech ECE: Digital Communication": 75000,
+  "M.Tech ME: CAD/CAM Engineering": 75000,
+  "M.Tech ME: Thermal Engineering": 75000,
+  "M.Tech ME: Production Engineering": 75000,
+  "M.Tech ME: Design Engineering": 75000,
+  "M.Tech EE: Power System and Automation": 75000,
+  "BCA Bachelor of Computer Applications": 150000,
+  "BCA Artificial Intelligence and Data Science": 160000,
+  "BCA Industry: Cyber Security (EC Council)": 170000,
+  "BCA Industry: Data Science & Analytics (Samatrix)": 170000,
+  "BCA Industry: Cloud Computing & Full Stack (IBM)": 170000,
+  "BCA Industry: AI & Machine Learning (IBM)": 170000,
+  "BCA Industry: Cloud Computing (Amazon-AWS)": 170000,
+  "BCA Industry: Full Stack Web Design (Xebia)": 170000,
+  "BCA Industry: Block Chain (upGrad)": 170000,
+  "MCA Master of Computer Applications": 170000,
+  "MCA AI and Data Science": 180000,
+  "MCA Industry: Cyber Security (EC Council)": 190000,
+  "MCA Industry: AI & Machine Learning (Samatrix)": 190000,
+  "MCA Industry: Data Science & Analytics (Samatrix)": 190000,
+  "MCA Industry: Cloud Computing & Full Stack (IBM)": 190000,
+  "MCA Industry: Cloud Computing (Amazon-AWS)": 190000,
+  "MCA Industry: Health Informatics": 160000,
+  "BA-JMC Journalism & Mass Communication": 100000,
+  "MA-JMC Journalism & Mass Communication": 65000,
+  "BBA Bachelor of Business Administration": 140000,
+  "BBA Banking Financial Service & Insurance": 150000,
+  "BBA Industry: Fintech (Zell & Deloitte)": 190000,
+  "BBA Industry: Data Analytics & Visualization (Samatrix)": 160000,
+  "B.Com Bachelor of Commerce": 90000,
+  "MBA Human Resource Management": 250000,
+  "MBA Marketing Management": 250000,
+  "MBA Finance Management": 250000,
+  "MBA Information Technology": 250000,
+  "MBA Production & Operation": 250000,
+  "MBA Retail Management": 250000,
+  "MBA Entrepreneurship and Family Business": 250000,
+  "MBA Industry: Data Analytics & Visualization (Samatrix)": 275000,
+  "MBA Industry: Artificial Intelligence (Samatrix)": 275000,
+  "B.Sc.(Hons.) Microbiology": 90000,
+  "B.Sc.(Hons.) Biotechnology": 90000,
+  "B.Sc.(Hons.) Forensic Science": 90000,
+  "M.Sc. Microbiology": 90000,
+  "M.Sc. Biotechnology": 90000,
+  "M.Sc. Forensic Science": 90000,
+  "M.Sc. Physics": 90000,
+  "M.Sc. Chemistry": 90000,
+  "M.Sc. Mathematics": 90000,
+  "M.Sc. Botany": 90000,
+  "M.Sc. Zoology": 90000,
+  "Integrated Law: B.A LL.B (Hons.)": 200000,
+  "Integrated Law: B.Sc LL.B (Hons.)": 200000,
+  "Integrated Law: BBA LL.B (Hons.)": 200000,
+  "LL.M": 75000,
+  "B.Des Interior Design": 140000,
+  "B.Des Jewellery Design & Manufacturing": 140000,
+  "B.Des Fashion Design": 175000,
+  "BVA Graphic Design": 140000,
+  "BVA Painting Design": 140000,
+  "M.Des Interior Design": 140000,
+  "M.Des Fashion Design": 175000,
+  "MVA Graphic Design": 140000,
+  "M.Sc. Design: Interior": 140000,
+  "M.Sc. Design: Jewellery": 140000,
+  "M.Sc. Design: Graphic": 140000,
+  "M.Sc. Design: Fashion": 175000,
+  "BA (Hons). Psychology": 90000,
+  "BA (Hons). Political Science": 90000,
+  "BA Liberal Studies": 100000,
+  "BA International Relations": 90000,
+  "MA Psychology": 90000,
+  "MA Political Science": 90000,
+  "BPT Bachelor of Physiotherapy": 90000,
+  "BMLT Bachelor of Medical Lab Technology": 90000,
+  "BRT Bachelor of Radiology Techniques": 90000,
+  "MPT Sports/Orthopaedics/Neurology/Cardio": 90000,
+  "BA (Hons.) Economics": 90000,
+  "MA Economics": 90000,
+  "B.Sc. in HHM Hospitality and Hotel Management": 100000,
+  "BA (Hons) English": 90000,
+  "BA French/German/Spanish/Japanese": 90000,
+  "MA English": 90000,
+  "Certificate Course Foreign Languages": 15000,
+  "Diploma Course Foreign Languages": 30000,
+  "Ph.D. Program (Per Year)": 50000,
+  "MBA Hospital & Healthcare Management (Executive)": 150000,
+  "B.Com ISDC: ACCA Specialization": 120000,
+  "B.Com ISDC: IoA/CMA/IFM/CIPS Specializations": 120000,
+  "BBA ISDC: Digital Business AI Society": 165000,
+  "BBA ISDC: Business Analytics IOA": 165000,
+  "BBA ISDC: Global Business-International": 250000,
+  "MBA ISDC: ACCA/CIMA/AI/IOA/DMI Specializations": 275000,
+  "B.Des ISDC: CIPS/World Design Specializations": 150000,
+  "M.Com ISDC: Management Accounting": 90000,
+  "MBA CollegeDekho: Global Financial Operations": 275000,
+  "MBA CollegeDekho: Applied HR / Sales / Product": 275000,
+  "BBA CollegeDekho: Sales / Brand / Healthcare": 160000,
+  "BCA CollegeDekho: MERN / RPA / Forensics": 170000,
+  "MCA CollegeDekho: MERN Full Stack": 190000,
+  "B.Des AID: Game Art and Animation": 225000,
+  "BBA Sunstone": 140000,
+  "MBA Sunstone": 250000,
+  "BCA Sunstone": 150000,
+  "MCA Sunstone": 170000,
+  "MBA Imarticus: Fintech": 300000,
+  "Hostel: AC Room-3 Seated (Single Occupancy)": 172000,
+  "Hostel: Non-AC Room-3 Seated (Single Occupancy)": 142000,
+  "Hostel: Non-AC Room-4 Seated (Single Occupancy)": 127000,
+  "Hostel: Registration Fee (One Time)": 5000,
+  "Hostel: Gymnasium Fee (Per Semester)": 5000,
+  "Bus Transportation Fee (Annual)": 50000
+}
+```
+
+### OUTPUT FORMAT:
+Return a JSON object only. 
+- 'question': What the Student says (the user).
+- 'expected': What the AI Agent should answer (following university rules).
+
+JSON Structure:
+{{
+  "conversation": [
+    {{ "question": "Student's first words", "expected": "Agent's greeting" }},
+    {{ "question": "Student's response", "expected": "Agent's next logic step" }}
+  ]
+}}

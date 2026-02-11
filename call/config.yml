@@ -1,0 +1,110 @@
+logger : 
+  colors : 
+    debug : "\x1b[33m"
+    info : :\x1b[34m"
+    warning : "\x1b[38;5;208m"
+    error : "\x1b[31m"
+    critical : "\x1b[31;1m"
+    reset : "\x1b[0m"
+  format : '%(asctime)s - %(levelname)s - %(message)s'
+  date-time-format : '%Y-%m-%d %H:%M:%S'
+
+stt : 
+
+  service : deepgram 
+
+  groq : 
+
+    model-name : whisper-large-v3-turbo
+    sample-rate : 16000 
+    sample-width : 2 
+    channels : 1
+
+  deepgram : 
+
+    model-name : nova-3
+    language : multi
+
+    api-version : '1'
+
+    sample-rate : 16000 
+    sample-width : 2 
+    channels : 1
+tts : 
+
+  service : google 
+
+  google : 
+    language : hi-IN
+    name : Aoede
+    service-file-path : ./sts.json
+
+  smallestai : 
+  murf : 
+
+llm : 
+  service : groq 
+
+  groq : 
+    model-name : llama-3.3-70b-versatile
+
+    preprocess : 
+      dict-converter : json
+
+fast-api : 
+
+  host : 0.0.0.0
+  port : 9888
+  reload : false
+
+  cors : 
+
+    allow-origins : ['*']
+    allow-methods : ['*']
+    allow-headers : ['*']
+    allow-credentials : true
+
+pl : 
+
+  connection : 
+
+    inbound : 
+
+      url : wss://9888-01kesszt4bnsgk9x4ct4ra8cjf.cloudspaces.litng.ai/ws/{call_uuid}/inbound
+      # url : wss://insurance.voicexp.ai/v2/ws/{call_uuid}/inbound
+      bidirectional : True 
+      audio-track : inbound 
+      stream-timeout : 3600
+      content-type : audio/x-l16;rate=16000
+
+    global : 
+
+      xml-path : assets/plivo_/webhook_xml.xml
+      stream-timeout : 3600
+      content-type : audio/x-l16
+      status-cb-url : https://insurance.voicexp.ai/stream-events
+      audio-ws-url : wss://insurance.voicexp.ai/ws
+      media-type : application/xml
+
+session : 
+
+  agent-url : http://localhost:9001/chat
+  # agent-url : http://agent:9001/chat
+  # agent-url : https://8000-01kfwzejn8cmk330hqtk8sk8ge.cloudspaces.litng.ai/chat
+
+  play-audio : 
+
+    event : playAudio
+    # contentType : audio/x-l16
+    contentType : audio/x-mulaw
+    # sampleRate : 16000
+    sampleRate : 8000
+  clear-audio : 
+    
+    event : clearAudio
+
+  settings : 
+
+    min-buffer-len : 2000
+    max-continous-interruption : 50
+    barge-in : True

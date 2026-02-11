@@ -1,0 +1,41 @@
+services:
+  agent:
+    build:
+      context: .
+      dockerfile: calling-agent.Dockerfile
+    container_name: vx-agent
+    env_file: agent/.env
+    restart: unless-stopped
+    command: ["uv", "run", "--package", "agent", "agent"]
+    ports:
+      - "${AGENT_PORT:-9001}:9001"
+
+  call:
+    build:
+      context: .
+      dockerfile: calling-agent.Dockerfile
+    container_name: call
+    env_file: call/.env
+    restart: unless-stopped
+    depends_on:
+      - agent
+    command: ["uv", "run", "--package", "call", "call"]
+    ports:
+      - "${CALL_PORT:-9888}:9888"
+
+  rag : 
+    build : 
+      context : .
+      dockerfile : calling-agent.Dockerfile
+
+    container_name : vx-rag
+    env_file : rag/.env
+    restart : unless-stopped
+    command : ["uv" , "run" , "--package" , "rag" , "rag"]
+    ports : 
+      - "${RAG_PORT:-9000}:9000"
+    volumes : 
+      - ./chroma_store:/home/user/app/chroma_store
+
+volumes:
+  chroma_data:

@@ -1,0 +1,30 @@
+[project]
+name = "sttbenchmarking"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "google-cloud-resource-manager>=1.14.2",
+    "jiwer>=4.0.0",
+    "matplotlib>=3.10.6",
+    "numpy>=1.26.4",
+    "pandas>=2.3.2",
+    "python-dotenv>=1.1.1",
+    "seaborn>=0.13.2",
+    "stt",
+    "tqdm>=4.67.1",
+    "tts",
+]
+
+[project.scripts]
+sttaudiocreation = "sttbenchmarking.audio_creation:main"
+sttbenchmarking = "sttbenchmarking.benchmarking:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+stt = { workspace = true }
+tts = { workspace = true }

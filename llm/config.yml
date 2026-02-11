@@ -1,0 +1,16 @@
+llm : 
+  groq :
+
+    model-name : moonshotai/kimi-k2-instruct-0905
+    preprocess :
+
+      dict-converter : json
+
+  azure-openai : 
+
+    model-name : gpt-4o-mini
+    api-version : 2024-10-21
+    endpoint : https://openai-40-testing.openai.azure.com/
+    preprocess :
+
+      dict-converter : json

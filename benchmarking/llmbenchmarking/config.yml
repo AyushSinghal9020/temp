@@ -1,0 +1,20 @@
+env-path : ../../.env
+input-file : assets/input_.txt
+benchmark-json-path : assets/benchmark.json
+
+llm : 
+  groq :
+
+    model-name : openai/gpt-oss-20b
+    preprocess :
+
+      dict-converter : ast
+
+  azure-openai : 
+
+    model-name : gpt-4o-mini
+    api-version : 2024-10-21
+    endpoint : https://openai-40-testing.openai.azure.com/
+    preprocess :
+
+      dict-converter : ast

@@ -1,0 +1,52 @@
+embedding : 
+  model : all-MiniLM-L6-v2
+
+database : 
+  db-path : src/rag/assets/vectordb/data.db
+
+raw-text : 
+  chunk-size : 500
+  embedding-dimension : 384
+
+pdf : 
+  chunk-size : 500
+  embedding-dimension : 384
+  prompt-path : /teamspace/studios/this_studio/vxp-agent-backend/rag/src/rag/assets/prompts/prompts.md
+
+
+website : 
+  sitemap : 
+    session-headers : 
+      User-Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+    namespaces : 
+      index : 
+        sitemap : http://www.sitemaps.org/schemas/sitemap/0.9
+        sitemapindex : http://www.sitemaps.org/schemas/sitemap/0.9
+      general : 
+        sitemap : http://www.sitemaps.org/schemas/sitemap/0.9
+        news : http://www.google.com/schemas/sitemap-news/0.9
+        image : http://www.google.com/schemas/sitemap-image/1.1
+        video : http://www.google.com/schemas/sitemap-video/1.1
+    timeout : 30
+  chunk-size : 500
+  embedding-dimension : 384
+  prompt-path : /teamspace/studios/this_studio/vxp-agent-backend/rag/src/rag/assets/prompts/prompts.md
+  # prompt-path : assets/prompts/prompts.md
+
+  bad-characs : [
+    copyright , 
+    rights reserved , 
+    ugc act , 
+  ]
+
+llm : 
+  groq : 
+
+    model-name : llama-3.3-70b-versatile
+    preprocess :
+
+      dict-converter : ast
+
+base-config : 
+  limit : 10
+  output-fields : ['text']

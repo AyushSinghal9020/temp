@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package ai;
+
+// AI Service definition for bidirectional streaming
+service AIService {
+  // Bidirectional streaming for real-time audio processing
+  rpc ProcessRealTimeAudio(stream AudioStreamRequest) returns (stream AudioStreamResponse);
+  
+  // Health check for the AI service
+  rpc HealthCheck(HealthCheckRequest) returns (HealthCheckResponse);
+}
+
+// Request message for audio streaming
+message AudioStreamRequest {
+  string session_id = 1;
+  bytes audio_data = 2;
+  int64 timestamp = 3;
+  bool is_final = 4;  // Indicates if this is the last packet
+  string call_type = 5;  // e.g., 'realtime_stream', 'transcription_only'
+  string audio_format = 6;  // e.g., 'pcmu', 'pcma', 'opus', 'g722'
+  int32 sample_rate = 7;    // Sample rate in Hz (8000, 16000, 48000)
+  int32 channels = 8;       // Number of audio channels (1 for mono, 2 for stereo)
+  int32 bits_per_sample = 9; // Bits per sample (8, 16, 24, 32)
+}
+
+// Response message from AI service
+message AudioStreamResponse {
+  string session_id = 1;
+  string transcript = 2;      // Transcribed text from STT
+  bytes audio_response = 3;   // Generated audio from TTS
+  string action = 4;          // Action for call control: 'continue', 'hangup', 'transfer'
+  string metadata = 5;        // Additional metadata as JSON string
+  string response_audio_format = 6; // Format of the returned audio (matching request format or preferred)
+  int32 response_sample_rate = 7;   // Sample rate of the returned audio
+  int32 response_channels = 8;      // Number of channels in the returned audio
+  float confidence_score = 9;       // Confidence score for the transcript (0.0 to 1.0)
+}
+
+// Health check request
+message HealthCheckRequest {
+  string service = 1;
+}
+
+// Health check response
+message HealthCheckResponse {
+  enum HealthStatus {
+    UNKNOWN = 0;
+    SERVING = 1;
+    NOT_SERVING = 2;
+  }
+  HealthStatus status = 1;
+  string service = 2;
+  string version = 3;
+}

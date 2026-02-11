@@ -1,0 +1,1660 @@
+[
+    {
+        "tags": {
+            "course": "B.Tech Computer Science and Engineering",
+            "language": "English",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I am interested in studying at J-E-C-R-C University",
+                "expected": "Hello, I'm Riya. Welcome to J-E-C-R-C University! What is your name?"
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hi Rohan, what are your interests? Are you looking to pursue a particular Course?"
+            },
+            {
+                "question": "I am interested in B-Tech Computer Science and Engineering",
+                "expected": "Great choice, Rohan! To enroll in B-Tech Computer Science and Engineering, could you tell me about your Eligibility, specifically your Class Twelfth marks?"
+            },
+            {
+                "question": "I scored Eighty-Eight Percent in Class Twelfth",
+                "expected": "Congratulations, Rohan! Now, could you tell me a bit about your current location? Are you from Jaipur?"
+            },
+            {
+                "question": "Yes, I am from Jaipur",
+                "expected": "Since you are from Jaipur, you might be interested to know that we have a convenient Bus service available for our students. Thank you, Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "B.Tech CSE with Amazon-AWS: Cloud Computing",
+            "language": "English",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I'm Rohan. I'm interested in B-Tech",
+                "expected": "Hello Rohan, nice to meet you. What area of B-Tech are you interested in, like Computer Science or something else?"
+            },
+            {
+                "question": "I'm interested in Computer Science",
+                "expected": "That's great, Rohan. Our B-Tech Computer Science with Amazon-AWS: Cloud Computing is a popular course. To enroll in it, I need to know about your eligibility. Can you tell me about your Class Twelfth percentage?"
+            },
+            {
+                "question": "I scored Eighty-Five Percent",
+                "expected": "Excellent, Rohan. Now, can you tell me where you are from? Are you from Jaipur or somewhere else?"
+            },
+            {
+                "question": "I'm from outside Jaipur",
+                "expected": "Since you are from outside Jaipur, I would recommend considering our Hostel facility for your stay. It's convenient and safe. \u0927\u0928\u094d\u092f\u0935\u093e\u0926 Rohan. \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 information record \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 counselors \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 question \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 help \u0915\u0930 \u0938\u0915\u0942\u0902?"
+            },
+            {
+                "question": "Yes, what is the Fee for this course?",
+                "expected": "The Fee for our B-Tech CSE with Amazon-AWS: Cloud Computing course is Two Seventy-Five Thousand"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "B.Tech CSE with Samatrix: AI and Machine Learning",
+            "language": "English",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I'm looking for some information about courses at J-E-C-R-C University",
+                "expected": "Hello, Welcome to J-E-C-R-C University. My name is Riya, and I'll be happy to help you. Can you please tell me your name?"
+            },
+            {
+                "question": "My name is Rohan, and I'm interested in tech",
+                "expected": "Nice to meet you, Rohan. You seem interested in technology. Which Course are you looking to pursue?"
+            },
+            {
+                "question": "I'm thinking of doing B-Tech",
+                "expected": "B-Tech is a great choice. We have various specializations available. Are you interested in a specific one, like Computer Science and Engineering with Samatrix: Artificial Intelligence and Machine Learning?"
+            },
+            {
+                "question": "Yes, I'm interested in that one",
+                "expected": "To be eligible for B-Tech C-S-E with Samatrix: Artificial Intelligence and Machine Learning, we need to check your Class Twelfth marks. What Percentage did you score?"
+            },
+            {
+                "question": "I scored Eighty-Five Percent",
+                "expected": "That's great, Rohan. Now, can you please tell me where are you from?"
+            },
+            {
+                "question": "I'm from Delhi",
+                "expected": "Since you are from outside Jaipur, I would like to inform you about our Hostel facilities. We have excellent accommodations for out-station students."
+            },
+            {
+                "question": "That sounds good",
+                "expected": "Thank you, Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "B.Tech CSE with Samatrix: Data Science & Analytics",
+            "language": "English",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hello, I am interested in taking admission in J-E-C-R-C university.",
+                "expected": "Hello, what is your name?"
+            },
+            {
+                "question": "My name is Aarav.",
+                "expected": "Hello Aarav, what are your interests? Are you looking to pursue a particular Course?"
+            },
+            {
+                "question": "I am interested in B-Tech, specifically in Computer Science.",
+                "expected": "Aarav, for B-Tech C-S-E, we have a special Course, B-Tech C-S-E with Samatrix: Data Science and Analytics. Are you interested in this?"
+            },
+            {
+                "question": "Yes, that sounds interesting. What are the eligibility criteria for this Course?",
+                "expected": "For B-Tech C-S-E with Samatrix: Data Science and Analytics, we require your Class Twelfth marks, specifically in Percentage, what was your Percentage in Class Twelfth?"
+            },
+            {
+                "question": "I scored around Ninety Percent.",
+                "expected": "That's great, Aarav. Since you are eligible, let's talk about the location. Where are you from?"
+            },
+            {
+                "question": "I am from Jaipur.",
+                "expected": "Since you are from Jaipur, we have a Bus facility available for you. Would you like to know more about the Bus scheduling?"
+            },
+            {
+                "question": "No, that's okay. How about the Fee for this Course?",
+                "expected": "The Fee for B-Tech C-S-E with Samatrix: Data Science and Analytics is Two Hundred Seventy-Five Thousand."
+            },
+            {
+                "question": "That's a bit expensive, but I am interested. What's the next step?",
+                "expected": "Thank you Aarav. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "B.Tech CSE with L&T EduTech: Generative AI",
+            "language": "Hinglish",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u090f\u0906\u0908 \u090f\u091c\u0947\u0902\u091f\u0964 \u0906\u092a\u0915\u093e \u0915\u094d\u092f\u093e \u0928\u093e\u092e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928! \u0906\u092a\u0915\u094b \u0915\u093f\u0938 \u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u091f\u0947\u0915\u094d\u0928\u094b\u0932\u0949\u091c\u0940 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u093e! \u091f\u0947\u0915\u094d\u0928\u094b\u0932\u0949\u091c\u0940 \u092e\u0947\u0902 \u0915\u094c\u0928 \u0938\u093e \u0915\u094b\u0930\u094d\u0938 \u0906\u092a\u0915\u094b \u092a\u0938\u0902\u0926 \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092c\u0940 \u091f\u0947\u0915 \u0938\u0940 \u090f\u0938 \u0908 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092c\u0940 \u091f\u0947\u0915 \u0938\u0940 \u090f\u0938 \u0908 \u090f\u0915 \u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u0948! \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u094d\u0935\u093e\u0932\u093f\u092b\u093e\u0907\u0902\u0917 \u092a\u0930\u0940\u0915\u094d\u0937\u093e \u092e\u0947\u0902 \u0915\u093f\u0924\u0928\u093e \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093f\u0932\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0938\u093e\u0920 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093f\u0932\u093e \u0939\u0948",
+                "expected": "\u0913\u0915\u0947! \u0905\u092c \u092c\u0924\u093e\u090f\u0902 \u0915\u093f \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0915\u0940 \u0938\u0941\u0935\u093f\u0927\u093e \u092d\u0940 \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u094b\u0917\u0940\u0964 \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0902?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "B.Tech Electronics & Communication (L&T EduTech)",
+            "language": "Hinglish",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947 \u092e\u0948\u0902 \u092c\u0940 \u091f\u0947\u0915 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928! \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u093f\u0938 \u0935\u093f\u0937\u092f \u092e\u0947\u0902 \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0907\u0932\u0947\u0915\u094d\u091f\u094d\u0930\u0949\u0928\u093f\u0915\u094d\u0938 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092c\u0940 \u091f\u0947\u0915 \u0907\u0932\u0947\u0915\u094d\u091f\u094d\u0930\u0949\u0928\u093f\u0915\u094d\u0938 \u090f\u0902\u0921 \u0915\u0949\u092e\u094d\u092f\u0941\u0928\u093f\u0915\u0947\u0936\u0928 \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0939\u0948 \u0915\u094d\u092f\u093e?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "B.Tech Lateral Entry: Civil",
+            "language": "Hinglish",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948, \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u0906\u092a\u0915\u094b \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u092e\u0947\u0902 \u0915\u094c\u0928 \u0938\u093e \u0915\u094b\u0930\u094d\u0938 \u092a\u0938\u0902\u0926 \u0939\u0948, \u091c\u0948\u0938\u0947 \u0915\u093f \u092c\u0940-\u091f\u0947\u0915?"
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092c\u0940-\u091f\u0947\u0915 \u0932\u0947\u091f\u0930\u0932 \u090f\u0902\u091f\u094d\u0930\u0940 \u0938\u093f\u0935\u093f\u0932 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092c\u0940-\u091f\u0947\u0915 \u0932\u0947\u091f\u0930\u0932 \u090f\u0902\u091f\u094d\u0930\u0940 \u0938\u093f\u0935\u093f\u0932 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u092a\u093f\u091b\u0932\u0947 \u0915\u094b\u0930\u094d\u0938 \u0915\u0947 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0915\u094d\u092f\u093e \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u092a\u093f\u091b\u0932\u0947 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 Eighty-Five Percent \u0939\u0948",
+                "expected": "\u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u094b?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 information record \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 counselors \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 question \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 help \u0915\u0930 \u0938\u0915\u0942\u0902?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "M.Tech Civil: Structural Engineering",
+            "language": "Hinglish",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928\u0964 \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948, \u0915\u094c\u0928 \u0938\u093e \u0915\u094b\u0930\u094d\u0938 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u090f\u092e-\u091f\u0947\u0915 \u0938\u093f\u0935\u093f\u0932 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u090f\u092e-\u091f\u0947\u0915 \u0938\u093f\u0935\u093f\u0932 \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u094b \u090f\u092e-\u091f\u0947\u0915 \u0938\u093f\u0935\u093f\u0932 \u0915\u0947 \u0915\u093f\u0938\u0940 \u0935\u093f\u0936\u0947\u0937 \u0938\u094d\u091f\u094d\u0930\u0940\u092e \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948, \u091c\u0948\u0938\u0947 \u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091a\u0930\u0932 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917?"
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092e\u0941\u091d\u0947 \u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091a\u0930\u0932 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091a\u0930\u0932 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u092e\u0947\u0902 \u090f\u092e-\u091f\u0947\u0915 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u092c\u0940-\u091f\u0947\u0915 \u0915\u0940 \u092e\u093e\u0930\u094d\u0915\u0936\u0940\u091f \u0926\u093f\u0916\u093e\u0928\u0940 \u0939\u094b\u0917\u0940\u0964 \u0906\u092a\u0915\u0947 \u092c\u0940-\u091f\u0947\u0915 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u092c\u0940-\u091f\u0947\u0915 \u092e\u0947\u0902 \u092a\u091a\u093e\u0938 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0939\u0948",
+                "expected": "\u0906\u092a\u0915\u093e \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0920\u0940\u0915 \u0939\u0948\u0964 \u0905\u092c \u092c\u0924\u093e\u090f\u0902, \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902? \u091c\u092f\u092a\u0941\u0930 \u092e\u0947\u0902 \u0930\u0939\u0924\u0947 \u0939\u0948\u0902 \u092f\u093e \u092c\u093e\u0939\u0930 \u0938\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0930\u094d\u091c \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u0938\u0939\u093e\u092f\u0924\u093e \u0915\u0930 \u0938\u0915\u0942\u0901?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "M.Tech CSE: Artificial Intelligence",
+            "language": "English",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hello, I am interested in studying at J-E-C-R-C University",
+                "expected": "Hello, welcome to J-E-C-R-C University! May I know your name?"
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hello Rohan, what are your interests? Are you looking to pursue a particular Course?"
+            },
+            {
+                "question": "I am interested in the field of Computer Science and Artificial Intelligence",
+                "expected": "That's great Rohan! We have an M-Tech C-S-E Artificial Intelligence Course. Are you aware of the Eligibility criteria for this Course?"
+            },
+            {
+                "question": "No, I am not aware. Can you please tell me?",
+                "expected": "For M-Tech C-S-E Artificial Intelligence, we require your Bachelor's Degree marks. Can you please tell me about your Bachelor's Degree marks, specifically what Percentage you scored?"
+            },
+            {
+                "question": "I scored Eighty Percent in my Bachelor's Degree",
+                "expected": "That's excellent Rohan! Since you are eligible for the M-Tech C-S-E Artificial Intelligence Course, can you please tell me about your current location? Are you from Jaipur?"
+            },
+            {
+                "question": "No, I am not from Jaipur. I am from Delhi",
+                "expected": "Since you are not from Jaipur, we would recommend our Hostel facilities for your comfortable stay during the Course. I have all the necessary information now"
+            },
+            {
+                "question": "",
+                "expected": "Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "M.Tech CSE: Cyber Security",
+            "language": "English",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I am interested in a master's course at J-E-C-R-C University",
+                "expected": "Hello, May I know your name?"
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hello Rohan, What interests you?"
+            },
+            {
+                "question": "I am interested in Computer Science",
+                "expected": "Great interest Rohan, Which course are you looking for, we have M-Tech, M-B-A, and others?"
+            },
+            {
+                "question": "I want to pursue M-Tech in Cyber Security",
+                "expected": "For M-Tech Cyber Security, we need to check your eligibility. Can you tell me about your qualifying examination marks, like your B-Tech percentage?"
+            },
+            {
+                "question": "I scored Eighty Percent in B-Tech",
+                "expected": "That's good, Rohan. Now, about your location, are you from Jaipur?"
+            },
+            {
+                "question": "No, I am from outside Jaipur",
+                "expected": "Since you are not from Jaipur, I would recommend our Hostel facility for your stay during the course. The Fee for M-Tech Cyber Security is Seventy-Five Thousand."
+            },
+            {
+                "question": "Okay, that sounds good",
+                "expected": "Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "M.Tech ECE: Digital Communication",
+            "language": "English",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I am interested in J-E-C-R-C University",
+                "expected": "Hello, I'm Riya. Welcome to J-E-C-R-C University. May I know your name?"
+            },
+            {
+                "question": "My name is Mohan",
+                "expected": "Hello Mohan, what are your interests? Are you looking to pursue a Course in a specific field?"
+            },
+            {
+                "question": "I'm interested in M-Tech E-C-E",
+                "expected": "M-Tech E-C-E, that's a great choice. We have a specialized Course, M-Tech E-C-E: Digital Communication. Are you aware of the Eligibility criteria for this Course?"
+            },
+            {
+                "question": "I think I need to have good B-Tech marks",
+                "expected": "That's correct, Mohan. For M-Tech E-C-E, we consider B-Tech marks. Could you please tell me about your B-Tech Percentage?"
+            },
+            {
+                "question": "I have around Eighty-Five Percent",
+                "expected": "That's great, Mohan. Now, where are you from?"
+            },
+            {
+                "question": "I am from Jaipur",
+                "expected": "Since you are from Jaipur, you can easily commute to our campus using our Bus service. Thank you Mohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "M.Tech ME: Production Engineering",
+            "language": "English",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I'm interested in studying at J-E-C-R-C University",
+                "expected": "Hello, welcome to J-E-C-R-C University. May I know your name?"
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hello Rohan, what are your interests? Are you looking to pursue a particular Course?"
+            },
+            {
+                "question": "I'm interested in mechanical engineering",
+                "expected": "Rohan, our university offers a great M-Tech ME: Production Engineering Course. Are you eligible for it, what were your marks in your previous qualification?"
+            },
+            {
+                "question": "I scored Eighty Percent",
+                "expected": "Great, Rohan. Now, where are you from? Are you from Jaipur or outside?"
+            },
+            {
+                "question": "I'm from outside Jaipur",
+                "expected": "Since you are from outside Jaipur, I would recommend our Hostel facility for your stay. It's convenient and comfortable."
+            },
+            {
+                "question": "Okay, that sounds good",
+                "expected": "Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "BCA Bachelor of Computer Applications",
+            "language": "Hinglish",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u090f\u0906\u0908 \u090f\u091c\u0947\u0902\u091f\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928! \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u093f\u0938 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092c\u0940\u0938\u0940\u090f \u0915\u0930\u0928\u093e \u0939\u0948",
+                "expected": "\u092c\u0940\u0938\u0940\u090f! \u092c\u0948\u091a\u0932\u0930 \u0911\u092b \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u090f\u092a\u094d\u0932\u0940\u0915\u0947\u0936\u0928 \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u0948\u0964 \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u090f\u0932\u093f\u091c\u093f\u092c\u093f\u0932\u093f\u091f\u0940 \u0915\u094d\u0930\u093e\u0907\u091f\u0947\u0930\u093f\u092f\u093e \u0915\u094d\u092f\u093e \u0939\u0948 \u0907\u0938\u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u093f\u090f\u0964 \u0906\u092a\u0915\u0947 \u092a\u093f\u091b\u0932\u0947 \u0915\u094d\u0935\u093e\u0932\u093f\u092b\u093f\u0915\u0947\u0936\u0928 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u092e\u0947\u0902 \u092a\u091a\u093e\u0938 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0939\u0948",
+                "expected": "\u0920\u0940\u0915 \u0939\u0948\u0964 \u0905\u092c \u0906\u092a\u0915\u094b \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u092c\u0940\u0938\u0940\u090f \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0926\u093e\u0916\u093f\u0932\u093e \u0932\u0947\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f, \u0906\u092a\u0915\u094b \u092f\u0939\u093e\u0901 \u0915\u0947 \u092a\u0924\u0947 \u092a\u0930 \u0906\u0928\u093e \u0939\u094b\u0917\u093e\u0964 \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0940 \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0928\u093e \u0906\u0938\u093e\u0928 \u0939\u094b\u0917\u093e\u0964 \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u0907\u0928\u094d\u092b\u0949\u0930\u094d\u092e\u0947\u0936\u0928 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0928\u094d\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0901?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "BCA Industry: Data Science & Analytics (Samatrix)",
+            "language": "Hinglish",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u090f\u0906\u0908 \u090f\u091c\u0947\u0902\u091f\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948? \u0915\u093f\u0938 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0926\u093f\u0932\u091a\u0938\u094d\u092a\u0940 \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092c\u0940\u0938\u0940\u090f \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0926\u093f\u0932\u091a\u0938\u094d\u092a\u0940 \u0939\u0948",
+                "expected": "\u092c\u0940\u0938\u0940\u090f \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0915\u094b\u0930\u094d\u0938 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u094b \u092c\u0940\u0938\u0940\u090f \u0915\u0947 \u0915\u093f\u0938 \u0935\u093f\u0936\u0947\u0937\u091c\u094d\u091e\u0924\u093e \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948, \u091c\u0948\u0938\u0947 \u0915\u093f \u0921\u0947\u091f\u093e \u0938\u093e\u0907\u0902\u0938 \u090f\u0902\u0921 \u090f\u0928\u093e\u0932\u093f\u091f\u093f\u0915\u094d\u0938?"
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092e\u0941\u091d\u0947 \u0921\u0947\u091f\u093e \u0938\u093e\u0907\u0902\u0938 \u090f\u0902\u0921 \u090f\u0928\u093e\u0932\u093f\u091f\u093f\u0915\u094d\u0938 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u094d\u0932\u093e\u0938 \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u092e\u0947\u0902 \u0905\u091a\u094d\u091b\u0947 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u091a\u093e\u0939\u093f\u090f \u0939\u094b\u0902\u0917\u0947\u0964 \u0906\u092a\u0915\u0947 \u0915\u094d\u0932\u093e\u0938 \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u0915\u0947 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0915\u094d\u092f\u093e \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u0915\u094d\u0932\u093e\u0938 \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u092e\u0947\u0902 \u0938 eventy \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0939\u0948\u0902",
+                "expected": "\u0906\u092a\u0915\u0947 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0905\u091a\u094d\u091b\u0947 \u0939\u0948\u0902\u0964 \u0905\u092c \u092e\u0948\u0902 \u0906\u092a\u0915\u0947 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0940 \u092a\u094d\u0930\u0915\u094d\u0930\u093f\u092f\u093e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092c\u0924\u093e \u0938\u0915\u0924\u093e \u0939\u0942\u0901\u0964 \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a \u0939\u092e\u093e\u0930\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0901?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "BCA Industry: Cloud Computing (Amazon-AWS)",
+            "language": "Hinglish",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u092e\u0948\u0902 \u092c\u0940\u0938\u0940\u090f \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901, \u0932\u0947\u0915\u093f\u0928 \u092e\u0941\u091d\u0947 \u0932\u0917\u0924\u093e \u0939\u0948 \u0915\u093f \u092f\u0939 \u092c\u0939\u0941\u0924 \u092e\u0941\u0936\u094d\u0915\u093f\u0932 \u0939\u0948",
+                "expected": "\u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948? \u0915\u093f\u0938 \u0924\u0930\u0939 \u0915\u093e \u0915\u094b\u0930\u094d\u0938 \u0906\u092a\u0915\u094b \u0906\u0915\u0930\u094d\u0937\u093f\u0924 \u0915\u0930\u0924\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u092e\u0947\u0902 \u0438\u043d\u0442\u0435\u0440\u0435\u0441 \u0939\u0948",
+                "expected": "\u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u0948\u0964 \u091c\u0947-\u0938\u0940-\u0906\u0930-\u0938\u0940\u5927\u5b66 \u092e\u0947\u0902 \u092c\u0940\u0938\u0940\u090f \u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u0915\u094b\u0930\u094d\u0938 \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0964 \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u094d\u092f\u093e \u0932\u0917\u0924\u093e \u0939\u0948, \u0906\u092a \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0909\u092a\u092f\u0941\u0915\u094d\u0924 \u0939\u094b \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092e\u0948\u0902 \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0909\u092a\u092f\u0941\u0915\u094d\u0924 \u0939\u0942\u0901",
+                "expected": "\u092c\u0940\u0938\u0940\u090f \u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u0915\u094b\u0930\u094d\u0938 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u092a\u0939\u0932\u0947 \u0915\u0915\u094d\u0937\u093e \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u0915\u0947 \u0905\u0902\u0915\u094b\u0902 \u0915\u0940 \u0906\u0935\u0936\u094d\u092f\u0915\u0924\u093e \u0939\u0948\u0964 \u0906\u092a\u0915\u0947 \u0915\u0915\u094d\u0937\u093e \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u092e\u0947\u0902 \u0915\u093f\u0924\u0928\u0947 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0905\u0902\u0915 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u0938\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0938\u0947 \u091c\u094d\u092f\u093e\u0926\u093e \u0905\u0902\u0915 \u0939\u0948\u0902",
+                "expected": "\u091c\u0947-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u0935\u093f\u0936\u094d\u0935\u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f \u092e\u0947\u0902 \u092c\u0940\u0938\u0940\u090f \u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u0915\u094b\u0930\u094d\u0938 \u0915\u0940 \u092b\u0940\u0938 \u090f\u0915 \u0932\u093e\u0916 \u0938\u0947\u0935\u0947\u0902\u0924\u0939\u091c\u093e\u0930 \u0939\u0948\u0964 \u0906\u092a \u091c\u0948\u0936\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b \u092f\u093e \u092c\u093e\u0939\u0930 \u0938\u0947?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0915\u0940 \u0938\u0941\u0935\u093f\u0927\u093e \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0964"
+            },
+            {
+                "question": "\u092c\u0938 \u0915\u092c \u0924\u0915 \u091a\u0932\u0924\u0940 \u0939\u0948?",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0902?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "MCA Master of Computer Applications",
+            "language": "Hinglish",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928! \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": " \u0920\u0940\u0915 \u0939\u0948, \u0930\u094b\u0939\u0928\u0964 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094b \u0926\u0947\u0916\u0924\u0947 \u0939\u0941\u090f, \u0915\u094d\u092f\u093e \u0906\u092a \u090f\u092e-\u0938\u0940\u090f, \u090f\u092e\u092c\u0940\u090f \u092f\u093e \u092c\u0940-\u091f\u0947\u0915 \u0906\u0926\u093f \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u090f\u092e-\u0938\u0940\u090f \u0915\u0930\u0928\u093e \u0939\u0948",
+                "expected": "\u090f\u092e-\u0938\u0940\u090f \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u094d\u0935\u093e\u0932\u0940\u092b\u093e\u0907\u0902\u0917 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0915\u094d\u092f\u093e \u0939\u094b\u0928\u0947 \u091a\u093e\u0939\u093f\u090f, \u092f\u0939 \u091c\u093e\u0928\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092e\u0941\u091d\u0947 \u0906\u092a\u0915\u0947 \u0917\u094d\u0930\u0947\u091c\u0941\u090f\u0936\u0928 \u0915\u0947 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u091a\u093e\u0939\u093f\u090f"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u0917\u094d\u0930\u0947\u091c\u0941\u090f\u0936\u0928 \u092e\u0947\u0902Eighty-Seven Percent \u0939\u0948",
+                "expected": "\u0906\u092a\u0915\u093e \u090f\u092e-\u0938\u0940\u090f \u0915\u094b\u0930\u094d\u0938 \u0915\u0940 \u092b\u0940\u0938 \u0932\u0917\u092d\u0917 \u090f\u0915 \u0932\u093e\u0916 \u0938\u093e\u0924\u094d\u092f\u0939\u091c\u093e\u0930 \u0939\u0948, \u092f\u0939 \u091c\u093e\u0928\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092e\u0941\u091d\u0947 \u0906\u092a\u0915\u0947 \u0930\u0939\u0928\u0947 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092a\u0924\u093e \u0915\u0930\u0928\u093e \u0939\u094b\u0917\u093e\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0915\u0940 \u0938\u0941\u0935\u093f\u0927\u093e \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u094b\u0917\u0940\u0964 \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0901?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "MCA Industry: Data Science & Analytics (Samatrix)",
+            "language": "English",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I'm interested in studying at J-E-C-R-C University",
+                "expected": "Hello! What is your name?"
+            },
+            {
+                "question": "My name is Raghav",
+                "expected": "Hello Raghav, what are your interests?"
+            },
+            {
+                "question": "I'm interested in computer applications",
+                "expected": "That's great, Raghav! We have various Courses at J-E-C-R-C University. Which Course are you looking to pursue?"
+            },
+            {
+                "question": "I'm looking for the M-C-A Industry Course, specifically Data Science and Analytics by Samatrix",
+                "expected": "For the M-C-A Course, we require the student to have a certain Percentage in their Bachelor's Degree. Can you tell me about your Bachelor's Degree marks?"
+            },
+            {
+                "question": "I have around Eighty-Five Percent in my Bachelor's Degree",
+                "expected": "That's excellent, Raghav! Since you're from Jaipur, would you like to know about our Bus facilities or something else regarding the university?"
+            },
+            {
+                "question": "I'd like to know about the Bus facilities",
+                "expected": "Thank you Raghav. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "MCA Industry: Health Informatics",
+            "language": "English",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I am interested in pursuing a master's degree at J-E-C-R-C University, can you guide me?",
+                "expected": "Hello, Welcome to J-E-C-R-C University. My name is Riya. Can you please tell me your name?"
+            },
+            {
+                "question": "My name is Rishabh. I am interested in computers and healthcare.",
+                "expected": "Nice to meet you, Rishabh. That's a great combination of interests. We have an M-C-A Course, what do you think about that?"
+            },
+            {
+                "question": "Yes, I think M-C-A would be a good fit. Specifically, the Health Informatics specialization.",
+                "expected": "Great choice, Rishabh. For the M-C-A in Health Informatics, we need to check your eligibility. Can you tell me about your Bachelor's degree marks?"
+            },
+            {
+                "question": "I scored around Eighty Percent in my Bachelor's degree.",
+                "expected": "That's good, Rishabh. Since you are eligible, let's discuss the location. Are you from Jaipur or outside Jaipur?"
+            },
+            {
+                "question": "I am from outside Jaipur.",
+                "expected": "Since you are from outside Jaipur, I would recommend our Hostel facilities for your stay. They are comfortable and convenient."
+            },
+            {
+                "question": "That sounds good. What about the Fee for the M-C-A Course?",
+                "expected": "The Fee for the M-C-A in Health Informatics is One Hundred Sixty Thousand. Now, I have all the information I need."
+            },
+            {
+                "question": "Okay, that's all from me.",
+                "expected": "Thank you, Rishabh. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "BBA Bachelor of Business Administration",
+            "language": "English",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I am looking for a course in management",
+                "expected": "Hello, my name is Riya, and I'm here to help you. May I know your name?"
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hello Rohan, what are your interests? Are you looking for a specific area in management?"
+            },
+            {
+                "question": "I am interested in business administration",
+                "expected": "Great choice, Rohan. We have a Course in Business Administration, it's called B-B-A. Are you aware of the Eligibility criteria for it?"
+            },
+            {
+                "question": "No, I am not aware, can you please tell me",
+                "expected": "For B-B-A, we require the student to have a good Percentage in their Qualifying Exam. Can you please tell me about your Qualifying Exam marks?"
+            },
+            {
+                "question": "I have Eighty Percent",
+                "expected": "That's great, Rohan. Since you have a good Percentage, you are eligible for our B-B-A Course. The Fee for this Course is One Forty Thousand. Are you from Jaipur or do you plan to come from outside?"
+            },
+            {
+                "question": "I am from outside Jaipur",
+                "expected": "Since you are from outside Jaipur, I would suggest you to opt for our Hostel facility. It's safe and convenient."
+            },
+            {
+                "question": "Okay, that sounds good",
+                "expected": "Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "BBA Industry: Data Analytics & Visualization (Samatrix)",
+            "language": "English",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I am interested in studying at J-E-C-R-C University",
+                "expected": "Hello, I'm Riya. May I know your name?"
+            },
+            {
+                "question": "My name is Rishabh",
+                "expected": "Hello Rishabh, what are your interests? Are you looking to pursue a particular Course?"
+            },
+            {
+                "question": "I am looking for a Course related to Business and Data",
+                "expected": "We have a B-B-A Course with a specialization in Data Analytics and Visualization by Samatrix. Would you like to know more about it?"
+            },
+            {
+                "question": "Yes, I would like to know more about the B-B-A in Data Analytics and Visualization",
+                "expected": "To be eligible for the B-B-A in Data Analytics and Visualization, can you please tell me about your Class Twelfth marks, specifically your Percentage?"
+            },
+            {
+                "question": "I scored around Eighty Percent",
+                "expected": "That's great, Rishabh. The Fee for this Course is One Hundred Sixty Thousand. Now, may I know, are you from Jaipur or somewhere else?"
+            },
+            {
+                "question": "I am from outside Jaipur",
+                "expected": "We have a good Hostel facility for outstation students. Would you like to know more about it?"
+            },
+            {
+                "question": "No, that's okay. You have all the information you need, right?",
+                "expected": "Thank you Rishabh. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "MBA Marketing Management",
+            "language": "Hinglish",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e\u090f\u0902"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928! \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948, \u0915\u094c\u0928\u0938\u0947 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u090f\u092e\u092c\u0940\u090f \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u0930\u094b\u0939\u0928, \u090f\u092e\u092c\u0940\u090f \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u0948\u0964 \u090f\u092e\u092c\u0940\u090f \u092e\u0947\u0902 \u0935\u093f\u0936\u0947\u0937\u091c\u094d\u091e\u0924\u093e \u0915\u094d\u092f\u093e \u0939\u0948, \u091c\u0948\u0938\u0947 \u0915\u093f \u090f\u092e\u092c\u0940\u090f \u092e\u093e\u0930\u094d\u0915\u0947\u091f\u093f\u0902\u0917 \u092e\u0948\u0928\u0947\u091c\u092e\u0947\u0902\u091f?"
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u090f\u092e\u092c\u0940\u090f \u092e\u093e\u0930\u094d\u0915\u0947\u091f\u093f\u0902\u0917 \u092e\u0948\u0928\u0947\u091c\u092e\u0947\u0902\u091f \u092e\u0947\u0902",
+                "expected": "\u090f\u092e\u092c\u0940\u090f \u092e\u093e\u0930\u094d\u0915\u0947\u091f\u093f\u0902\u0917 \u092e\u0948\u0928\u0947\u091c\u092e\u0947\u0902\u091f \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0915\u094b\u0930\u094d\u0938 \u0939\u0948\u0964 \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u094d\u092f\u093e \u092f\u094b\u0917\u094d\u092f\u0924\u093e \u0939\u093e\u0938\u093f\u0932 \u0915\u0930\u0928\u0940 \u0939\u094b\u0917\u0940? \u092c\u0924\u093e\u090f\u0902, \u0906\u092a\u0915\u0947 \u0917\u094d\u0930\u0947\u091c\u0941\u090f\u0936\u0928 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092a\u0930\u0938\u0947\u0902\u091f\u0947\u091c \u0925\u093e?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u0917\u094d\u0930\u0947\u091c\u0941\u090f\u0936\u0928 \u092e\u0947\u0902 Eighty-Five Percent \u0925\u093e",
+                "expected": "\u0909\u0924\u094d\u0924\u092e! \u0930\u094b\u0939\u0928, \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902? \u0906\u092a\u0915\u094b \u0939\u092e\u093e\u0930\u0947 \u0915\u0949\u0932\u0947\u091c \u0924\u0915 \u0906\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u094d\u092f\u093e \u0938\u0941\u0935\u093f\u0927\u093e \u091a\u093e\u0939\u093f\u090f?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0915\u093e\u0930\u0923, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0940 \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0905\u091a\u094d\u091b\u0940 \u0930\u0939\u0947\u0917\u0940\u0964"
+            },
+            {
+                "question": "\u0915\u094b\u0930\u094d\u0938 \u0915\u0940 \u092b\u0940\u0938 \u0915\u094d\u092f\u093e \u0939\u0948?",
+                "expected": "\u090f\u092e\u092c\u0940\u090f \u092e\u093e\u0930\u094d\u0915\u0947\u091f\u093f\u0902\u0917 \u092e\u0948\u0928\u0947\u091c\u092e\u0947\u0902\u091f \u0915\u0940 \u092b\u0940\u0938 Two Hundred Fifty Thousand \u0939\u0948\u0964"
+            },
+            {
+                "question": "\u0915\u094d\u092f\u093e \u092b\u0940\u0938 \u092e\u0947\u0902 \u0915\u094b\u0908 \u091b\u0942\u091f \u0939\u0948?",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 information record \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 counselors \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 question \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 help \u0915\u0930 \u0938\u0915\u0942\u0902?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "MBA Production & Operation",
+            "language": "Hinglish",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947 \u092e\u0948\u0902 \u090f\u092e\u092c\u0940\u090f \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": " \u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u090f\u092e\u092c\u0940\u090f \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u0935\u093f\u0936\u0947\u0937\u091c\u094d\u091e\u0924\u093e \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092a\u094d\u0930\u094b\u0921\u0915\u094d\u0936\u0928 \u0914\u0930 \u0911\u092a\u0930\u0947\u0936\u0928 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u090f\u092e\u092c\u0940\u090f \u092a\u094d\u0930\u094b\u0921\u0915\u094d\u0936\u0928 \u0914\u0930 \u0911\u092a\u0930\u0947\u0936\u0928 \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0915\u094b\u0930\u094d\u0938 \u0939\u0948, \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0917\u094d\u0930\u0947\u091c\u0941\u090f\u0936\u0928 \u092e\u0947\u0902 \u0915\u093f\u0924\u0928\u0947 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u092a\u093e\u0938 \u0917\u094d\u0930\u0947\u091c\u0941\u090f\u0936\u0928 \u092e\u0947\u0902 \u0938\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0939\u0948\u0902",
+                "expected": "\u0906\u092a\u0915\u093e \u092a\u0924\u093e \u0915\u0939\u093e\u0901 \u0939\u0948, \u091c\u0948\u092a\u0930 \u092f\u093e \u0915\u0939\u0940\u0902 \u0914\u0930 \u0938\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u0948\u092a\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u0907\u0928\u094d\u092b\u093c\u0949\u0930\u094d\u092e\u0947\u0936\u0928 \u0930\u0947\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0928\u094d\u0938\u0932\u0930\u094d\u0938 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u0915\u094d\u0935\u0947\u0936\u094d\u091a\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u0939\u0947\u0932\u094d\u092a \u0915\u0930 \u0938\u0915\u0942\u0901?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "MBA Industry: Data Analytics & Visualization (Samatrix)",
+            "language": "Hinglish",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947 \u092e\u0948\u0902 \u090f\u092e\u092c\u0940\u090f \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0902",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928\u0964 \u090f\u092e\u092c\u0940\u090f \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0921\u0947\u091f\u093e \u090f\u0928\u093e\u0932\u093f\u091f\u093f\u0915\u094d\u0938 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u0921\u0947\u091f\u093e \u090f\u0928\u093e\u0932\u093f\u091f\u093f\u0915\u094d\u0938 \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u0939\u0948\u0964 \u091c\u0947-\u0908-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u092e\u0947\u0902 \u090f\u092e\u092c\u0940\u090f \u0907\u0902\u0921\u0938\u094d\u091f\u094d\u0930\u0940 \u0921\u0947\u091f\u093e \u090f\u0928\u093e\u0932\u093f\u091f\u093f\u0915\u094d\u0938 \u090f\u0902\u0921 \u0935\u093f\u091c\u093c\u0941\u0905\u0932\u093e\u0907\u091c\u093c\u0947\u0936\u0928 \u0915\u094b\u0930\u094d\u0938 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u0907\u0938\u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u0939\u093e\u0901 \u092e\u0941\u091d\u0947 \u091c\u093e\u0928\u0928\u093e \u0939\u0948",
+                "expected": "\u090f\u092e\u092c\u0940\u090f \u0907\u0902\u0921\u0938\u094d\u091f\u094d\u0930\u0940 \u0921\u0947\u091f\u093e \u090f\u0928\u093e\u0932\u093f\u091f\u093f\u0915\u094d\u0938 \u090f\u0902\u0921 \u0935\u093f\u091c\u093c\u0941\u0905\u0932\u093e\u0907\u091c\u093c\u0947\u0936\u0928 \u0915\u094b\u0930\u094d\u0938 \u0915\u0947 \u0932\u093f\u090f \u092a\u094d\u0930\u0935\u0947\u0936 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0917\u094d\u0930\u0947\u091c\u0941\u090f\u0936\u0928 \u092e\u0947\u0902 \u0915\u093f\u0924\u0928\u0947 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093f\u0932\u0947 \u0925\u0947?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0917\u094d\u0930\u0947\u091c\u0941\u090f\u0936\u0928 \u092e\u0947\u0902 \u0907\u0915\u094d\u092f\u0941\u0935\u0923 Percent \u092e\u093f\u0932\u0947 \u0925\u0947",
+                "expected": "\u0909\u0938\u0915\u0947 \u092c\u093e\u0926, \u0906\u092a\u0915\u093e \u092a\u0924\u093e \u0915\u0939\u093e\u0902 \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u0907\u0902\u092b\u0949\u0930\u094d\u092e\u0947\u0936\u0928 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0902?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "B.Sc.(Hons.) Biotechnology",
+            "language": "Hinglish",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947, \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947-\u0908-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u0935\u093f\u0936\u094d\u0935\u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f \u0915\u0940 \u090f\u0906\u0908 \u090f\u091c\u0947\u0902\u091f\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092c\u093e\u092f\u094b\u091f\u0947\u0915\u094d\u0928\u094b\u0932\u0949\u091c\u0940 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092c\u093e\u092f\u094b\u091f\u0947\u0915\u094d\u0928\u094b\u0932\u0949\u091c\u0940 \u090f\u0915 \u092c\u0939\u0941\u0924 \u0939\u0940 \u0930\u094b\u091a\u0915 \u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u0939\u0948\u0964 \u0906\u092a\u0928\u0947 \u0915\u094c\u0928 \u0938\u093e \u0915\u094b\u0930\u094d\u0938 \u0915\u0930\u0928\u0947 \u0915\u0940 \u0938\u094b\u091a\u093e \u0939\u0948? \u091c\u0948\u0938\u0947 \u0915\u093f \u092c\u0940-\u090f\u0938-\u0938\u0940 (\u0911\u0928\u0930\u094d\u0938) \u092c\u093e\u092f\u094b\u091f\u0947\u0915\u094d\u0928\u094b\u0932\u0949\u091c\u0940?"
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092c\u0940-\u090f\u0938-\u0938\u0940 (\u0911\u0928\u0930\u094d\u0938) \u092c\u093e\u092f\u094b\u091f\u0947\u0915\u094d\u0928\u094b\u0932\u0949\u091c\u0940",
+                "expected": "\u092c\u0940-\u090f\u0938-\u0938\u0940 (\u0911\u0928\u0930\u094d\u0938) \u092c\u093e\u092f\u094b\u091f\u0947\u0915\u094d\u0928\u094b\u0932\u0949\u091c\u0940 \u0915\u0947 \u0932\u093f\u090f \u092a\u093e\u0924\u094d\u0930\u0924\u093e \u0915\u0947 \u0905\u0928\u0941\u0938\u093e\u0930 \u0906\u092a\u0915\u094b \u0915\u094d\u0932\u093e\u0938 \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u092e\u0947\u0902 \u0915\u093f\u0924\u0928\u0947 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093f\u0932\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092a\u091a\u093e\u0938 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093f\u0932\u0947 \u0939\u0948\u0902",
+                "expected": "\u0920\u0940\u0915 \u0939\u0948, \u0930\u094b\u0939\u0928\u0964 \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0935\u091c\u0939 \u0938\u0947 \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0915\u0940 \u0938\u0941\u0935\u093f\u0927\u093e \u092d\u0940 \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u094b\u0917\u0940\u0964"
+            },
+            {
+                "question": "\u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092c\u0924\u093e\u090f\u0902",
+                "expected": "\u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u0905\u0927\u093f\u0915 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0947 \u092a\u0930\u093f\u0935\u0939\u0928 \u0935\u093f\u092d\u093e\u0917 \u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0930\u094d\u091c \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u092a\u0930\u093e\u092e\u0930\u094d\u0936\u0926\u093e\u0924\u093e \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0902?"
+            },
+            {
+                "question": "\u0928\u0939\u0940\u0902, \u0927\u0928\u094d\u092f\u0935\u093e\u0926",
+                "expected": "\u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948, \u0930\u094b\u0939\u0928\u0964 \u0939\u092e\u093e\u0930\u0940 \u091f\u0940\u092e \u0938\u0947 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u093f\u092f\u093e \u091c\u093e\u090f\u0917\u093e\u0964"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "M.Sc. Forensic Science",
+            "language": "English",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I am interested in a master's course at J-E-C-R-C University",
+                "expected": "Hello, my name is Riya. I'd be happy to guide you through our courses. May I know your name, please?"
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Nice to meet you, Rohan. What interests you? Are you looking for a course in a specific field?"
+            },
+            {
+                "question": "I am interested in Forensic Science",
+                "expected": "We have an M-Sc Forensic Science Course. To be eligible, we need to check your Bachelor's marks. Can you please tell me about your Bachelor's marks, Rohan?"
+            },
+            {
+                "question": "I scored Seventy Percent in my Bachelor's",
+                "expected": "That's great, Rohan. Our M-Sc Forensic Science Course fee is around Ninety Thousand. Are you from Jaipur or somewhere else?"
+            },
+            {
+                "question": "I am from a different city",
+                "expected": "Since you are not from Jaipur, I would recommend considering our Hostel facilities for accommodation. They are convenient and provide a comfortable stay for our students."
+            },
+            {
+                "question": "That sounds good",
+                "expected": "Thank you, Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "M.Sc. Mathematics",
+            "language": "English",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hello, I'm interested in the M.Sc. Mathematics Course at J-E-C-R-C University",
+                "expected": "Hello, my name is Riya. What is your name?"
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hello Rohan, what interests you about the M-Sc Mathematics Course?"
+            },
+            {
+                "question": "I've always been passionate about Mathematics and I think this Course will help me grow",
+                "expected": "That's great to hear, Rohan. To pursue M-Sc Mathematics, we need to check your Eligibility. Can you tell me about your Qualification type, like Bachelor's or Master's, and your Percentage?"
+            },
+            {
+                "question": "I've completed my Bachelor's in Mathematics with Seventy Percent",
+                "expected": "Since you're from which location, Rohan? Are you from Jaipur or somewhere else?"
+            },
+            {
+                "question": "I'm from outside Jaipur, a different city",
+                "expected": "Since you are from outside Jaipur, I would suggest you consider our Hostel facilities for a comfortable stay. The Fee for the M-Sc Mathematics Course is Ninety Thousand. Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "Integrated Law: B.A LL.B (Hons.)",
+            "language": "English",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hello, I'm extremely frustrated, I've been trying to figure out the admission process for Integrated Law course at J-E-C-R-C University, but I'm not getting any clear information.",
+                "expected": "Hello, I'm Riya. Sorry to hear that you're frustrated. Could you please tell me your name?"
+            },
+            {
+                "question": "My name is Aisha. Nice to meet you Riya.",
+                "expected": "Nice to meet you too, Aisha. What interests you about the Integrated Law course, specifically the B.A L-L-B (Hons.)?"
+            },
+            {
+                "question": "I've always been interested in Law and I think this course would be perfect for me. But I'm not sure about the eligibility criteria.",
+                "expected": "That's great to hear, Aisha. To be eligible for the Integrated Law course, could you please tell me about your Class Twelfth marks, specifically your Percentage?"
+            },
+            {
+                "question": "I scored around Ninety Percent. Will that be enough to get into the course?",
+                "expected": "Congratulations, Aisha. Now, since you're interested in the Integrated Law course, I would like to know, where are you from?"
+            },
+            {
+                "question": "I'm from Jaipur.",
+                "expected": "Since you're from Jaipur, I would like to inform you that we have a convenient Bus facility available for our students. Now, I have all the necessary information. Thank you Aisha. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "LL.M",
+            "language": "English",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I want to know about the courses offered by J-E-C-R-C University",
+                "expected": "Hello, My name is Riya. What is your name?"
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hello Rohan, what are your interests?"
+            },
+            {
+                "question": "I am interested in Law",
+                "expected": "Great, Rohan. We have a Course, LL.M. Would you like to know more about it?"
+            },
+            {
+                "question": "Yes, please tell me more about LL.M.",
+                "expected": "The Fee for LL.M is Seventy-Five Thousand. To be eligible, can you tell me about your Graduation marks?"
+            },
+            {
+                "question": "I have Eighty Percent in my Graduation",
+                "expected": "You are eligible, Rohan. Where are you from?"
+            },
+            {
+                "question": "I am from Jaipur",
+                "expected": "Since you are from Jaipur, we suggest our Bus facility for daily commuting. "
+            },
+            {
+                "question": "That sounds good",
+                "expected": "Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "B.Des Fashion Design",
+            "language": "Hinglish",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u090f\u0921\u092e\u093f\u0936\u0928 \u090f\u0915\u094d\u0938\u092a\u0930\u094d\u091f\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0905\u0902\u0936\u0941\u0932 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0905\u0902\u0936\u0941\u0932, \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948? \u0915\u093f\u0938 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0907\u0902\u091f\u0930\u0947\u0938\u094d\u091f \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092b\u0948\u0936\u0928 \u0921\u093f\u091c\u093e\u0907\u0928 \u092e\u0947\u0902 \u0438\u043d\u0442\u0435\u0440\u0435\u0441 \u0939\u0948",
+                "expected": "\u092c\u0940-\u0921\u0947\u0938 \u092b\u0948\u0936\u0928 \u0921\u093f\u091c\u093e\u0907\u0928 \u090f\u0915 \u092c\u0939\u0941\u0924 \u0939\u0940 \u0930\u094b\u091a\u0915 \u0915\u094b\u0930\u094d\u0938 \u0939\u0948\u0964 \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u093f\u0938 \u092a\u094d\u0930\u0915\u093e\u0930 \u0915\u0940 \u092f\u094b\u0917\u094d\u092f\u0924\u093e \u0915\u0940 \u0906\u0935\u0936\u094d\u092f\u0915\u0924\u093e \u0939\u0948, \u092f\u0939 \u091c\u093e\u0928\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092e\u0941\u091d\u0947 \u0906\u092a\u0915\u0940 \u092a\u0942\u0930\u094d\u0935 \u0936\u093f\u0915\u094d\u0937\u093e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092c\u0924\u093e\u090f\u0902\u0964 \u0906\u092a\u0915\u0940 \u0915\u094d\u0935\u093e\u0932\u093f\u092b\u093e\u0907\u0902\u0917 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0915\u094d\u092f\u093e \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902\u0928\u0947 \u0938\u094d\u0915\u0942\u0932 \u0938\u0947 Eighty-Five Percent \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u093f\u090f \u0939\u0948\u0902",
+                "expected": "\u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u093e, \u0905\u0902\u0936\u0941\u0932! \u0905\u092c \u092e\u0948\u0902 \u0906\u092a\u0915\u094b \u092c\u0924\u093e \u0926\u0942\u0901 \u0915\u093f \u092c\u0940-\u0921\u0947\u0938 \u092b\u0948\u0936\u0928 \u0921\u093f\u091c\u093e\u0907\u0928 \u0915\u094b\u0930\u094d\u0938 \u0915\u0940 \u092b\u0940\u0938 \u0932\u0917\u092d\u0917 \u090f\u0915 \u0932\u093e\u0916 \u092a\u091a\u0939\u0924\u094d\u0924\u0930 \u0939\u091c\u093e\u0930 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0947 \u0915\u0948\u092e\u094d\u092a\u0938 \u092e\u0947\u0902 \u0930\u0939\u0928\u093e \u092a\u0938\u0902\u0926 \u0915\u0930\u0947\u0902\u0917\u0947 \u092f\u093e \u0906\u092a \u0915\u0939\u0940\u0902 \u0914\u0930 \u0938\u0947 \u0906\u0915\u0930 \u092a\u0922\u093c\u093e\u0908 \u0915\u0930\u0947\u0902\u0917\u0947?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u094b \u0938\u0915\u0924\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0940 \u092c\u0938\u0947\u0902 \u0936\u0939\u0930 \u0915\u0947 \u0935\u093f\u092d\u093f\u0928\u094d\u0928 \u0939\u093f\u0938\u094d\u0938\u094b\u0902 \u0938\u0947 \u091a\u0932\u0924\u0940 \u0939\u0948\u0902\u0964"
+            },
+            {
+                "question": "\u092f\u0939 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u092c\u0939\u0941\u0924 \u0909\u092a\u092f\u094b\u0917\u0940 \u0939\u0948",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0905\u0902\u0936\u0941\u0932\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0901?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "M.Des Interior Design",
+            "language": "Hinglish",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 J-E-C-R-C \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 admission \u0932\u0947\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947, \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u0940 \u0438\u043d\u0442\u0435\u0440\u0435\u0441 \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 Design \u092e\u0947\u0902 Interest \u0939\u0948",
+                "expected": "Design \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0915\u094c\u0928 \u0938\u0940 Course \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 M-Des Interior Design \u0915\u0930\u0928\u093e \u0939\u0948",
+                "expected": "M-Des Interior Design \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u0947 \u092a\u093e\u0938 \u0915\u0941\u0932 Percentage \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u092a\u093e\u0938 Seventy Percent \u0939\u0948",
+                "expected": "\u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u094b, \u0930\u094b\u0939\u0928?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 Jaipur \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 information record \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 counselors \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 question \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 help \u0915\u0930 \u0938\u0915\u0942\u0902? \u0939\u092e\u093e\u0930\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 Bus \u0915\u0940 \u0938\u0941\u0935\u093f\u0927\u093e \u092d\u0940 \u0939\u0948\u0964"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "M.Sc. Design: Interior",
+            "language": "Hinglish",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947 Riya, \u092e\u0948\u0902 M.Sc. \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u093f\u0938 \u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092e\u0947\u0902 \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 Design \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u0930\u094b\u0939\u0928, \u0906\u092a\u0928\u0947 Design \u092e\u0947\u0902 \u0915\u094c\u0928 \u0938\u093e Course \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 M.Sc. Design: Interior \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0930\u094b\u0939\u0928, M.Sc. Design: Interior \u0915\u0947 \u0932\u093f\u090f Eligibility \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b Bachelor Degree \u0915\u0947 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0915\u094d\u092f\u093e \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u092c\u0948\u091a\u0932\u0930 \u0921\u093f\u0917\u094d\u0930\u0940 \u092e\u0947\u0902 Eighty Percent \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0939\u0948\u0902",
+                "expected": "\u0930\u094b\u0939\u0928, \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 information record \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 counselors \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 question \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 help \u0915\u0930 \u0938\u0915\u0942\u0902?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "M.Sc. Design: Fashion",
+            "language": "Hinglish",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u091c\u0947\u0915\u0947\u0930\u094d\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947, \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947\u0915\u0947\u0930\u094d\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u090f\u0921\u092e\u093f\u0936\u0928 \u090f\u091c\u0947\u0902\u091f\u0964 \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e\u090f\u0902\u0964"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092f\u0939\u093e\u0901 \u0939\u0942\u0901\u0964 \u0906\u092a\u0915\u094b \u0915\u093f\u0938 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092b\u0948\u0936\u0928 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092b\u0948\u0936\u0928 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0928\u0947 \u0935\u093e\u0932\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0947 \u090f\u092e\u090f\u0938\u0938\u0940 \u0921\u093f\u091c\u093e\u0907\u0928: \u092b\u0948\u0936\u0928 \u0915\u094b\u0930\u094d\u0938 \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u094b \u0938\u0915\u0924\u093e \u0939\u0948\u0964 \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0915\u094d\u092f\u093e \u0906\u092a \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0915\u093f \u0906\u092a\u0915\u0940 \u092a\u093f\u091b\u0932\u0940 \u0915\u094d\u0935\u093e\u0932\u093f\u092b\u093f\u0915\u0947\u0936\u0928 \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0948\u0902\u0928\u0947 \u092c\u0940\u090f\u0938\u0938\u0940 \u0915\u093f\u092f\u093e \u0939\u0948",
+                "expected": "\u092c\u0940\u090f\u0938\u0938\u0940 \u0915\u0930\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u090f\u092e\u090f\u0938\u0938\u0940 \u0921\u093f\u091c\u093e\u0907\u0928: \u092b\u0948\u0936\u0928 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u092e \u0938\u0947 \u0915\u092e \u0938\u093e\u0920 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0939\u094b\u0928\u0947 \u091a\u093e\u0939\u093f\u090f\u0964 \u0906\u092a\u0915\u0947 \u092c\u0940\u090f\u0938\u0938\u0940 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0925\u093e?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u092c\u0940\u090f\u0938\u0938\u0940 \u092e\u0947\u0902 \u0905\u091f\u094d\u0920\u093e\u0930\u0939 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0938\u0947 \u091c\u094d\u092f\u093e\u0926\u093e \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0925\u0947",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u0905\u092c \u092c\u0924\u093e\u090f\u0902 \u0915\u093f \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0940 \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u094b \u0938\u0915\u0924\u0940 \u0939\u0948\u0964 \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0901?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "BA International Relations",
+            "language": "English",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I am interested in studying at J-E-C-R-C University.",
+                "expected": "Hello, welcome to J-E-C-R-C University. What is your name?"
+            },
+            {
+                "question": "My name is Aarav.",
+                "expected": "Nice to meet you Aarav. What are your interests?"
+            },
+            {
+                "question": "I am interested in studying International Relations.",
+                "expected": "That's great, Aarav. We offer a Course in B-A International Relations. Are you eligible for it?"
+            },
+            {
+                "question": "Yes, I have completed my Class Twelfth.",
+                "expected": "Could you tell me about your Class Twelfth Percentage?"
+            },
+            {
+                "question": "I scored about Eighty Percent.",
+                "expected": "You are from which location, Aarav?"
+            },
+            {
+                "question": "I am from Jaipur.",
+                "expected": "Since you are from Jaipur, you can easily commute to our campus using our Bus service. The Fee for B-A International Relations is Ninety Thousand per year."
+            },
+            {
+                "question": "That sounds good.",
+                "expected": "Thank you Aarav. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "BPT Bachelor of Physiotherapy",
+            "language": "English",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I'm interested in studying at J-E-C-R-C University",
+                "expected": "Hello, what is your name?"
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hi Rohan, what interests you?"
+            },
+            {
+                "question": "I'm interested in healthcare and want to help people",
+                "expected": "That's great, Rohan! We have a Course like Bachelor of Physiotherapy. Are you interested in that?"
+            },
+            {
+                "question": "Yes, BPT seems interesting",
+                "expected": "To pursue BPT, we need to check your Eligibility. Can you tell me about your Class Twelfth Percentage?"
+            },
+            {
+                "question": "I scored around Eighty-Five Percent",
+                "expected": "That's impressive, Rohan! Now, where are you from?"
+            },
+            {
+                "question": "I'm from Jaipur",
+                "expected": "Since you're from Jaipur, we provide a convenient Bus service for our students. It can help you commute to the university."
+            },
+            {
+                "question": "That sounds good",
+                "expected": "Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "MPT Sports/Orthopaedics/Neurology/Cardio",
+            "language": "English",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I am so frustrated with the whole admission process!",
+                "expected": "Hi, I'm Riya from J-E-C-R-C University. What is your name?"
+            },
+            {
+                "question": "My name is Rohan.",
+                "expected": "Hello Rohan, what brings you to our University? What are your interests?"
+            },
+            {
+                "question": "I am interested in physical therapy, especially in sports and orthopaedics.",
+                "expected": "That's great, Rohan! We have an M-P-T Course in Sports, Orthopaedics, Neurology, and Cardio. Are you eligible for it?"
+            },
+            {
+                "question": "I think so, I did my Bachelor's in Physiotherapy.",
+                "expected": "For the M-P-T Course, we require your Bachelor's marks. Can you tell me about your Bachelor's Percentage?"
+            },
+            {
+                "question": "I got a high Percentage, around Eighty-Five Percent.",
+                "expected": "That's excellent, Rohan! Our M-P-T Course Fee is around Ninety Thousand. Are you from Jaipur or outside?"
+            },
+            {
+                "question": "I am not from Jaipur, I am from another city.",
+                "expected": "Since you are not from Jaipur, I would suggest you look into our Hostel facilities. We have excellent accommodations for out-of-town students."
+            },
+            {
+                "question": "Okay, that sounds good.",
+                "expected": "Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "B.Sc. in HHM Hospitality and Hotel Management",
+            "language": "English",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I want to know about the courses offered by J-E-C-R-C University",
+                "expected": "Hello, my name is Riya, and I'm an A-I Agent of J-E-C-R-C University. What is your name?"
+            },
+            {
+                "question": "My name is Ankit",
+                "expected": "Nice to meet you, Ankit. What are your interests?"
+            },
+            {
+                "question": "I am interested in Hospitality and Hotel Management",
+                "expected": "That's a great interest, Ankit. We have a Course called B-Sc in H-H-M Hospitality and Hotel Management. Are you eligible for it?"
+            },
+            {
+                "question": "Yes, I have completed my Class Twelfth with a good Percentage",
+                "expected": "To confirm your eligibility for the B-Sc in H-H-M Course, can you tell me about your Class Twelfth marks?"
+            },
+            {
+                "question": "I scored around Eighty Percent",
+                "expected": "Thanks for sharing that, Ankit. You are eligible for the B-Sc in H-H-M Course. The Fee for this Course is one hundred thousand. Where are you from, Ankit?"
+            },
+            {
+                "question": "I am from Jaipur",
+                "expected": "You're from Jaipur, that's great. We have a Bus facility available for our students. Would you like to know more about it?"
+            },
+            {
+                "question": "No, I'm good for now",
+                "expected": "Thank you, Ankit. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "MA English",
+            "language": "Hinglish",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947 \u0908 \u0938\u0940 \u0906\u0930 \u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u090f\u0906\u0908 \u090f\u091c\u0947\u0902\u091f\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928! \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u093f\u0938 \u092b\u0940\u0932\u094d\u0921 \u092e\u0947\u0902 \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0907\u0902\u0917\u094d\u0932\u093f\u0936 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u093e! \u090f\u092e \u090f \u0907\u0902\u0917\u094d\u0932\u093f\u0936 \u0915\u094b\u0930\u094d\u0938 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u0947\u0902\u0917\u0947?"
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092c\u0924\u093e\u090f\u0902",
+                "expected": "\u090f\u092e \u090f \u0907\u0902\u0917\u094d\u0932\u093f\u0936 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0917\u094d\u0930\u0947\u091c\u0941\u090f\u0936\u0928 \u0915\u0940 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0915\u094d\u092f\u093e \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u092a\u093e\u0938 \u0938eventy \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0939\u0948",
+                "expected": "\u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902 \u0930\u094b\u0939\u0928?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0915\u0940 \u0938\u0941\u0935\u093f\u0927\u093e \u092d\u0940 \u0939\u0948 \u091c\u094b \u0906\u092a\u0915\u094b \u0915\u0948\u092e\u094d\u092a\u0938 \u0924\u0915 \u0932\u0947 \u091c\u093e \u0938\u0915\u0924\u0940 \u0939\u0948\u0964 \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 information record \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 counselors \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 question \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 help \u0915\u0930 \u0938\u0915\u0942\u0902?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "Ph.D. Program (Per Year)",
+            "language": "Hinglish",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u092a\u0940-\u090f\u091a-\u0921\u0940 \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u092a\u0940-\u090f\u091a-\u0921\u0940 \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092a\u0940-\u090f\u091a-\u0921\u0940 \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e \u092e\u0947\u0902 \u092c\u0939\u0941\u0924 \u0930\u0941\u091a\u093f \u0939\u0948, \u0915\u094d\u092f\u094b\u0902\u0915\u093f \u092e\u0948\u0902 \u0930\u093f\u0938\u0930\u094d\u091a \u092e\u0947\u0902 \u0905\u092a\u0928\u093e \u0915\u0930\u093f\u092f\u0930 \u092c\u0928\u093e\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0930\u094b\u0939\u0928, \u092a\u0940-\u090f\u091a-\u0921\u0940 \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e \u0915\u0947 \u0932\u093f\u090f \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u093e\u0938\u094d\u091f\u0930 \u0921\u093f\u0917\u094d\u0930\u0940 \u0915\u0947 \u0928\u0902\u092c\u0930 \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092e\u0947\u0930\u0947 \u092e\u093e\u0938\u094d\u091f\u0930 \u0921\u093f\u0917\u094d\u0930\u0940 \u092e\u0947\u0902 \u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u0947 \u0928\u0902\u092c\u0930 \u0939\u0948\u0902",
+                "expected": "\u0930\u094b\u0939\u0928, \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902? \u091c\u0947-\u0908-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u0935\u093f\u0936\u094d\u0935\u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f \u0915\u0947 \u092a\u093e\u0938 \u0915\u094d\u092f\u093e \u0938\u0941\u0935\u093f\u0927\u093e\u090f\u0901 \u0939\u0948\u0902 \u091c\u094b \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u0909\u092a\u092f\u0941\u0915\u094d\u0924 \u0939\u094b\u0902\u0917\u0940?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0940 \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u092c\u0939\u0941\u0924 \u0909\u092a\u092f\u0941\u0915\u094d\u0924 \u0939\u094b \u0938\u0915\u0924\u0940 \u0939\u0948"
+            },
+            {
+                "question": "\u0913\u0939, \u092f\u0939 \u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u093e \u0939\u0948",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 record \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u092a\u0930\u093e\u092e\u0930\u094d\u0936\u0926\u093e\u0924\u093e \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0901?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "B.Com ISDC: IoA/CMA/IFM/CIPS Specializations",
+            "language": "Hinglish",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0906\u092a\u0915\u0940 \u0915\u0948\u0938\u0947 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0942\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0902",
+                "expected": "\u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u0940 \u0907\u0902\u091f\u0930\u0947\u0938\u094d\u091f \u0915\u0948\u0938\u0947 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0915\u0949\u092e\u0930\u094d\u0938 \u092e\u0947\u0902 \u0907\u0902\u091f\u0930\u0947\u0938\u094d\u091f \u0939\u0948",
+                "expected": "\u0915\u0949\u092e\u0930\u094d\u0938 \u092e\u0947\u0902 \u0906\u092a\u0915\u093e \u0907\u0902\u091f\u0930\u0947\u0938\u094d\u091f \u0939\u0948, \u092f\u0939 \u091c\u093e\u0928\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0905\u091a\u094d\u091b\u093e \u0939\u0948\u0964 \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u092c\u0940-\u0915\u0949\u092e \u0906\u0908\u090f\u0938\u0921\u0940\u0938\u0940 \u091c\u0948\u0938\u0947 \u0915\u094b\u0930\u094d\u0938 \u0939\u0948\u0902\u0964"
+            },
+            {
+                "question": "\u092c\u0940-\u0915\u0949\u092e \u0906\u0908\u090f\u0938\u0921\u0940\u0938\u0940 \u092e\u0947\u0902 \u092e\u0941\u091d\u0947 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u0932\u093f\u090f \u0915\u094d\u092f\u093e \u0915\u0930\u0928\u093e \u0939\u094b\u0917\u093e?",
+                "expected": "\u092c\u0940-\u0915\u0949\u092e \u0906\u0908\u090f\u0938\u0921\u0940\u0938\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u092a\u093f\u091b\u0932\u0940 \u0915\u0915\u094d\u0937\u093e \u0915\u0947 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u092c\u0924\u093e\u0928\u0947 \u0939\u094b\u0902\u0917\u0947\u0964"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u092a\u093f\u091b\u0932\u0940 \u0915\u0915\u094d\u0937\u093e \u092e\u0947\u0902 \u0938\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0939\u0948\u0902",
+                "expected": "\u0906\u092a\u0915\u0947 \u092a\u093f\u091b\u0932\u0940 \u0915\u0915\u094d\u0937\u093e \u092e\u0947\u0902 \u0938\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0939\u0948\u0902\u0964 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u0932\u093f\u090f \u092f\u0939 \u0905\u091a\u094d\u091b\u093e \u0939\u0948\u0964 \u0905\u092c \u0906\u092a\u0915\u094b \u092c\u0924\u093e\u0928\u093e \u0939\u094b\u0917\u093e \u0915\u093f \u0906\u092a \u0915\u0939\u093e\u0902 \u0938\u0947 \u0939\u0948\u0902\u0964"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0902",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u0907\u0902\u092b\u0949\u0930\u094d\u092e\u0947\u0936\u0928 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930\u094d\u0938 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0902?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "BBA ISDC: Global Business-International",
+            "language": "Hinglish",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u0915\u0949\u0932\u0947\u091c \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947-\u0908-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u0935\u093f\u0936\u094d\u0935\u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f \u0915\u0940 \u090f\u0906\u0908 \u090f\u091c\u0947\u0902\u091f\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928! \u0915\u0943\u092a\u092f\u093e \u092c\u0924\u093e\u090f\u0902, \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0935\u094d\u092f\u0935\u0938\u093e\u092f \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092c\u093f\u091c\u0928\u0947\u0938 \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u092f\u0939\u093e\u0901 \u092c\u0940-\u092c\u0940-\u090f \u0906\u0908\u090f\u0938\u0921\u0940\u0938\u0940: \u0917\u094d\u0932\u094b\u092c\u0932 \u092c\u093f\u091c\u0928\u0947\u0938-\u0907\u0902\u091f\u0930\u0928\u0947\u0936\u0928\u0932 \u091c\u0948\u0938\u0947 \u0915\u094b\u0930\u094d\u0938 \u0939\u0948\u0902\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u0907\u0938 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092e\u0941\u091d\u0947 \u0932\u0917\u0924\u093e \u0939\u0948 \u0915\u093f \u092f\u0939 \u092e\u0947\u0930\u0947 \u0932\u093f\u090f \u0909\u092a\u092f\u0941\u0915\u094d\u0924 \u0939\u094b \u0938\u0915\u0924\u093e \u0939\u0948",
+                "expected": "\u092c\u0940-\u092c\u0940-\u090f \u0906\u0908\u090f\u0938\u0921\u0940\u0938\u0940: \u0917\u094d\u0932\u094b\u092c\u0932 \u092c\u093f\u091c\u0928\u0947\u0938-\u0907\u0902\u091f\u0930\u0928\u0947\u0936\u0928\u0932 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u094d\u0932\u093e\u0938 \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u0915\u0947 \u0905\u0902\u0915\u094b\u0902 \u0915\u0940 \u0906\u0935\u0936\u094d\u092f\u0915\u0924\u093e \u0939\u094b\u0917\u0940\u0964 \u0906\u092a\u0915\u0947 \u0915\u094d\u0932\u093e\u0938 \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u092e\u0947\u0902 \u0915\u093f\u0924\u0928\u0947 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u0932\u0917\u092d\u0917 \u0938\u093e\u0920 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0939\u0948\u0902",
+                "expected": "\u0906\u092a\u0915\u0947 \u0938\u093e\u0920 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u092c\u0940-\u092c\u0940-\u090f \u0906\u0908\u090f\u0938\u0921\u0940\u0938\u0940: \u0917\u094d\u0932\u094b\u092c\u0932 \u092c\u093f\u091c\u0928\u0947\u0938-\u0907\u0902\u091f\u0930\u0928\u0947\u0936\u0928\u0932 \u0915\u0947 \u0932\u093f\u090f \u092a\u0930\u094d\u092f\u093e\u092a\u094d\u0924 \u0939\u094b \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0905\u092c \u092c\u0924\u093e\u090f\u0902, \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0915\u0940 \u0938\u0941\u0935\u093f\u0927\u093e \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u094b \u0938\u0915\u0924\u0940 \u0939\u0948\u0964"
+            },
+            {
+                "question": "\u0915\u094d\u092f\u093e \u092b\u0940\u0938 \u0915\u093f\u0924\u0928\u0940 \u0939\u094b\u0917\u0940?",
+                "expected": "\u0907\u0938 \u0915\u094b\u0930\u094d\u0938 \u0915\u0940 \u092b\u0940\u0938 \u0922\u093e\u0908 \u0932\u093e\u0916 \u0930\u0941\u092a\u092f\u0947 \u0939\u094b\u0917\u0940\u0964"
+            },
+            {
+                "question": "\u092f\u0939 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0920\u0940\u0915 \u0939\u0948",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0901?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "MBA CollegeDekho: Global Financial Operations",
+            "language": "English",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I'm interested in studying at J-E-C-R-C University",
+                "expected": "Hello, I'm Riya. What's your name?"
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Nice to meet you, Rohan. What brings you here? Are you interested in a particular Course?"
+            },
+            {
+                "question": "Yes, I'm interested in the MBA Course, specifically Global Financial Operations",
+                "expected": "Great choice, Rohan. For MBA, we require your Graduate marks. Can you tell me about your Graduation?"
+            },
+            {
+                "question": "I scored around Eighty-Five Percent in my Graduation",
+                "expected": "Excellent, Rohan. Since you're from Jaipur, I would like to inform you that our University provides a Bus facility for local students. Would you like to know more about the Fee structure for the Global Financial Operations Course?"
+            },
+            {
+                "question": "Yes, please tell me about the Fee",
+                "expected": "The Fee for the Global Financial Operations Course is Two Hundred Seventy-Five Thousand. Are you from Jaipur or outside?"
+            },
+            {
+                "question": "I'm from outside Jaipur",
+                "expected": "In that case, Rohan, I would recommend our Hostel facility. It's a great way to experience college life. Thank you, Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "BCA CollegeDekho: MERN / RPA / Forensics",
+            "language": "English",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I'm interested in knowing more about J-E-C-R-C University",
+                "expected": "Namaste, \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 May I know your name, please?"
+            },
+            {
+                "question": "My name is Aarav",
+                "expected": "Hello Aarav, \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u094b \u0915\u094c\u0928 \u0938\u0947 Course \u092e\u0947\u0902 Interest \u0939\u0948?"
+            },
+            {
+                "question": "I am keen on pursuing B-C-A, specifically the MERN or R-P-A Course",
+                "expected": "Aarav, for B-C-A Course, especially for specializations like MERN or R-P-A, what were your marks in Class Twelfth?"
+            },
+            {
+                "question": "I scored around Eighty Percent",
+                "expected": "That's great, Aarav. Are you from Jaipur or somewhere else?"
+            },
+            {
+                "question": "I am from Jaipur",
+                "expected": "Since you're from Jaipur, you might want to consider using our Bus facility for daily commute. \u0927\u0928\u094d\u092f\u0935\u093e\u0926 Aarav. \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 information record \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 counselors \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 question \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 help \u0915\u0930 \u0938\u0915\u0942\u0902?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "BBA Sunstone",
+            "language": "English",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I am looking for admission in J-E-C-R-C University",
+                "expected": "Hello, I'm Riya. What is your name and what course are you interested in?"
+            },
+            {
+                "question": "My name is Ravi and I am interested in B-B-A Sunstone",
+                "expected": "Hello Ravi, to proceed with B-B-A Sunstone Course, what was your Class Twelfth Percentage?"
+            },
+            {
+                "question": "I scored around Eighty Percent",
+                "expected": "That's great, Ravi. Since you are interested in B-B-A Sunstone, are you from Jaipur or outside?"
+            },
+            {
+                "question": "I am from outside Jaipur",
+                "expected": "Since you are from outside, I would suggest you to opt for our Hostel facility. The fee for B-B-A Sunstone is One Forty Thousand per annum."
+            },
+            {
+                "question": "That sounds okay, what is the next step?",
+                "expected": "Thank you Ravi. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "MCA Sunstone",
+            "language": "English",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I want to know about MCA courses",
+                "expected": "Hello, my name is Riya, and I'm an agent from J-E-C-R-C University. What is your name?"
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Nice to meet you Rohan, what are your interests that led you to consider M-C-A?"
+            },
+            {
+                "question": "I'm interested in computer applications",
+                "expected": "That's great Rohan. We have an M-C-A Course, specifically the M-C-A Sunstone. Are you aware of the eligibility criteria for this Course?"
+            },
+            {
+                "question": "No, I don't know",
+                "expected": "For the M-C-A Course, we require your graduation marks. Can you tell me about your graduation Percentage?"
+            },
+            {
+                "question": "I scored Eighty Percent",
+                "expected": "That's good Rohan. Our M-C-A Sunstone Course Fee is One Seventy Thousand. Are you from Jaipur or outside?"
+            },
+            {
+                "question": "I'm from outside Jaipur",
+                "expected": "Since you're from outside Jaipur, I would recommend considering our Hostel facilities for your stay during the Course. Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "Hostel: Non-AC Room-3 Seated (Single Occupancy)",
+            "language": "Hinglish",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e\u090f\u0902\u0964"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0906\u0930\u094d\u092f \u0939\u0948",
+                "expected": "\u0906\u0930\u094d\u092f, \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948? \u0915\u093f\u0938 \u092a\u094d\u0930\u0915\u093e\u0930 \u0915\u0947 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0926\u093f\u0932\u091a\u0938\u094d\u092a\u0940 \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092c\u0940-\u091f\u0947\u0915 \u092e\u0947\u0902 \u0926\u093f\u0932\u091a\u0938\u094d\u092a\u0940 \u0939\u0948",
+                "expected": "\u092c\u0940-\u091f\u0947\u0915 \u092e\u0947\u0902 \u0926\u093f\u0932\u091a\u0938\u094d\u092a\u0940 \u0939\u0948\u0964 \u092c\u0940-\u091f\u0947\u0915 \u0915\u0947 \u0932\u093f\u090f \u0906\u0935\u0936\u094d\u092f\u0915 \u092a\u093e\u0924\u094d\u0930\u0924\u093e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092c\u0924\u093e\u0928\u093e \u091a\u093e\u0939\u0942\u0902\u0917\u0940\u0964 \u0906\u0930\u094d\u092f, \u0906\u092a\u0915\u0947 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u0915\u0947 \u092a\u0930\u0938\u0947\u0902\u091f\u0947\u091c \u0915\u094d\u092f\u093e \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u092a\u0930\u0938\u0947\u0902\u091f\u0947\u091c \u0906\u0920\u094d\u092f\u093e-\u0928\u093f\u0928\u094d\u092f\u093e\u0928\u092c\u0947 \u0939\u0948",
+                "expected": "\u0906\u0930\u094d\u092f, \u0906\u092a\u0915\u093e \u092a\u0930\u0938\u0947\u0902\u091f\u0947\u091c \u0905\u091a\u094d\u091b\u093e \u0939\u0948\u0964 \u0905\u092c \u0932\u094b\u0915\u0947\u0936\u0928 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092c\u093e\u0924 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902\u0964 \u0906\u092a \u0915\u0939\u093e\u0902 \u0938\u0947 \u0939\u0948\u0902?"
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0902",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0948\u0902\u0964 \u0939\u092e\u093e\u0930\u0940 \u092c\u0938 \u0938\u0947\u0935\u093e \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u0938\u0941\u0935\u093f\u0927\u093e\u091c\u0928\u0915 \u0939\u094b \u0938\u0915\u0924\u0940 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u094b \u092c\u0938 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u091a\u093e\u0939\u093f\u090f?"
+            },
+            {
+                "question": "\u0939\u093e\u0902, \u092c\u0938 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0947\u0902",
+                "expected": "\u092c\u0938 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0940 \u0935\u0947\u092c\u0938\u093e\u0907\u091f \u092a\u0930 \u091c\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0906\u0930\u094d\u092f, \u0906\u092a\u0915\u094b \u0939\u094b\u0938\u094d\u091f\u0932 \u0915\u0940 \u091c\u0930\u0942\u0930\u0924 \u0928\u0939\u0940\u0902 \u0939\u0948, \u0932\u0947\u0915\u093f\u0928 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0930\u094d\u091c \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964"
+            },
+            {
+                "question": "\u0915\u094b\u0908 \u0914\u0930 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u091a\u093e\u0939\u093f\u090f?",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0906\u0930\u094d\u092f\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 information record \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 counselors \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 question \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 help \u0915\u0930 \u0938\u0915\u0942\u0902?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "Hostel: Gymnasium Fee (Per Semester)",
+            "language": "Hinglish",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u091c\u0947\u0915\u0947\u0906\u0930\u0938\u0940 \u0935\u093f\u0936\u094d\u0935\u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947, \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901\u0964 \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e\u090f\u0902\u0964"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092c\u0940-\u091f\u0947\u0915 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092c\u0940-\u091f\u0947\u0915 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902\u0964 \u0905\u092c \u092c\u0924\u093e\u090f\u0902, \u0906\u092a\u0915\u094b \u0915\u093f\u0938 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0907\u0902\u091f\u0930\u0947\u0938\u094d\u091f \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u0938\u093e\u0907\u0902\u0938 \u092e\u0947\u0902 \u0907\u0902\u091f\u0930\u0947\u0938\u094d\u091f \u0939\u0948",
+                "expected": "\u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u0938\u093e\u0907\u0902\u0938 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u092b\u0935\u0940\u0902 \u092e\u0947\u0902 \u0915\u094c\u0928\u0938\u0947 \u0935\u093f\u0937\u092f \u0932\u0947\u0928\u0947 \u0939\u094b\u0902\u0917\u0947 \u0914\u0930 \u0906\u092a\u0915\u093e \u092a\u0930\u0938\u0947\u0902\u091f\u0947\u091c \u0915\u094d\u092f\u093e \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0948\u0902\u0928\u0947 \u092b\u093f\u091c\u093f\u0915\u094d\u0938, \u0915\u0947\u092e\u093f\u0938\u094d\u091f\u094d\u0930\u0940, \u0914\u0930 \u092e\u0948\u0925\u094d\u0938 \u0932\u093f\u092f\u093e \u0925\u093e \u0914\u0930 \u092e\u0947\u0930\u093e \u092a\u0930\u0938\u0947\u0902\u091f\u0947\u091c Eighty-Seven Percent \u0939\u0948",
+                "expected": "\u0906\u092a\u0915\u093e \u092a\u0930\u0938\u0947\u0902\u091f\u0947\u091c \u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u093e \u0939\u0948\u0964 \u0906\u092a\u0915\u093e \u0918\u0930 \u0915\u0939\u093e\u0901 \u0939\u0948?"
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0918\u0930 \u091c\u092f\u092a\u0941\u0930 \u092e\u0947\u0902 \u0939\u0948",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u092e\u0947\u0902 \u0939\u094b\u0928\u0947 \u0915\u0940 \u0935\u091c\u0939 \u0938\u0947 \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u092d\u0940 \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0964"
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0932\u0947\u0928\u093e \u091a\u093e\u0939\u0942\u0902\u0917\u093e",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0915\u0947 \u0938\u093e\u0925 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0942\u0901?"
+            }
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "tags": {
+            "course": "B.Tech Computer Science and Engineering",
+            "language": "English",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        },
+        "conversation": [
+            {
+                "question": "Hello, I am interested in studying at J-E-C-R-C University.",
+                "expected": "Hello, welcome to J-E-C-R-C University. May I know your name?"
+            },
+            {
+                "question": "My name is Rohan.",
+                "expected": "Hi Rohan, what are your interests? Are you looking to pursue a particular Course?"
+            },
+            {
+                "question": "I am interested in Computer Science.",
+                "expected": "Great choice, Rohan. We have a good B-Tech Computer Science and Engineering Course here. Are you eligible for it? What were your marks in your qualifying exam, like Class Twelfth?"
+            },
+            {
+                "question": "I scored Eighty-Eight Percent in my Class Twelfth.",
+                "expected": "That's excellent, Rohan. Since you are eligible, let's talk about our campus. Where are you from?"
+            },
+            {
+                "question": "I am from Jaipur.",
+                "expected": "Since you are from Jaipur, you can commute to our university using our Bus facility. The Fee for the B-Tech Computer Science and Engineering Course is Two Lakh Forty-Five Thousand. Does that work for you?"
+            },
+            {
+                "question": "Yes, that's fine.",
+                "expected": "Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    },
+    {
+        "tags": {
+            "course": "B.Tech Computer Science and Engineering",
+            "language": "English",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Long"
+        },
+        "conversation": [
+            {
+                "question": "Hi, I am interested in taking admission in J-E-C-R-C University",
+                "expected": "Hello, welcome to J-E-C-R-C University. My name is Riya, and I'll be happy to assist you. Can you please tell me your name?"
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Nice to meet you, Rohan. What are your interests? Are you looking to pursue a particular Course or Field of study?"
+            },
+            {
+                "question": "I am interested in Computer Science",
+                "expected": "Great choice, Rohan. We have an excellent B-Tech Computer Science and Engineering Course. To confirm your Eligibility, can you please tell me about your Qualification, specifically your Class Twelfth marks?"
+            },
+            {
+                "question": "I scored Eighty-Five Percent in my Class Twelfth",
+                "expected": "Excellent, Rohan. With Eighty-Five Percent in Class Twelfth, you are Eligible for our B-Tech Computer Science and Engineering Course. The Fee for this Course is Two Lakh Forty-Five Thousand. Where are you from, Rohan?"
+            },
+            {
+                "question": "I am from Jaipur",
+                "expected": "Since you are from Jaipur, you can commute to the university easily. We also have a convenient Bus service available for students. Thank you, Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?"
+            }
+        ]
+    }
+]

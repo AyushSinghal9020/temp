@@ -1,0 +1,22 @@
+[project]
+name = "stt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "assemblyai>=0.46.0",
+    "deepgram-sdk==5.3.0",
+    "google-cloud-speech>=2.33.0",
+    "google-cloud-texttospeech>=2.29.0",
+    "groq>=0.31.1",
+    "python-dotenv>=1.1.1",
+    "pyyaml>=6.0.2",
+]
+
+[project.scripts]
+stt = "stt:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

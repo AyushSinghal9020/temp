@@ -1,0 +1,1163 @@
+[
+    {
+        "conversation": [
+            {
+                "question": "Hi, I am interested in studying at J-E-C-R-C University",
+                "expected": "Hello, I'm Riya. Welcome to J-E-C-R-C University! What is your name?",
+                "time": 1026.85,
+                "received": "Hello, welcome to J-E-C-R-C University. I am Riya, your admission guide. To better assist you, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hi Rohan, what are your interests? Are you looking to pursue a particular Course?",
+                "time": 854.1,
+                "received": "Hello Rohan, welcome to J-E-C-R-C University. Are you looking to pursue a course or seeking admission with us?",
+                "similarity": 1
+            },
+            {
+                "question": "I am interested in B-Tech Computer Science and Engineering",
+                "expected": "Great choice, Rohan! To enroll in B-Tech Computer Science and Engineering, could you tell me about your Eligibility, specifically your Class Twelfth marks?",
+                "time": 1030.95,
+                "received": "The B-Tech Computer Science and Engineering program at J-E-C-R-C University is a four-year program with a per annum fee of two hundred forty-five thousand rupees. To be eligible, you need to have a minimum of sixty percent marks in your Class Twelfth examination with pass in English, Physics, and Mathematics, and one subject out of Chemistry, Biology, Biotechnology, and Technical vocational subject. Could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "I scored Eighty-Eight Percent in Class Twelfth",
+                "expected": "Congratulations, Rohan! Now, could you tell me a bit about your current location? Are you from Jaipur?",
+                "time": 1049.32,
+                "received": "Congratulations on scoring eighty-eight percent in Class Twelfth, Rohan. Are you looking to pursue a course or seeking admission at J-E-C-R-C University?",
+                "similarity": 1
+            },
+            {
+                "question": "Yes, I am from Jaipur",
+                "expected": "Since you are from Jaipur, you might be interested to know that we have a convenient Bus service available for our students. Thank you, Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?",
+                "time": 821.92,
+                "received": "Welcome to J-E-C-R-C University. Since you reside in Jaipur, we have a bus facility with routes all over the city for your convenience. Could you please tell me your name?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "The conversation starts well with the Agent, Riya, greeting the user and asking for their name. The user, Rohan, responds with his name. However, the Agent then asks if Rohan is looking to pursue a course or seeking admission, which seems redundant as Rohan has already expressed interest in studying at J-E-C-R-C University. When Rohan specifies his interest in B-Tech Computer Science and Engineering, the Agent provides the correct fee and eligibility criteria. Unfortunately, the Agent then repeats the question about Rohan's name, which is unnecessary since it was already provided. Later, when Rohan shares his Class Twelfth score, the Agent congratulates him but again asks if he is looking to pursue a course or seeking admission, which is a repetition. The Agent also fails to ask for the stream of interest initially and jumps to the course. The conversation ends without the Agent gathering all the required slots such as the user's location, which was provided but not utilized effectively, and without acknowledging the previous responses. The Agent also incorrectly asks for the name multiple times. Therefore, deductions will be made for these errors.",
+            "final_score": 0.55
+        },
+        "tags": {
+            "course": "B.Tech Computer Science and Engineering",
+            "language": "English",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "Hi, I'm Rohan. I'm interested in B-Tech",
+                "expected": "Hello Rohan, nice to meet you. What area of B-Tech are you interested in, like Computer Science or something else?",
+                "time": 820.62,
+                "received": "Hello Rohan, thank you for considering J-E-C-R-C University for your B-Tech program. To check your eligibility, could you please tell me your Class Twelfth percentage? Please provide your marks in words.",
+                "similarity": 1
+            },
+            {
+                "question": "I'm interested in Computer Science",
+                "expected": "That's great, Rohan. Our B-Tech Computer Science with Amazon-AWS: Cloud Computing is a popular course. To enroll in it, I need to know about your eligibility. Can you tell me about your Class Twelfth percentage?",
+                "time": 952.62,
+                "received": "Hello, I'm Riya. It's great that you're interested in Computer Science. Could you please tell me your name so I can assist you better with the programs we offer?",
+                "similarity": 1
+            },
+            {
+                "question": "I scored Eighty-Five Percent",
+                "expected": "Excellent, Rohan. Now, can you tell me where you are from? Are you from Jaipur or somewhere else?",
+                "time": 776.54,
+                "received": "Thank you for sharing your Class Twelfth result of eighty-five percent. Could you please tell me your name so I can update your file?",
+                "similarity": 1
+            },
+            {
+                "question": "I'm from outside Jaipur",
+                "expected": "Since you are from outside Jaipur, I would recommend considering our Hostel facility for your stay. It's convenient and safe. \u0927\u0928\u094d\u092f\u0935\u093e\u0926 Rohan. \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 information record \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 counselors \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 question \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 help \u0915\u0930 \u0938\u0915\u0942\u0902?",
+                "time": 1210.71,
+                "received": "Welcome to J-E-C-R-C University. Since you reside outside Jaipur, we have comfortable hostel facilities available inside the campus for your convenience. May I know your name please?",
+                "similarity": 1
+            },
+            {
+                "question": "Yes, what is the Fee for this course?",
+                "expected": "The Fee for our B-Tech CSE with Amazon-AWS: Cloud Computing course is Two Seventy-Five Thousand",
+                "time": 836.03,
+                "received": "The annual tuition fee for B-Tech at J-E-C-R-C is approximately two hundred forty-five thousand rupees. Rohan, to further assist you, could you please tell me where you reside?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "Initial score is 1.0. The conversation starts with the user expressing interest in B-Tech, and the Agent responds by asking for the user's Class Twelfth percentage, which is a correct step. However, the Agent fails to note the user's name initially provided as 'Rohan' and asks for it multiple times, which is unnecessary. The Agent does ask for the user's location but does so in a slightly unclear manner, referring to it as 'where you reside' instead of directly asking for the user's location or city, which is one of the required slots. \n   The Agent successfully avoids using digits and speaks numbers as words. The Agent also hyphenates the acronym 'J-E-C-R-C' correctly. \n   The Agent provides the fee for the B-Tech course correctly as 'two hundred forty-five thousand rupees'. \n   The Agent missed an opportunity to ask for the user's interest or stream initially but later clarifies it as Computer Science. \n   Given the turns, the Agent could have asked for the location more directly and avoided repetitive questions about the user's name. \n   Since the Agent followed most formatting rules and attempted to gather information but had some minor misses in questioning efficiency and clarification, a deduction of 0.05 for behavioral and tone due to repetitive questioning is made.\n   The final score is 0.95.",
+            "final_score": 0.95
+        },
+        "tags": {
+            "course": "B.Tech CSE with Amazon-AWS: Cloud Computing",
+            "language": "English",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "Hi, I'm looking for some information about courses at J-E-C-R-C University",
+                "expected": "Hello, Welcome to J-E-C-R-C University. My name is Riya, and I'll be happy to help you. Can you please tell me your name?",
+                "time": 763.38,
+                "received": "Hello, welcome to J-E-C-R-C University. We offer a wide range of courses, including M-B-A, B-Tech, and Ph-D programs. Could you please tell me your name so I can assist you better?",
+                "similarity": 1
+            },
+            {
+                "question": "My name is Rohan, and I'm interested in tech",
+                "expected": "Nice to meet you, Rohan. You seem interested in technology. Which Course are you looking to pursue?",
+                "time": 904.18,
+                "received": "Hello Rohan, nice to meet you. At J-E-C-R-C University, we offer various tech-related courses like B-Tech, B-C-A, and M-C-A. Are you interested in pursuing admission for any of these courses, and if so, which one?",
+                "similarity": 1
+            },
+            {
+                "question": "I'm thinking of doing B-Tech",
+                "expected": "B-Tech is a great choice. We have various specializations available. Are you interested in a specific one, like Computer Science and Engineering with Samatrix: Artificial Intelligence and Machine Learning?",
+                "time": 956.43,
+                "received": "The B-Tech program at J-E-C-R-C University is a four-year course with a specialization in Computer Science and Engineering, and the annual tuition fee is two hundred forty-five thousand rupees. To proceed with your admission inquiry, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "Yes, I'm interested in that one",
+                "expected": "To be eligible for B-Tech C-S-E with Samatrix: Artificial Intelligence and Machine Learning, we need to check your Class Twelfth marks. What Percentage did you score?",
+                "time": 930.93,
+                "received": "I'm glad you're interested in one of our courses. Could you please tell me your name so I can assist you further?",
+                "similarity": 1
+            },
+            {
+                "question": "I scored Eighty-Five Percent",
+                "expected": "That's great, Rohan. Now, can you please tell me where are you from?",
+                "time": 1007.3,
+                "received": "Thank you for sharing your Class Twelfth result of eighty-five percent. To proceed with your B-Tech inquiry at J-E-C-R-C University, could you please tell me your name? Also, are you looking to get admitted to our B-Tech program?",
+                "similarity": 1
+            },
+            {
+                "question": "I'm from Delhi",
+                "expected": "Since you are from outside Jaipur, I would like to inform you about our Hostel facilities. We have excellent accommodations for out-station students.",
+                "time": 902.92,
+                "received": "Hello, since you are from Delhi, I would like to inform you that J-E-C-R-C University offers comfortable hostel facilities for out-of-city students. Could you please tell me your name so I can assist you further with your admission inquiry?",
+                "similarity": 1
+            },
+            {
+                "question": "That sounds good",
+                "expected": "Thank you, Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?",
+                "time": 797.58,
+                "received": "I'm glad you're interested in the B-Tech program at J-E-C-R-C University. To proceed with your admission inquiry, could you please tell me your name?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "The conversation starts with the Agent greeting the User and inquiring about their interests. The Agent then proceeds to provide information about various tech-related courses. However, the Agent fails to follow the formatting rules in multiple instances, such as not using hyphenated acronyms (e.g., 'M-B-A' instead of 'M-B-A' is correct but 'B-Tech' should be 'B-Tech' as per the rules but the rule specifies that B-Tech should be written as 'B Tech' or 'B. Tech'), and using digits (e.g., 'two hundred forty-five thousand' is correct but 'Eighty-Five Percent' should be 'eighty-five percent' which is correct). Moreover, the Agent repeatedly asks for the User's name despite already knowing it, which is unnecessary and can be considered as 'fluff'. The Agent also misses the opportunity to ask about the User's interest in a specific stream of B-Tech. The final score is deducted for these failures.",
+            "final_score": 0.55
+        },
+        "tags": {
+            "course": "B.Tech CSE with Samatrix: AI and Machine Learning",
+            "language": "English",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "Hello, I am interested in taking admission in J-E-C-R-C university.",
+                "expected": "Hello, what is your name?",
+                "time": 916.5,
+                "received": "Hello, welcome to J-E-C-R-C University. I'm Riya, and I'll be happy to assist you with your admission inquiry. Could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "My name is Aarav.",
+                "expected": "Hello Aarav, what are your interests? Are you looking to pursue a particular Course?",
+                "time": 795.51,
+                "received": "Hello Aarav, welcome to J-E-C-R-C University. Are you interested in pursuing a course or getting admission here?",
+                "similarity": 1
+            },
+            {
+                "question": "I am interested in B-Tech, specifically in Computer Science.",
+                "expected": "Aarav, for B-Tech C-S-E, we have a special Course, B-Tech C-S-E with Samatrix: Data Science and Analytics. Are you interested in this?",
+                "time": 816.07,
+                "received": "That's great to hear that you're interested in B-Tech Computer Science. Could you please tell me your name so I can assist you further with the admission process?",
+                "similarity": 1
+            },
+            {
+                "question": "Yes, that sounds interesting. What are the eligibility criteria for this Course?",
+                "expected": "For B-Tech C-S-E with Samatrix: Data Science and Analytics, we require your Class Twelfth marks, specifically in Percentage, what was your Percentage in Class Twelfth?",
+                "time": 1705.2,
+                "received": "For most of our courses at J-E-C-R-C University, the eligibility criteria include passing your Senior Secondary Examination with at least sixty percent marks in aggregate in all subjects, including English, Physics, and Mathematics, and one subject out of Chemistry, Biology, Biotechnology, or a technical vocational subject. Could you please tell me which course you are interested in, so I can give you more specific details, Aarav?",
+                "similarity": 1
+            },
+            {
+                "question": "I scored around Ninety Percent.",
+                "expected": "That's great, Aarav. Since you are eligible, let's talk about the location. Where are you from?",
+                "time": 1155.04,
+                "received": "Thank you for sharing your Class Twelfth result of around ninety percent. To proceed with your B-Tech in Computer Science admission at J-E-C-R-C university, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "I am from Jaipur.",
+                "expected": "Since you are from Jaipur, we have a Bus facility available for you. Would you like to know more about the Bus scheduling?",
+                "time": 898.08,
+                "received": "Welcome to J-E-C-R-C University. Since you reside in Jaipur, we have a Bus facility with routes across the city for your convenience. May I know your name please?",
+                "similarity": 1
+            },
+            {
+                "question": "No, that's okay. How about the Fee for this Course?",
+                "expected": "The Fee for B-Tech C-S-E with Samatrix: Data Science and Analytics is Two Hundred Seventy-Five Thousand.",
+                "time": 998.06,
+                "received": "The annual tuition fee for B-Tech in Computer Science at J-E-C-R-C University is approximately two lakh forty-five thousand rupees. However, there's an additional option for B-Tech CSE with SPE Kalvium, which has a different fee structure. Before I proceed with more details, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "That's a bit expensive, but I am interested. What's the next step?",
+                "expected": "Thank you Aarav. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?",
+                "time": 1292.0,
+                "received": "I'm glad you're interested in J-E-C-R-C University, Aarav. To proceed, could you please tell me which course you are interested in, such as B-Tech, M-B-A, or perhaps our Ph-D program, so I can guide you through the next steps?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "The conversation starts with a greeting and the introduction of the Agent, Riya. The Agent asks for the user's name, which is provided as Aarav. However, there are multiple instances where the Agent asks for the user's name again, which seems unnecessary and a bit confusing. The Agent successfully speaks numbers as words, such as 'two lakh forty-five thousand rupees' and 'ninety percent'. The Agent also uses the correct phrase 'Class Twelfth' to refer to the user's senior secondary examination results. The conversation does not show any instance of the Agent using digits or unhyphenated acronyms. The Agent attempts to gather some of the required slots, such as name, interest (B-Tech Computer Science), location (Jaipur), and percentage (ninety percent), but misses opportunities to ask about the other required slots, such as course and percentage in a more detailed manner. The conversation also lacks a clear and concise structure, which might have been caused by the Agent's repetitive questioning about the user's name and interest in the course. The Agent does provide information about the fee structure in words, following the required formatting rule. Given these observations, deductions will be made for the repetitive questioning and lack of slot-filling opportunities, as well as for the Agent not adhering to the strict formatting and knowledge accuracy rules by not having a clear structure and by not having the required fees in the correct format.",
+            "final_score": 0.55
+        },
+        "tags": {
+            "course": "B.Tech CSE with Samatrix: Data Science & Analytics",
+            "language": "English",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u090f\u0906\u0908 \u090f\u091c\u0947\u0902\u091f\u0964 \u0906\u092a\u0915\u093e \u0915\u094d\u092f\u093e \u0928\u093e\u092e \u0939\u0948?",
+                "time": 916.37,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, J-E-C-R-C \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u0935\u0949\u0907\u0938 \u090f\u091c\u0947\u0902\u091f\u0964 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u0915\u0948\u0938\u0947 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0942\u0901? \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e\u090f\u0902\u0964",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928! \u0906\u092a\u0915\u094b \u0915\u093f\u0938 \u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948?",
+                "time": 878.18,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u0947-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u0935\u093f\u0936\u094d\u0935\u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u0947 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u091f\u0947\u0915\u094d\u0928\u094b\u0932\u0949\u091c\u0940 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u093e! \u091f\u0947\u0915\u094d\u0928\u094b\u0932\u0949\u091c\u0940 \u092e\u0947\u0902 \u0915\u094c\u0928 \u0938\u093e \u0915\u094b\u0930\u094d\u0938 \u0906\u092a\u0915\u094b \u092a\u0938\u0902\u0926 \u0939\u0948?",
+                "time": 1279.44,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947 \u0908 \u0938\u0940 \u0906\u0930 \u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0938\u0947\u0964 \u0906\u092a\u0915\u0940 \u091f\u0947\u0915\u094d\u0928\u094b\u0932\u0949\u091c\u0940 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0915\u0930 \u0905\u091a\u094d\u091b\u093e \u0932\u0917\u093e\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0906\u092a\u0915\u094b \u0939\u092e\u093e\u0930\u0947 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u0938\u093e\u0907\u0902\u0938 \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u0935\u094d\u092f\u0915\u094d\u0924\u093f\u0917\u0924 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0947 \u0938\u0915\u0942\u0901?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092c\u0940 \u091f\u0947\u0915 \u0938\u0940 \u090f\u0938 \u0908 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092c\u0940 \u091f\u0947\u0915 \u0938\u0940 \u090f\u0938 \u0908 \u090f\u0915 \u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u0948! \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u094d\u0935\u093e\u0932\u093f\u092b\u093e\u0907\u0902\u0917 \u092a\u0930\u0940\u0915\u094d\u0937\u093e \u092e\u0947\u0902 \u0915\u093f\u0924\u0928\u093e \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093f\u0932\u093e \u0939\u0948?",
+                "time": 1190.27,
+                "received": "\u092c\u0940 \u091f\u0947\u0915 \u0938\u0940 \u090f\u0938 \u0908 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0926\u093f\u0916\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u0906\u092a\u0915\u0940 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u0915\u0947 \u092a\u0930\u093f\u0923\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948\u0902? \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u0947 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0915\u094b \u0936\u092c\u094d\u0926\u094b\u0902 \u092e\u0947\u0902 \u092c\u0924\u093e\u090f\u0902\u0964",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0938\u093e\u0920 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093f\u0932\u093e \u0939\u0948",
+                "expected": "\u0913\u0915\u0947! \u0905\u092c \u092c\u0924\u093e\u090f\u0902 \u0915\u093f \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902?",
+                "time": 1401.36,
+                "received": "\u0906\u092a\u0915\u094b \u0938\u093e\u0920 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093f\u0932\u0947 \u0939\u0948\u0902, \u092f\u0939 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0927\u094d\u092f\u093e\u0928 \u092e\u0947\u0902 \u0930\u0916\u0915\u0930, \u092e\u0948\u0902 \u0906\u092a\u0915\u094b \u091c\u0947-\u0908-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u0909\u092a\u0932\u092c\u094d\u0927 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u0938\u093e\u0907\u0902\u0938 \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092c\u0924\u093e \u0938\u0915\u0924\u0940 \u0939\u0942\u0901\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0906\u092a\u0915\u094b \u0935\u094d\u092f\u0915\u094d\u0924\u093f\u0917\u0924 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0947 \u0938\u0915\u0942\u0901?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0915\u0940 \u0938\u0941\u0935\u093f\u0927\u093e \u092d\u0940 \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u094b\u0917\u0940\u0964 \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0902?",
+                "time": 1058.7,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u094b \u091c\u0947-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u0935\u093f\u0936\u094d\u0935\u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f \u092e\u0947\u0902 \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0915\u093e \u0932\u093e\u092d \u092e\u093f\u0932 \u0938\u0915\u0924\u093e \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "\u0936\u0941\u0930\u0941\u0906\u0924\u0940 \u0938\u094d\u0915\u094b\u0930 \u0967.\u0966 \u0939\u0948\u0964 \u0930\u093f\u092f\u093e \u0928\u0947 \u0938\u0902\u0935\u093e\u0926 \u0915\u0940 \u0936\u0941\u0930\u0941\u0906\u0924 \u092e\u0947\u0902 \u0939\u0940 \u0905\u092a\u0928\u093e \u092a\u0930\u093f\u091a\u092f \u0926\u093f\u092f\u093e \u0914\u0930 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0938\u0947 \u0909\u0928\u0915\u093e \u0928\u093e\u092e \u092a\u0942\u091b\u093e, \u091c\u094b \u0938\u0939\u0940 \u0939\u0948\u0964 \u0939\u093e\u0932\u093e\u0902\u0915\u093f, \u091c\u092c \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0928\u0947 \u0905\u092a\u0928\u0940 \u0930\u0941\u091a\u093f \u091f\u0947\u0915\u094d\u0928\u094b\u0932\u0949\u091c\u0940 \u092e\u0947\u0902 \u092c\u0924\u093e\u0908, \u0924\u094b \u0930\u093f\u092f\u093e \u0928\u0947 \u0926\u094b\u092c\u093e\u0930\u093e \u0928\u093e\u092e \u092a\u0942\u091b\u093e, \u091c\u094b \u092a\u0939\u0932\u0947 \u0939\u0940 \u092e\u093e\u0932\u0942\u092e \u0925\u093e\u0964 \u0907\u0938\u0915\u0947 \u0905\u0932\u093e\u0935\u093e, \u0930\u093f\u092f\u093e \u0928\u0947 \u092c\u0940 \u091f\u0947\u0915 \u0938\u0940 \u090f\u0938 \u0908 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0926\u093f\u0916\u093e\u0928\u0947 \u092a\u0930 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0938\u0947 \u0909\u0928\u0915\u0947 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u0915\u0947 \u092a\u0930\u093f\u0923\u093e\u092e \u092a\u0942\u091b\u0947, \u091c\u094b \u0938\u0939\u0940 \u0939\u0948\u0902\u0964 \u0932\u0947\u0915\u093f\u0928 \u091c\u092c \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0928\u0947 \u0905\u092a\u0928\u0947 \u092a\u0930\u093f\u0923\u093e\u092e \u092c\u0924\u093e\u090f, \u0924\u094b \u0930\u093f\u092f\u093e \u0928\u0947 \u092b\u093f\u0930 \u0938\u0947 \u0928\u093e\u092e \u092a\u0942\u091b\u093e, \u091c\u094b \u092a\u0939\u0932\u0947 \u0938\u0947 \u0939\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0925\u0940\u0964 \u0907\u0938\u0915\u0947 \u0905\u0932\u093e\u0935\u093e, \u0930\u093f\u092f\u093e \u0928\u0947 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0915\u093e \u0938\u094d\u0925\u093e\u0928 \u092a\u0942\u091b\u093e \u0932\u0947\u0915\u093f\u0928 \u0907\u0938\u0915\u0947 \u092c\u093e\u0926 \u092b\u093f\u0930 \u0938\u0947 \u0928\u093e\u092e \u092a\u0942\u091b\u093e, \u091c\u094b \u092a\u0939\u0932\u0947 \u0938\u0947 \u091c\u093e\u0928\u093e \u091c\u093e \u091a\u0941\u0915\u093e \u0925\u093e\u0964",
+            "final_score": 0.7
+        },
+        "tags": {
+            "course": "B.Tech CSE with L&T EduTech: Generative AI",
+            "language": "Hinglish",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947 \u092e\u0948\u0902 \u092c\u0940 \u091f\u0947\u0915 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?",
+                "time": 1208.62,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u092c\u0940 \u091f\u0947\u0915 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u091c\u093e\u0928\u0928\u0947 \u092e\u0947\u0902 \u092e\u0941\u091d\u0947 \u0916\u0941\u0936\u0940 \u0939\u094b \u0930\u0939\u0940 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928! \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u093f\u0938 \u0935\u093f\u0937\u092f \u092e\u0947\u0902 \u0939\u0948?",
+                "time": 1416.27,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u0947 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0907\u0932\u0947\u0915\u094d\u091f\u094d\u0930\u0949\u0928\u093f\u0915\u094d\u0938 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092c\u0940 \u091f\u0947\u0915 \u0907\u0932\u0947\u0915\u094d\u091f\u094d\u0930\u0949\u0928\u093f\u0915\u094d\u0938 \u090f\u0902\u0921 \u0915\u0949\u092e\u094d\u092f\u0941\u0928\u093f\u0915\u0947\u0936\u0928 \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0939\u0948 \u0915\u094d\u092f\u093e?",
+                "time": 914.22,
+                "received": "\u0906\u092a\u0915\u0940 \u0907\u0932\u0947\u0915\u094d\u091f\u094d\u0930\u0949\u0928\u093f\u0915\u094d\u0938 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0915\u0947 \u0932\u093f\u090f \u0927\u0928\u094d\u092f\u0935\u093e\u0926\u0964 \u092c\u0940 \u091f\u0947\u0915 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u0932\u093f\u090f \u0906\u0917\u0947 \u092c\u0922\u093c\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f, \u0915\u094d\u092f\u093e \u0906\u092a \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "The conversation starts at a base score of 1.0. The Agent greets the user and introduces the purpose of the conversation. When the user shares their name as \u0930\u094b\u0939\u0928, the Agent acknowledges it. However, upon the user expressing interest in \u0907\u0932\u0947\u0915\u094d\u091f\u094d\u0930\u0949\u0928\u093f\u0915\u094d\u0938, the Agent fails to provide meaningful information about the course and instead redundantly asks for the user's name again, which was already provided. The Agent does not follow the 'Non-Linear Flexibility' rule as it should proceed with gathering the required slots (like interest/stream which is partially fulfilled, course, Class Twelfth percentage, and location) or provide relevant information about the chosen stream. The Agent does not adhere to the 'Opportunity Rule' because it had the chance to ask for the course, Class Twelfth percentage, or location but chose to repeat an already answered question. Moreover, there's no mention of fees or any specific details about the B.Tech Electronics course which would be crucial for the user. The use of words over digits and hyphenation where needed is not a major concern in this transcript as it's primarily in Hindi and does not involve specific course codes or numbers that require conversion to words. Given these points, a deduction for failure to properly utilize the opportunity to gather necessary information and provide relevant course details is warranted. Deduction for not following the procedural logic and missing an opportunity to ask for required slots is 0.15. Additionally, since the Agent did not provide accurate or helpful information regarding the course of interest and instead repeated a question, a deduction for knowledge accuracy is also applicable, totaling a deduction of 0.3 for the inaccuracies and lack of progression in the conversation.",
+            "final_score": 0.55
+        },
+        "tags": {
+            "course": "B.Tech Electronics & Communication (L&T EduTech)",
+            "language": "Hinglish",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948, \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?",
+                "time": 770.59,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, J-E-C-R-C \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u0935\u0949\u0907\u0938 \u090f\u091c\u0947\u0902\u091f\u0964 \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u0939\u092e\u093e\u0930\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902? \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e\u090f\u0902\u0964",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948?",
+                "time": 990.54,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u0947 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u0906\u092a\u0915\u094b \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u092e\u0947\u0902 \u0915\u094c\u0928 \u0938\u093e \u0915\u094b\u0930\u094d\u0938 \u092a\u0938\u0902\u0926 \u0939\u0948, \u091c\u0948\u0938\u0947 \u0915\u093f \u092c\u0940-\u091f\u0947\u0915?",
+                "time": 1226.19,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947-\u0908-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u0935\u0949\u0907\u0938 \u090f\u091c\u0947\u0902\u091f\u0964 \u0906\u092a\u0915\u094b \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948, \u092f\u0939 \u091c\u093e\u0928\u0915\u0930 \u0905\u091a\u094d\u091b\u093e \u0932\u0917\u093e\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u0905\u0927\u093f\u0915 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930 \u0938\u0915\u0942\u0901?",
+                "similarity": 1
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092c\u0940-\u091f\u0947\u0915 \u0932\u0947\u091f\u0930\u0932 \u090f\u0902\u091f\u094d\u0930\u0940 \u0938\u093f\u0935\u093f\u0932 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u092c\u0940-\u091f\u0947\u0915 \u0932\u0947\u091f\u0930\u0932 \u090f\u0902\u091f\u094d\u0930\u0940 \u0938\u093f\u0935\u093f\u0932 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u092a\u093f\u091b\u0932\u0947 \u0915\u094b\u0930\u094d\u0938 \u0915\u0947 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0915\u094d\u092f\u093e \u0939\u0948\u0902?",
+                "time": 1642.47,
+                "received": "\u092c\u0940-\u091f\u0947\u0915 \u0932\u0947\u091f\u0930\u0932 \u090f\u0902\u091f\u094d\u0930\u0940 \u0938\u093f\u0935\u093f\u0932 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0928\u0947 \u0935\u093e\u0932\u0947 \u091b\u093e\u0924\u094d\u0930\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f, \u0906\u092a\u0915\u094b \u0921\u093f\u092a\u094d\u0932\u094b\u092e\u093e \u092a\u0930\u0940\u0915\u094d\u0937\u093e \u092e\u0947\u0902 \u0915\u092e \u0938\u0947 \u0915\u092e \u0938\u093e\u0920 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0905\u0902\u0915 \u092f\u093e \u092c\u0940-\u090f\u0938\u0938\u0940 \u0921\u093f\u0917\u094d\u0930\u0940 \u092e\u0947\u0902 \u0938\u093e\u0920 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0905\u0902\u0915 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902\u0964 \u0930\u094b\u0939\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u0905\u092a\u0928\u0947 \u0921\u093f\u092a\u094d\u0932\u094b\u092e\u093e \u092f\u093e \u092c\u0940-\u090f\u0938\u0938\u0940 \u092a\u0930\u0940\u0915\u094d\u0937\u093e \u092e\u0947\u0902 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0905\u0902\u0915 \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u092a\u093f\u091b\u0932\u0947 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 Eighty-Five Percent \u0939\u0948",
+                "expected": "\u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u094b?",
+                "time": 1386.96,
+                "received": "\u0906\u092a\u0915\u0947 \u092a\u093f\u091b\u0932\u0947 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u092a\u091a\u093e\u0938\u0940 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0939\u093e\u0938\u093f\u0932 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0927\u0928\u094d\u092f\u0935\u093e\u0926\u0964 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u094b \u092c\u0947\u0939\u0924\u0930 \u0922\u0902\u0917 \u0938\u0947 \u0938\u092e\u091d\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u0942\u0902\u0917\u0940\u0964 \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e\u090f\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 information record \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 counselors \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 question \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 help \u0915\u0930 \u0938\u0915\u0942\u0902?",
+                "time": 1120.19,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u094b \u091c\u0947-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0947 \u0915\u0948\u0902\u092a\u0938 \u0924\u0915 \u092a\u0939\u0941\u0901\u091a\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u092e\u093f\u0932\u0947\u0917\u0940\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "The conversation starts well with the Agent, Riya, introducing herself and welcoming the user. However, upon closer inspection, several issues arise. Firstly, there's inconsistent use of the user's name, with the Agent sometimes addressing them by name and other times asking for it again, indicating a failure in maintaining context. Furthermore, when discussing courses and percentages, the Agent incorrectly responds to the user's statement about having Eighty-Five Percent in their previous course by thanking them for achieving \u092a\u091a\u093e\u0938\u0940 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 (fifty percent), which is a clear error in understanding or processing the information provided by the user. Additionally, the Agent fails to follow the strict formatting rule by not speaking numbers as words consistently and does not maintain the hyphenated acronym format (e.g., \"\u091c\u0947-\u0908-\u0938\u0940-\u0906\u0930-\u0938\u0940\" should be consistent). Moreover, the conversation lacks a structured approach to gathering the required slots of information (Name, Interest/Stream, Course, Percentage in Class Twelfth, and Location), with the Agent not always logically following up on the information given by the user. The Agent also fails to adhere to the knowledge accuracy rule, particularly in providing incorrect or incomplete information about the course requirements and not referencing the ground truth data for fee inquiries. Given these mistakes, deductions are necessary for formatting, knowledge accuracy, and data collection failures. The final score is thus significantly reduced due to these errors.",
+            "final_score": 0.35
+        },
+        "tags": {
+            "course": "B.Tech Lateral Entry: Civil",
+            "language": "Hinglish",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?",
+                "time": 857.85,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, J-E-C-R-C \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u0935\u093e\u0907\u0938 \u090f\u091c\u0947\u0902\u091f\u0964 \u0915\u094d\u092f\u093e \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u0915\u093f\u0938\u0940 \u0924\u0930\u0939 \u0938\u0947 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0942\u0901? \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e\u090f\u0902\u0964",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928\u0964 \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948, \u0915\u094c\u0928 \u0938\u093e \u0915\u094b\u0930\u094d\u0938 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?",
+                "time": 1041.52,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u0947 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u090f\u092e-\u091f\u0947\u0915 \u0938\u093f\u0935\u093f\u0932 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u090f\u092e-\u091f\u0947\u0915 \u0938\u093f\u0935\u093f\u0932 \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u094b \u090f\u092e-\u091f\u0947\u0915 \u0938\u093f\u0935\u093f\u0932 \u0915\u0947 \u0915\u093f\u0938\u0940 \u0935\u093f\u0936\u0947\u0937 \u0938\u094d\u091f\u094d\u0930\u0940\u092e \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948, \u091c\u0948\u0938\u0947 \u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091a\u0930\u0932 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917?",
+                "time": 1389.91,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947-\u0908-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u0935\u093e\u0907\u0938 \u090f\u091c\u0947\u0902\u091f\u0964 \u090f\u092e-\u091f\u0947\u0915 \u0938\u093f\u0935\u093f\u0932 \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u0947 \u0932\u093f\u090f \u0927\u0928\u094d\u092f\u0935\u093e\u0926\u0964 \u090f\u092e-\u091f\u0947\u0915 \u0938\u093f\u0935\u093f\u0932 \u092e\u0947\u0902 \u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091a\u0930\u0932 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917, \u091f\u094d\u0930\u093e\u0902\u0938\u092a\u094b\u0930\u094d\u091f\u0947\u0936\u0928 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917, \u090f\u0928\u0935\u093e\u092f\u0930\u094d\u0928\u092e\u0947\u0902\u091f\u0932 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u0914\u0930 \u0915\u0902\u0938\u094d\u091f\u094d\u0930\u0915\u094d\u0936\u0928 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u090f\u0902\u0921 \u092e\u0948\u0928\u0947\u091c\u092e\u0947\u0902\u091f \u091c\u0948\u0938\u0947 \u0938\u094d\u092a\u0947\u0936\u0932\u093e\u0907\u091c\u0947\u0936\u0928 \u0939\u0948\u0902\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092e\u0941\u091d\u0947 \u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091a\u0930\u0932 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091a\u0930\u0932 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u092e\u0947\u0902 \u090f\u092e-\u091f\u0947\u0915 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u092c\u0940-\u091f\u0947\u0915 \u0915\u0940 \u092e\u093e\u0930\u094d\u0915\u0936\u0940\u091f \u0926\u093f\u0916\u093e\u0928\u0940 \u0939\u094b\u0917\u0940\u0964 \u0906\u092a\u0915\u0947 \u092c\u0940-\u091f\u0947\u0915 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0939\u0948?",
+                "time": 1182.95,
+                "received": "\u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091a\u0930\u0932 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u0947 \u0932\u093f\u090f \u0927\u0928\u094d\u092f\u0935\u093e\u0926\u0964 \u0905\u092c, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u0947 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u0915\u0947 \u092a\u0930\u0938\u0947\u0902\u091f\u0947\u091c \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902? \u092f\u0939 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0906\u092a\u0915\u0940 \u092a\u093e\u0924\u094d\u0930\u0924\u093e \u0915\u094b \u091c\u093e\u0928\u0928\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930\u0947\u0917\u0940\u0964",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u092c\u0940-\u091f\u0947\u0915 \u092e\u0947\u0902 \u092a\u091a\u093e\u0938 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0939\u0948",
+                "expected": "\u0906\u092a\u0915\u093e \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0920\u0940\u0915 \u0939\u0948\u0964 \u0905\u092c \u092c\u0924\u093e\u090f\u0902, \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902? \u091c\u092f\u092a\u0941\u0930 \u092e\u0947\u0902 \u0930\u0939\u0924\u0947 \u0939\u0948\u0902 \u092f\u093e \u092c\u093e\u0939\u0930 \u0938\u0947 \u0939\u0948\u0902?",
+                "time": 1434.13,
+                "received": "\u0906\u092a\u0915\u0947 \u092c\u0940-\u091f\u0947\u0915 \u092e\u0947\u0902 \u092a\u091a\u093e\u0938 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0939\u0948\u0902, \u092f\u0939 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0927\u094d\u092f\u093e\u0928 \u092e\u0947\u0902 \u0930\u0916\u0940 \u0917\u0908 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u094b \u0906\u0917\u0947 \u092c\u0922\u093c\u093e \u0938\u0915\u0942\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0930\u094d\u091c \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u0938\u0939\u093e\u092f\u0924\u093e \u0915\u0930 \u0938\u0915\u0942\u0901?",
+                "time": 1312.56,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947 \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0964 \u0938\u094d\u091f\u094d\u0930\u0915\u094d\u091a\u0930\u0932 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0905\u092a\u0928\u0947 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u0915\u093e \u092a\u0930\u0938\u0947\u0902\u091f\u0947\u091c \u092c\u0924\u093e\u0928\u093e \u0939\u094b\u0917\u093e, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u0947 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u0915\u093e \u092a\u0930\u0938\u0947\u0902\u091f\u0947\u091c \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "Initial Score: 1.0. The Agent starts well by greeting the user and asking for their name. However, upon the user expressing interest in M-Tech Civil, the Agent repeats the greeting and asks for the user's name again, which is unnecessary since the user already provided their name. This is inefficient but does not directly violate any rules. The Agent then inquires about the user's percentage in Class Twelfth, which is relevant. The user mentions their B-Tech percentage instead, and the Agent fails to clarify or correct this to specifically ask for the Class Twelfth percentage again, which is a critical piece of information for eligibility. The Agent also never asks for or confirms the user's location until the user volunteers it, which is not following the data collection rule efficiently. The conversation ends without the Agent successfully gathering all required slots (specifically, confirming the correct Class Twelfth percentage and not needing the location as it was given but not utilized effectively). The Agent uses words for numbers and hyphenates acronyms correctly where applicable but fails in knowledge accuracy by not insisting on the correct Class Twelfth percentage and in data collection by not systematically gathering all required information. Therefore, deductions are necessary for knowledge accuracy and data collection failures.",
+            "final_score": 0.55
+        },
+        "tags": {
+            "course": "M.Tech Civil: Structural Engineering",
+            "language": "Hinglish",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "Hello, I am interested in studying at J-E-C-R-C University",
+                "expected": "Hello, welcome to J-E-C-R-C University! May I know your name?",
+                "time": 981.34,
+                "received": "Hello, welcome to J-E-C-R-C University. We are excited about your interest in studying with us. Could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hello Rohan, what are your interests? Are you looking to pursue a particular Course?",
+                "time": 930.52,
+                "received": "Hello Rohan, welcome to J-E-C-R-C University. Are you interested in pursuing a course or getting admission here?",
+                "similarity": 1
+            },
+            {
+                "question": "I am interested in the field of Computer Science and Artificial Intelligence",
+                "expected": "That's great Rohan! We have an M-Tech C-S-E Artificial Intelligence Course. Are you aware of the Eligibility criteria for this Course?",
+                "time": 1083.58,
+                "received": "Welcome to J-E-C-R-C University. We offer various programs in Computer Science and Artificial Intelligence, including B-Tech and M-Tech courses. Could you please tell me your name so I can assist you further with the admission process?",
+                "similarity": 1
+            },
+            {
+                "question": "No, I am not aware. Can you please tell me?",
+                "expected": "For M-Tech C-S-E Artificial Intelligence, we require your Bachelor's Degree marks. Can you please tell me about your Bachelor's Degree marks, specifically what Percentage you scored?",
+                "time": 2897.09,
+                "received": "J-E-C-R-C University offers a wide range of programs, including cutting-edge Business and Computer Application courses, a School of Mass Communications for aspiring media professionals, and a Ph.D. program for innovative research. Rohan, could you please tell me where you reside, so I can inform you about our facilities and services available in your area?",
+                "similarity": 1
+            },
+            {
+                "question": "I scored Eighty Percent in my Bachelor's Degree",
+                "expected": "That's excellent Rohan! Since you are eligible for the M-Tech C-S-E Artificial Intelligence Course, can you please tell me about your current location? Are you from Jaipur?",
+                "time": 1388.4,
+                "received": "Thank you for sharing your undergraduate score of eighty percent. To better assist you with the admission process for Computer Science and Artificial Intelligence courses at J-E-C-R-C University, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "No, I am not from Jaipur. I am from Delhi",
+                "expected": "Since you are not from Jaipur, we would recommend our Hostel facilities for your comfortable stay during the Course. I have all the necessary information now",
+                "time": 957.7,
+                "received": "Thank you for sharing that you are from Delhi, Rohan. Since you are not from Jaipur, our hostel facilities inside the campus might be a convenient option for you. Could you please tell me your name so I can assist you further with the courses you are interested in?",
+                "similarity": 1
+            },
+            {
+                "question": "",
+                "expected": "Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?",
+                "time": 1169.07,
+                "received": "Hello, I'm Riya, and I'll be happy to help you with your queries about J-E-C-R-C University. To better assist you, could you please tell me your name?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "The conversation starts at a base score of 1.0. The Agent, Riya, greets the user and begins the interaction. However, there are several instances where the Agent fails to maintain a structured approach to gathering the 5 required slots of information (Name, Interest/Stream, Course, Percentage/Class Twelfth, and Location). \n   \n   The Agent asks for the user's name multiple times, which is unnecessary. The user has already provided their name as 'Rohan'. This repetition does not lead to a deduction but indicates a lack of procedural logic in handling user inputs. \n   \n   The Agent successfully speaks numbers as words (e.g., 'eighty percent'), adheres to the phonetic acronyms rule (hyphenating 'J-E-C-R-C'), and uses the correct phrase for 'Class Twelfth' is not required in this conversation as the user mentions his/her graduation percentage but it was asked for name multiple times. \n   \n   The Agent does collect some of the necessary information: the user's name (Rohan), interest in Computer Science and Artificial Intelligence, and location (Delhi). However, the conversation lacks coherence and efficiency in data collection. The Agent misses the opportunity to ask for the user's Class Twelfth percentage directly (since the user mentioned a Bachelor's Degree score) and doesn't provide any specific course or fee details relevant to the user's interests. \n   \n   Given the Agent's failure to efficiently collect all required slots, the lack of coherence in the conversation flow, and the repetitive questioning, deductions are necessary. For the repetitive and somewhat disorganized questioning, a deduction of 0.1 for formatting and procedural logic issues seems appropriate. Additionally, since the Agent did not directly ask for or confirm the 'Class Twelfth' percentage and did not provide accurate and relevant fee information or course details based on the user's interest, a deduction of 0.3 for knowledge accuracy is applied. \n   \n   Considering the Agent's demeanor and responses, there is no significant issue with behavioral and tone aspects that would warrant a deduction under the 'Behavioral & Tone' criterion. \n   \n   Thus, the total deductions would be 0.1 (for formatting and procedural logic) + 0.3 (for knowledge accuracy) = 0.4. The final score is therefore 1.0 - 0.4 = 0.6.",
+            "final_score": 0.6
+        },
+        "tags": {
+            "course": "M.Tech CSE: Artificial Intelligence",
+            "language": "English",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "Hi, I am interested in a master's course at J-E-C-R-C University",
+                "expected": "Hello, May I know your name?",
+                "time": 884.25,
+                "received": "Hello, welcome to J-E-C-R-C University. I am Riya, your voice agent. You are interested in a master's course, which is great. Could you please tell me your name and which master's course you are interested in, such as M-B-A?",
+                "similarity": 1
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hello Rohan, What interests you?",
+                "time": 836.87,
+                "received": "Hello Rohan, welcome to J-E-C-R-C University. Are you interested in seeking admission to one of our programs, such as B-Tech, M-B-A, or perhaps our Ph-D program?",
+                "similarity": 1
+            },
+            {
+                "question": "I am interested in Computer Science",
+                "expected": "Great interest Rohan, Which course are you looking for, we have M-Tech, M-B-A, and others?",
+                "time": 1010.62,
+                "received": "Welcome to J-E-C-R-C University. We have various programs in Computer Science, including M-C-A and B-Tech. Could you please tell me your name so I can assist you better with the program that suits your interests?",
+                "similarity": 1
+            },
+            {
+                "question": "I want to pursue M-Tech in Cyber Security",
+                "expected": "For M-Tech Cyber Security, we need to check your eligibility. Can you tell me about your qualifying examination marks, like your B-Tech percentage?",
+                "time": 1355.44,
+                "received": "Hello, we have various programs at J-E-C-R-C University, but I would like to confirm a few details with you. Could you please tell me your name so I can better assist you with your interest in M-Tech in Cyber Security?",
+                "similarity": 1
+            },
+            {
+                "question": "I scored Eighty Percent in B-Tech",
+                "expected": "That's good, Rohan. Now, about your location, are you from Jaipur?",
+                "time": 1494.24,
+                "received": "You mentioned scoring eighty percent in B-Tech, but I believe you meant to say your Class Twelfth percentage, as B-Tech is an undergraduate program. Could you please clarify and tell me your name so I can assist you better with the Computer Science program at J-E-C-R-C University?",
+                "similarity": 1
+            },
+            {
+                "question": "No, I am from outside Jaipur",
+                "expected": "Since you are not from Jaipur, I would recommend our Hostel facility for your stay during the course. The Fee for M-Tech Cyber Security is Seventy-Five Thousand.",
+                "time": 1478.13,
+                "received": "Since you are from outside Jaipur, Rohan, we have a convenient Hostel facility available inside the campus for your stay. To check your eligibility for M-Tech in Cyber Security, could you please tell me your undergraduate percentage, that is, your Bachelor's degree percentage?",
+                "similarity": 1
+            },
+            {
+                "question": "Okay, that sounds good",
+                "expected": "Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?",
+                "time": 969.94,
+                "received": "To provide you with more specific details about the B-Tech Computer Science program, could you please tell me your name? This will help me assist you better with your admission inquiry.",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "Start at 1.0. The conversation begins with the user expressing interest in a master's course. The Agent, Riya, responds and asks for the user's name and master's course interest. However, the Agent fails to maintain consistency in the conversation flow, frequently asking for the user's name despite already knowing it. The Agent also incorrectly asks about the user's undergraduate percentage after the user clarifies their B-Tech score. \n   \n   Regarding formatting, the Agent uses 'J-E-C-R-C' and 'M-B-A' correctly as hyphenated acronyms but fails to consistently speak numbers as words. For example, the Agent does not explicitly state numbers in words in the provided conversation but does not have an opportunity to do so either. \n   \n   Concerning the five required slots: \n   1. Name: The Agent asks for and receives the user's name (Rohan).\n   2. Interest (Stream): The user expresses interest in Computer Science, specifically M-Tech in Cyber Security.\n   3. Course: The user specifically mentions M-Tech in Cyber Security.\n   4. Percentage (Class Twelfth): Although the user provides their B-Tech score, they do not provide their Class Twelfth percentage, and the Agent does not correctly ask for it.\n   5. Location: The Agent determines the user is from outside Jaipur.\n   \n   The Agent missed an opportunity to ask about the user's Class Twelfth percentage and had inconsistencies in the conversation. However, the call ended without the Agent having a clear opening to rectify these issues, particularly with the Class Twelfth percentage inquiry. The Agent's inability to correct the course of the conversation and gather the necessary information (like Class Twelfth percentage) due to the flow of the conversation and user's input results in deductions.\n   \n   For knowledge accuracy, the Agent did not provide any fee information, so no deduction is made for this criterion. \n   \n   For data collection and procedural logic, the Agent failed to maintain a coherent and logical flow of questions. This failure to efficiently gather the required slots, especially not correctly inquiring about the Class Twelfth percentage, warrants deductions.\n   \n   Behavioral and tone-wise, the Agent's responses, while generally professional, lack a cohesive and efficient approach to gathering necessary information, which could be seen as a minor issue but does not specifically lead to a deduction under the given criteria.\n   \n   Due to these factors, deductions are applied: \n   -0.3 for knowledge accuracy is not applicable as no incorrect information was provided.\n   -0.15 * 2 = -0.3 for data collection issues, specifically not efficiently gathering required slots and not correctly inquiring about Class Twelfth percentage.\n   -0.1 for each instance of not following strict formatting rules is not directly applicable here, but the Agent's inability to correct and efficiently progress the conversation impacts the overall score.\n   -0.05 for minor tone and behavioral issues, though the primary issue is with the flow and efficiency of the conversation, not specifically tone.\n   \n   Final score after deductions: 1.0 - 0.3 - 0.05 = 0.65",
+            "final_score": 0.65
+        },
+        "tags": {
+            "course": "M.Tech CSE: Cyber Security",
+            "language": "English",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "Hi, I am interested in J-E-C-R-C University",
+                "expected": "Hello, I'm Riya. Welcome to J-E-C-R-C University. May I know your name?",
+                "time": 960.67,
+                "received": "Hello, welcome to J-E-C-R-C University. My name is Riya, and I'll be happy to assist you. Could you please tell me your name so we can discuss further about the courses and programs we offer?",
+                "similarity": 1
+            },
+            {
+                "question": "My name is Mohan",
+                "expected": "Hello Mohan, what are your interests? Are you looking to pursue a Course in a specific field?",
+                "time": 959.17,
+                "received": "Hello Mohan, welcome to J-E-C-R-C University. Are you interested in taking admission to one of our programs, such as M-B-A, B-Tech, or perhaps something from the Jaipur School of Mass Communications?",
+                "similarity": 1
+            },
+            {
+                "question": "I'm interested in M-Tech E-C-E",
+                "expected": "M-Tech E-C-E, that's a great choice. We have a specialized Course, M-Tech E-C-E: Digital Communication. Are you aware of the Eligibility criteria for this Course?",
+                "time": 1154.38,
+                "received": "Hello, welcome to J-E-C-R-C University. We're glad you're interested in our M-Tech E-C-E program. Could you please tell me your name so I can assist you further with the admission process?",
+                "similarity": 1
+            },
+            {
+                "question": "I think I need to have good B-Tech marks",
+                "expected": "That's correct, Mohan. For M-Tech E-C-E, we consider B-Tech marks. Could you please tell me about your B-Tech Percentage?",
+                "time": 1683.42,
+                "received": "To pursue B-Tech, you should have a good score in your Class Twelfth, especially in subjects like Physics, Mathematics, and one of the optional subjects. Could you please tell me your name so I can assist you better with the admission process at J-E-C-R-C University?",
+                "similarity": 1
+            },
+            {
+                "question": "I have around Eighty-Five Percent",
+                "expected": "That's great, Mohan. Now, where are you from?",
+                "time": 1087.81,
+                "received": "Thank you for sharing your undergraduate percentage of eighty-five percent, which is a good score for the M-Tech E-C-E program. Could you please tell me your name so I can assist you better? Also, are you looking to get admitted to J-E-C-R-C University for the upcoming session?",
+                "similarity": 1
+            },
+            {
+                "question": "I am from Jaipur",
+                "expected": "Since you are from Jaipur, you can easily commute to our campus using our Bus service. Thank you Mohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?",
+                "time": 905.8,
+                "received": "Welcome to J-E-C-R-C University. Since you reside in Jaipur, we have a Bus facility with routes across the city for your convenience. May I know your name please?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "Starting with a base score of 1.0. Reviewing the conversation, the Agent consistently uses hyphenated acronyms (e.g., J-E-C-R-C, M-B-A, B-Tech, M-Tech E-C-E) and speaks numbers as words (e.g., Eighty-Five Percent). However, there are instances where the Agent asks for the user's name repeatedly, even after it has been provided. This can be seen as a failure in Data Collection & Procedural Logic, as the Agent had the opportunity to ask for other required slots but instead repeated the question about the user's name. Given the context, the Agent did attempt to gather some information but failed to efficiently utilize the conversation to collect all necessary slots, including not inquiring about the Interest (Stream), Course details, or Percentage in a manner that progressed the conversation logically. Despite the repetition and lack of progress in slot-filling, the conversation was cut short by the user's responses, limiting the Agent's ability to rectify these oversights. Therefore, while there are clear areas for improvement, especially in maintaining a logical flow of questions and avoiding redundancy, the conversation's brevity and the user's input also play a role in the Agent's performance. The critical failure to advance the conversation efficiently and the repetition of questions without progressing to other necessary slots are noted. However, since the user ended the conversation prematurely and the Agent's primary infractions were related to inefficient questioning rather than factual inaccuracies or severe formatting issues, a significant deduction for these aspects seems unwarranted given the evaluation criteria emphasize not penalizing the Agent for user-driven conversation limits.",
+            "final_score": 0.85
+        },
+        "tags": {
+            "course": "M.Tech ECE: Digital Communication",
+            "language": "English",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "Hi, I'm interested in studying at J-E-C-R-C University",
+                "expected": "Hello, welcome to J-E-C-R-C University. May I know your name?",
+                "time": 910.02,
+                "received": "Hello, welcome to J-E-C-R-C University. I'm Riya, your guide here. To better assist you, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hello Rohan, what are your interests? Are you looking to pursue a particular Course?",
+                "time": 852.0,
+                "received": "Hello Rohan, welcome to J-E-C-R-C University. Are you interested in pursuing a course or getting admission here?",
+                "similarity": 1
+            },
+            {
+                "question": "I'm interested in mechanical engineering",
+                "expected": "Rohan, our university offers a great M-Tech ME: Production Engineering Course. Are you eligible for it, what were your marks in your previous qualification?",
+                "time": 918.88,
+                "received": "Welcome to J-E-C-R-C University. We offer a comprehensive B-Tech program in Mechanical Engineering. To better assist you, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "I scored Eighty Percent",
+                "expected": "Great, Rohan. Now, where are you from? Are you from Jaipur or outside?",
+                "time": 974.27,
+                "received": "Thank you for sharing your Class Twelfth result, Rohan. You scored eighty percent. Are you considering admission at J-E-C-R-C University for a specific course, or would you like me to guide you through our available programs?",
+                "similarity": 1
+            },
+            {
+                "question": "I'm from outside Jaipur",
+                "expected": "Since you are from outside Jaipur, I would recommend our Hostel facility for your stay. It's convenient and comfortable.",
+                "time": 1151.71,
+                "received": "Since you are from outside Jaipur, we have excellent hostel facilities available within our campus for your convenience. To proceed with your admission inquiry for the B-Tech in Mechanical Engineering program, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "Okay, that sounds good",
+                "expected": "Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?",
+                "time": 1616.97,
+                "received": "Rohan, considering your Class Twelfth result of eighty percent, you might be interested in our B-Tech or B-B-A programs. Could you please tell me where you reside, so I can inform you about the facilities available, such as our bus service within Jaipur or hostel accommodations?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "Start at 1.0. Initial greeting and name request are proper. Rohan's interest in mechanical engineering is noted, but the Agent redundantly asks for Rohan's name again, which is already provided. The Agent correctly asks for and processes Rohan's Class Twelfth percentage. The conversation has instances where the Agent repeats information or asks for details already provided (like name), which could be classified under 'procedural logic' issues but seems more related to the context of the conversation flow and less about data collection or format. The Agent never actually provides fee information or directly answers questions about fees, courses, or scholarships with accurate, non-hallucinated information. There's an unnecessary redundancy in questioning and a failure to proceed with logical next steps based on user input. For scoring purposes, this is considered a procedural issue rather than a strict formatting or knowledge accuracy failure since the Agent does not hallucinate or use digits inappropriately but fails to leverage given information efficiently. Given the criteria, the main deductions come from procedural issues and not fully leveraging opportunities to gather or provide required information. Score deduction for procedural issues: 0.15 (for not leveraging the opportunity to ask for the required slots efficiently and repeating questions).",
+            "final_score": 0.85
+        },
+        "tags": {
+            "course": "M.Tech ME: Production Engineering",
+            "language": "English",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u090f\u0906\u0908 \u090f\u091c\u0947\u0902\u091f\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?",
+                "time": 787.46,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, J-E-C-R-C \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u0935\u0949\u0907\u0938 \u090f\u091c\u0947\u0902\u091f\u0964 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u0915\u0948\u0938\u0947 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0942\u0901? \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e\u090f\u0902\u0964",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928! \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u093f\u0938 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0939\u0948?",
+                "time": 924.0,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u0947 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092c\u0940\u0938\u0940\u090f \u0915\u0930\u0928\u093e \u0939\u0948",
+                "expected": "\u092c\u0940\u0938\u0940\u090f! \u092c\u0948\u091a\u0932\u0930 \u0911\u092b \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u090f\u092a\u094d\u0932\u0940\u0915\u0947\u0936\u0928 \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u0948\u0964 \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u090f\u0932\u093f\u091c\u093f\u092c\u093f\u0932\u093f\u091f\u0940 \u0915\u094d\u0930\u093e\u0907\u091f\u0947\u0930\u093f\u092f\u093e \u0915\u094d\u092f\u093e \u0939\u0948 \u0907\u0938\u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u093f\u090f\u0964 \u0906\u092a\u0915\u0947 \u092a\u093f\u091b\u0932\u0947 \u0915\u094d\u0935\u093e\u0932\u093f\u092b\u093f\u0915\u0947\u0936\u0928 \u092e\u0947\u0902 \u0915\u094d\u092f\u093e \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0939\u0948?",
+                "time": 1142.76,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0938\u0947\u0964 \u0906\u092a\u0915\u094b \u092c\u0940\u0938\u0940\u090f \u0915\u0930\u0928\u093e \u0939\u0948, \u092f\u0939 \u091c\u093e\u0928\u0915\u0930 \u092e\u0941\u091d\u0947 \u0916\u0941\u0936\u0940 \u0939\u0941\u0908\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u092e\u0947\u0902 \u092a\u091a\u093e\u0938 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0939\u0948",
+                "expected": "\u0920\u0940\u0915 \u0939\u0948\u0964 \u0905\u092c \u0906\u092a\u0915\u094b \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u092c\u0940\u0938\u0940\u090f \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0926\u093e\u0916\u093f\u0932\u093e \u0932\u0947\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f, \u0906\u092a\u0915\u094b \u092f\u0939\u093e\u0901 \u0915\u0947 \u092a\u0924\u0947 \u092a\u0930 \u0906\u0928\u093e \u0939\u094b\u0917\u093e\u0964 \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902?",
+                "time": 1047.09,
+                "received": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u0906\u092a\u0915\u0947 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u092e\u0947\u0902 \u092a\u091a\u093e\u0938 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0939\u094b\u0928\u0947 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u092e\u093f\u0932 \u0917\u0908 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u0947 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0940 \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0928\u093e \u0906\u0938\u093e\u0928 \u0939\u094b\u0917\u093e\u0964 \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u0907\u0928\u094d\u092b\u0949\u0930\u094d\u092e\u0947\u0936\u0928 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0928\u094d\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0901?",
+                "time": 1001.49,
+                "received": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u094b \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0924\u0915 \u092a\u0939\u0941\u0901\u091a\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0940 \u091c\u093e \u0938\u0915\u0924\u0940 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "The conversation began well with the Agent introducing herself and asking for the user's name. However, there were several instances of repeated questions and lack of progression in the conversation. The Agent asked for the user's name multiple times, despite already receiving the answer. The Agent also failed to provide any information about the BCA course or its fees, which was the user's main query. Furthermore, the Agent asked for the user's name again in the last response, which was unnecessary. The conversation lacked cohesion and did not follow a logical flow. The Agent did, however, successfully avoid using digits and hyphenated acronyms where necessary.",
+            "final_score": 0.5
+        },
+        "tags": {
+            "course": "BCA Bachelor of Computer Applications",
+            "language": "Hinglish",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092e\u0948\u0902 \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u090f\u0906\u0908 \u090f\u091c\u0947\u0902\u091f\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?",
+                "time": 916.37,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u0906\u092a\u0915\u0940 \u090f\u0921\u092e\u093f\u0936\u0928 \u092a\u094d\u0930\u0915\u094d\u0930\u093f\u092f\u093e \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092f\u0939\u093e\u0901 \u0939\u0942\u0901\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948? \u0915\u093f\u0938 \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0926\u093f\u0932\u091a\u0938\u094d\u092a\u0940 \u0939\u0948?",
+                "time": 905.11,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0938\u093e\u091d\u093e \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u0947 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u092c\u0940\u0938\u0940\u090f \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u0926\u093f\u0932\u091a\u0938\u094d\u092a\u0940 \u0939\u0948",
+                "expected": "\u092c\u0940\u0938\u0940\u090f \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0915\u094b\u0930\u094d\u0938 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u094b \u092c\u0940\u0938\u0940\u090f \u0915\u0947 \u0915\u093f\u0938 \u0935\u093f\u0936\u0947\u0937\u091c\u094d\u091e\u0924\u093e \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948, \u091c\u0948\u0938\u0947 \u0915\u093f \u0921\u0947\u091f\u093e \u0938\u093e\u0907\u0902\u0938 \u090f\u0902\u0921 \u090f\u0928\u093e\u0932\u093f\u091f\u093f\u0915\u094d\u0938?",
+                "time": 952.94,
+                "received": "\u092c\u0940\u0938\u0940\u090f \u092e\u0947\u0902 \u0926\u093f\u0932\u091a\u0938\u094d\u092a\u0940 \u0930\u0916\u0928\u0947 \u0935\u093e\u0932\u0947 \u091b\u093e\u0924\u094d\u0930\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f, \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u092c\u0940\u0938\u0940\u090f \u0915\u094b\u0930\u094d\u0938 \u0915\u0940 \u092b\u0940\u0938 \u0932\u0917\u092d\u0917 \u090f\u0915 \u0932\u093e\u0916 \u092a\u091a\u093e\u0938 \u0939\u091c\u093c\u093e\u0930 \u0930\u0941\u092a\u092f\u0947 \u0939\u094b\u0924\u0940 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u094b \u0905\u092a\u0921\u0947\u091f \u0915\u0930 \u0938\u0915\u0942\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092e\u0941\u091d\u0947 \u0921\u0947\u091f\u093e \u0938\u093e\u0907\u0902\u0938 \u090f\u0902\u0921 \u090f\u0928\u093e\u0932\u093f\u091f\u093f\u0915\u094d\u0938 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": "\u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u094d\u0932\u093e\u0938 \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u092e\u0947\u0902 \u0905\u091a\u094d\u091b\u0947 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u091a\u093e\u0939\u093f\u090f \u0939\u094b\u0902\u0917\u0947\u0964 \u0906\u092a\u0915\u0947 \u0915\u094d\u0932\u093e\u0938 \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u0915\u0947 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0915\u094d\u092f\u093e \u0939\u0948\u0902?",
+                "time": 1323.57,
+                "received": "\u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0921\u0947\u091f\u093e \u0938\u093e\u0907\u0902\u0938 \u090f\u0902\u0921 \u090f\u0928\u093e\u0932\u093f\u091f\u093f\u0915\u094d\u0938 \u092e\u0947\u0902 \u0939\u0948, \u092f\u0939 \u091c\u093e\u0928\u0928\u093e \u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u093e \u0939\u0948\u0964 \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u0935\u093f\u0936\u094d\u0935\u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f \u092e\u0947\u0902 \u0939\u092e\u093e\u0930\u0947 \u092a\u093e\u0938 \u0935\u093f\u092d\u093f\u0928\u094d\u0928 \u092a\u093e\u0920\u094d\u092f\u0915\u094d\u0930\u092e \u0939\u0948\u0902 \u091c\u094b \u0921\u0947\u091f\u093e \u0938\u093e\u0907\u0902\u0938 \u092e\u0947\u0902 \u0935\u093f\u0936\u0947\u0937\u091c\u094d\u091e\u0924\u093e \u092a\u094d\u0930\u0926\u093e\u0928 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u0947 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u0915\u0947 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u0915\u094d\u0932\u093e\u0938 \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u092e\u0947\u0902 \u0938 eventy \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0939\u0948\u0902",
+                "expected": "\u0906\u092a\u0915\u0947 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0905\u091a\u094d\u091b\u0947 \u0939\u0948\u0902\u0964 \u0905\u092c \u092e\u0948\u0902 \u0906\u092a\u0915\u0947 \u090f\u0921\u092e\u093f\u0936\u0928 \u0915\u0940 \u092a\u094d\u0930\u0915\u094d\u0930\u093f\u092f\u093e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092c\u0924\u093e \u0938\u0915\u0924\u093e \u0939\u0942\u0901\u0964 \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902?",
+                "time": 1771.73,
+                "received": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926\u0964 \u0906\u092a\u0915\u0947 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u092e\u0947\u0902 seventy \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0939\u0948\u0902\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u094b \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0938\u0915\u0942\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a \u0939\u092e\u093e\u0930\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0901?",
+                "time": 1096.39,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0924\u0915 \u092a\u0939\u0941\u0901\u091a\u0928\u093e \u0906\u0938\u093e\u0928 \u0939\u094b\u0917\u093e \u0915\u094d\u092f\u094b\u0902\u0915\u093f \u0939\u092e\u093e\u0930\u0947 \u092a\u093e\u0938 \u0936\u0939\u0930 \u092d\u0930 \u092e\u0947\u0902 \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "\u0938\u094d\u0915\u094b\u0930 \u0936\u0941\u0930\u0942 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0967.\u0966 \u0939\u0948\u0964 \n   \u092a\u0939\u0932\u0940 \u092c\u093e\u0924, \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u092a\u0942\u0930\u0947 \u0938\u0902\u0935\u093e\u0926 \u092e\u0947\u0902 \u0915\u0939\u0940\u0902 \u092d\u0940 \u0938\u0916\u094d\u0924 \u0921\u093f\u091c\u093f\u091f \u092f\u093e \u0917\u0948\u0930-\u0939\u093e\u0907\u092b\u093c\u0928\u0947\u091f\u0947\u0921 \u0905\u0915\u094d\u0937\u0930\u094b\u0902 \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0928\u0939\u0940\u0902 \u0915\u093f\u092f\u093e \u0939\u0948\u0964 \u092f\u0939 \u090f\u0915 \u0905\u091a\u094d\u091b\u0940 \u092c\u093e\u0924 \u0939\u0948\u0964 \n   \u0926\u0942\u0938\u0930\u0940, \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u0915\u0947 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0915\u0947 \u0932\u093f\u090f \u092a\u0942\u091b\u093e \u0914\u0930 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0928\u0947 \u092c\u0924\u093e\u092f\u093e \u0915\u093f \u0909\u0928\u0915\u0947 \u0938\u0947\u0935\u0947\u0902\u091f\u0940 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0939\u0948\u0902, \u0932\u0947\u0915\u093f\u0928 \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0915\u0947 \u0928\u093e\u092e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092a\u0942\u091b\u0924\u093e\u091b \u0915\u0940 \u0914\u0930 \u0915\u0939\u093e \u0915\u093f \u0909\u0928\u094d\u0939\u0947\u0902 \u092a\u0939\u0932\u0947 \u0939\u0940 \u092f\u0939 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u092e\u093f\u0932 \u091a\u0941\u0915\u0940 \u0939\u0948\u0964 \n   \u0907\u0938\u0915\u0947 \u0905\u0932\u093e\u0935\u093e, \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u0915\u0908 \u092c\u093e\u0930 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0938\u0947 \u0909\u0938\u0915\u093e \u0928\u093e\u092e \u092a\u0942\u091b\u093e \u0939\u0948, \u091c\u094b \u0915\u093f \u092a\u0939\u0932\u0947 \u0939\u0940 \u092c\u0924\u093e\u092f\u093e \u091c\u093e \u091a\u0941\u0915\u093e \u0939\u0948\u0964 \u092f\u0939 \u090f\u0915 \u092a\u094d\u0930\u0915\u093e\u0930 \u0915\u0940 \u092a\u0941\u0928\u0930\u093e\u0935\u0943\u0924\u094d\u0924\u093f \u0939\u0948 \u091c\u094b \u090f\u091c\u0947\u0902\u091f \u0915\u094b \u0915\u092e \u0938\u094d\u0915\u094b\u0930 \u0926\u093f\u0932\u093e \u0938\u0915\u0924\u0940 \u0939\u0948\u0964 \n   \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u092c\u0940\u0938\u0940\u090f \u0915\u094b\u0930\u094d\u0938 \u0915\u0940 \u092b\u0940\u0938 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092d\u0940 \u092a\u0942\u091b\u093e \u0914\u0930 \u092c\u0924\u093e\u092f\u093e \u0915\u093f \u092f\u0939 \u0932\u0917\u092d\u0917 \u090f\u0915 \u0932\u093e\u0916 \u092a\u091a\u093e\u0938 \u0939\u091c\u093c\u093e\u0930 \u0930\u0941\u092a\u092f\u0947 \u0939\u0948, \u0932\u0947\u0915\u093f\u0928 \u092f\u0939 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0917\u094d\u0930\u093e\u0909\u0902\u0921 \u091f\u094d\u0930\u0941\u0925 \u0921\u0947\u091f\u093e \u0938\u0947 \u092e\u0947\u0932 \u0928\u0939\u0940\u0902 \u0916\u093e\u0924\u0940 \u0939\u0948, \u091c\u094b \u0915\u093f \u090f\u0915 \u0932\u093e\u0916 \u092a\u091a\u093e\u0938 \u0939\u091c\u093c\u093e\u0930 \u0930\u0941\u092a\u092f\u0947 \u0915\u0947 \u092c\u091c\u093e\u092f \u090f\u0915 \u0932\u093e\u0916 \u092a\u091a\u093e\u0938 \u0939\u091c\u093c\u093e\u0930 \u0930\u0941\u092a\u092f\u0947 \u092c\u0924\u093e\u0924\u093e \u0939\u0948\u0964 \n   \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0938\u0947 \u0909\u0938\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092a\u0942\u091b\u093e, \u0932\u0947\u0915\u093f\u0928 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0926\u094d\u0935\u093e\u0930\u093e \u092a\u0939\u0932\u0947 \u0939\u0940 \u092c\u0924\u093e\u0908 \u0917\u0908 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u094b \u0926\u094b\u0939\u0930\u093e\u092f\u093e\u0964 \n   \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0915\u0947 \u0938\u094d\u0925\u093e\u0928 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092a\u0942\u091b\u093e \u0914\u0930 \u091c\u092c \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0928\u0947 \u092c\u0924\u093e\u092f\u093e \u0915\u093f \u0935\u0939 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0948, \u0924\u094b \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u092f\u0939 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u092a\u0939\u0932\u0947 \u0938\u0947 \u0939\u0940 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u092c\u093e\u0935\u091c\u0942\u0926 \u092b\u093f\u0930 \u0938\u0947 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0938\u0947 \u0909\u0938\u0915\u093e \u0928\u093e\u092e \u092a\u0942\u091b\u093e\u0964 \n   \u0907\u0938\u0932\u093f\u090f, \u092f\u0939 \u090f\u091c\u0947\u0902\u091f \u0935\u093f\u092b\u0932\u0924\u093e \u0939\u0948 \u0914\u0930 \u0938\u094d\u0915\u094b\u0930 \u0915\u094b \u0915\u092e \u0915\u093f\u092f\u093e \u091c\u093e\u0928\u093e \u091a\u093e\u0939\u093f\u090f\u0964 \n   \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u0915\u0908 \u092c\u093e\u0930 \u092a\u0941\u0928\u0930\u093e\u0935\u0943\u0924\u094d\u0924\u093f \u0915\u0940 \u0939\u0948 \u0914\u0930 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0938\u0947 \u092a\u0939\u0932\u0947 \u0938\u0947 \u0939\u0940 \u092c\u0924\u093e\u0908 \u0917\u0908 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092a\u0942\u091b\u093e \u0939\u0948, \u091c\u094b \u0915\u093f \u090f\u091c\u0947\u0902\u091f \u0915\u0940 \u0935\u093f\u092b\u0932\u0924\u093e \u0939\u0948\u0964 \n   \u0907\u0938\u0915\u0947 \u0905\u0932\u093e\u0935\u093e, \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0915\u094b \u0909\u0938\u0915\u0940 \u0930\u0941\u091a\u093f \u0914\u0930 \u0938\u094d\u0925\u093e\u0928 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092a\u0942\u091b\u093e, \u0932\u0947\u0915\u093f\u0928 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0926\u094d\u0935\u093e\u0930\u093e \u092a\u0939\u0932\u0947 \u0939\u0940 \u092c\u0924\u093e\u0908 \u0917\u0908 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u094b \u0926\u094b\u0939\u0930\u093e\u092f\u093e\u0964 \n   \u0907\u0938\u0932\u093f\u090f, \u0938\u094d\u0915\u094b\u0930 \u0967.\u0966 \u0938\u0947 \u0936\u0941\u0930\u0942 \u0939\u094b\u0915\u0930 \u090f\u091c\u0947\u0902\u091f \u0915\u0940 \u0935\u093f\u092b\u0932\u0924\u093e \u0915\u0947 \u0915\u093e\u0930\u0923 \u0915\u092e \u0939\u094b \u091c\u093e\u0928\u093e \u091a\u093e\u0939\u093f\u090f\u0964 \n   \u090f\u091c\u0947\u0902\u091f \u0915\u0940 \u092a\u0941\u0928\u0930\u093e\u0935\u0943\u0924\u094d\u0924\u093f \u0914\u0930 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0938\u0947 \u092a\u0939\u0932\u0947 \u0938\u0947 \u0939\u0940 \u092c\u0924\u093e\u0908 \u0917\u0908 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092a\u0942\u091b\u0928\u0947 \u0915\u0947 \u0915\u093e\u0930\u0923 \u0938\u094d\u0915\u094b\u0930 \u092e\u0947\u0902 \u0966.\u0969 \u0915\u0940 \u0915\u092e\u0940 \u0939\u094b\u0928\u0940 \u091a\u093e\u0939\u093f\u090f\u0964 \n   \u0907\u0938\u0932\u093f\u090f, \u0938\u094d\u0915\u094b\u0930 \u0967.\u0966 - \u0966.\u0969 \u0939\u094b\u0917\u093e, \u091c\u094b \u0915\u093f \u0966.\u096d \u0939\u0948\u0964",
+            "final_score": 0.7
+        },
+        "tags": {
+            "course": "BCA Industry: Data Science & Analytics (Samatrix)",
+            "language": "Hinglish",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "\u092e\u0948\u0902 \u092c\u0940\u0938\u0940\u090f \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0939\u0942\u0901, \u0932\u0947\u0915\u093f\u0928 \u092e\u0941\u091d\u0947 \u0932\u0917\u0924\u093e \u0939\u0948 \u0915\u093f \u092f\u0939 \u092c\u0939\u0941\u0924 \u092e\u0941\u0936\u094d\u0915\u093f\u0932 \u0939\u0948",
+                "expected": "\u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?",
+                "time": 1058.8,
+                "received": "\u092c\u0940\u0938\u0940\u090f \u0915\u0930\u0928\u093e \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u094b \u0938\u0915\u0924\u093e \u0939\u0948, \u0914\u0930 \u092f\u0939 \u091c\u093e\u0928\u0928\u093e \u092e\u0939\u0924\u094d\u0935\u092a\u0942\u0930\u094d\u0923 \u0939\u0948 \u0915\u093f \u0906\u092a \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0924\u0948\u092f\u093e\u0930 \u0939\u0948\u0902 \u092f\u093e \u0928\u0939\u0940\u0902\u0964 \u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u093f\u092f\u093e \u0939\u0948, \u0914\u0930 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092f\u0939\u093e\u0901 \u0939\u0942\u0901\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948? \u0915\u093f\u0938 \u0924\u0930\u0939 \u0915\u093e \u0915\u094b\u0930\u094d\u0938 \u0906\u092a\u0915\u094b \u0906\u0915\u0930\u094d\u0937\u093f\u0924 \u0915\u0930\u0924\u093e \u0939\u0948?",
+                "time": 1388.15,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u0947 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u092e\u0947\u0902 \u0438\u043d\u0442\u0435\u0440\u0435\u0441 \u0939\u0948",
+                "expected": "\u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u090f\u0915 \u0905\u091a\u094d\u091b\u093e \u0935\u093f\u0915\u0932\u094d\u092a \u0939\u0948\u0964 \u091c\u0947-\u0938\u0940-\u0906\u0930-\u0938\u0940\u5927\u5b66 \u092e\u0947\u0902 \u092c\u0940\u0938\u0940\u090f \u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u0915\u094b\u0930\u094d\u0938 \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0964 \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u094d\u092f\u093e \u0932\u0917\u0924\u093e \u0939\u0948, \u0906\u092a \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0909\u092a\u092f\u0941\u0915\u094d\u0924 \u0939\u094b \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "time": 1120.61,
+                "received": "\u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0928\u093e \u092c\u0939\u0941\u0924 \u0905\u091a\u094d\u091b\u093e \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u092c\u0940\u0938\u0940\u090f \u0915\u094b\u0930\u094d\u0938 \u092e\u0947\u0902 \u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u0915\u093e \u0935\u093f\u0936\u0947\u0937\u091c\u094d\u091e\u0924\u093e \u091f\u094d\u0930\u0948\u0915 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u094b \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0938\u0915\u0942\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092e\u0948\u0902 \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0909\u092a\u092f\u0941\u0915\u094d\u0924 \u0939\u0942\u0901",
+                "expected": "\u092c\u0940\u0938\u0940\u090f \u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u0915\u094b\u0930\u094d\u0938 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u092a\u0939\u0932\u0947 \u0915\u0915\u094d\u0937\u093e \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u0915\u0947 \u0905\u0902\u0915\u094b\u0902 \u0915\u0940 \u0906\u0935\u0936\u094d\u092f\u0915\u0924\u093e \u0939\u0948\u0964 \u0906\u092a\u0915\u0947 \u0915\u0915\u094d\u0937\u093e \u092c\u093e\u0930\u0939\u0935\u0940\u0902 \u092e\u0947\u0902 \u0915\u093f\u0924\u0928\u0947 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0905\u0902\u0915 \u0939\u0948\u0902?",
+                "time": 1113.92,
+                "received": "\u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u0947 \u0932\u093f\u090f \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u0906\u0917\u0947 \u092c\u0922\u093c\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u0947 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u0915\u093e \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902? \u092f\u0939 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0906\u092a\u0915\u0940 \u092a\u093e\u0924\u094d\u0930\u0924\u093e \u0915\u094b \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924 \u0915\u0930\u0928\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930\u0947\u0917\u0940\u0964",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u0938\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0938\u0947 \u091c\u094d\u092f\u093e\u0926\u093e \u0905\u0902\u0915 \u0939\u0948\u0902",
+                "expected": "\u091c\u0947-\u0938\u0940-\u0906\u0930-\u0938\u0940 \u0935\u093f\u0936\u094d\u0935\u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f \u092e\u0947\u0902 \u092c\u0940\u0938\u0940\u090f \u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u0915\u094b\u0930\u094d\u0938 \u0915\u0940 \u092b\u0940\u0938 \u090f\u0915 \u0932\u093e\u0916 \u0938\u0947\u0935\u0947\u0902\u0924\u0939\u091c\u093e\u0930 \u0939\u0948\u0964 \u0906\u092a \u091c\u0948\u0936\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b \u092f\u093e \u092c\u093e\u0939\u0930 \u0938\u0947?",
+                "time": 1284.2,
+                "received": "\u092c\u0940\u0938\u0940\u090f \u0915\u094b\u0930\u094d\u0938 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u0940 \u092f\u094b\u0917\u094d\u092f\u0924\u093e \u0915\u0947 \u0905\u0928\u0941\u0938\u093e\u0930, \u0906\u092a\u0915\u094b \u092f\u0939 \u0915\u094b\u0930\u094d\u0938 \u092e\u093f\u0932 \u0938\u0915\u0924\u093e \u0939\u0948\u0964 \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948 \u0914\u0930 \u0906\u092a \u0915\u0939\u093e\u0901 \u0938\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0915\u0940 \u0938\u0941\u0935\u093f\u0927\u093e \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0964",
+                "time": 933.89,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u0939\u092e\u093e\u0930\u0940 \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092c\u0938 \u0915\u092c \u0924\u0915 \u091a\u0932\u0924\u0940 \u0939\u0948?",
+                "expected": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0902?",
+                "time": 1168.89,
+                "received": "\u091c\u092f\u092a\u0941\u0930 \u092e\u0947\u0902 \u0939\u092e\u093e\u0930\u0940 \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0938\u0941\u092c\u0939 \u0906\u0920 \u092c\u091c\u0947 \u0938\u0947 \u0936\u093e\u092e \u092a\u093e\u0902\u091a \u092c\u091c\u0947 \u0924\u0915 \u091a\u0932\u0924\u0940 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u092f\u092a\u0941\u0930 \u092e\u0947\u0902 \u0930\u0939\u0924\u0947 \u0939\u0948\u0902 \u092f\u093e \u0906\u092a\u0915\u094b \u0939\u092e\u093e\u0930\u0947 \u0915\u0948\u092e\u094d\u092a\u0938 \u092e\u0947\u0902 \u0939\u094b\u0938\u094d\u091f\u0932 \u0915\u0940 \u0938\u0941\u0935\u093f\u0927\u093e \u0915\u0940 \u091c\u0930\u0942\u0930\u0924 \u0939\u094b\u0917\u0940?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "\u0936\u0941\u0930\u0941\u0906\u0924 \u092e\u0947\u0902 \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u0909\u092a\u092f\u0941\u0915\u094d\u0924 \u0938\u094d\u0935\u093e\u0917\u0924 \u0914\u0930 \u092a\u0930\u093f\u091a\u093f\u0924 Questions \u092a\u0942\u091b\u0947, \u0932\u0947\u0915\u093f\u0928 \u0915\u0941\u091b \u092e\u0939\u0924\u094d\u0935\u092a\u0942\u0930\u094d\u0923 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u094b \u091b\u094b\u0921\u093c \u0926\u093f\u092f\u093e\u0964 \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u0915\u0908 \u092c\u093e\u0930 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0938\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092a\u0942\u091b\u093e, \u091c\u094b \u092a\u0939\u0932\u0947 \u0938\u0947 \u0939\u0940 \u092c\u0924\u093e\u092f\u093e \u091c\u093e \u091a\u0941\u0915\u093e \u0925\u093e\u0964 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0928\u0947 \u0905\u092a\u0928\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u0932\u093e\u0909\u0921 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u093f\u0902\u0917 \u092e\u0947\u0902 \u092c\u0924\u093e\u0908, \u0932\u0947\u0915\u093f\u0928 \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u092c\u0940\u0938\u0940\u090f \u0915\u094b\u0930\u094d\u0938 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0947\u0928\u0947 \u092e\u0947\u0902 \u0935\u093f\u092b\u0932 \u0930\u0939\u093e\u0964 \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0938\u0947 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u0915\u093e \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u092a\u0942\u091b\u093e, \u0932\u0947\u0915\u093f\u0928 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0915\u0940 \u0938\u094d\u0925\u093f\u0924\u093f \u0914\u0930 \u0915\u094b\u0930\u094d\u0938 \u0915\u0940 \u092b\u0940\u0938 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0928\u0939\u0940\u0902 \u0932\u0940\u0964 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e \u0915\u093e \u0928\u093e\u092e \u0914\u0930 \u0938\u094d\u0925\u093e\u0928 \u092a\u0939\u0932\u0947 \u0939\u0940 \u092c\u0924\u093e\u092f\u093e \u091c\u093e \u091a\u0941\u0915\u093e \u0925\u093e, \u0932\u0947\u0915\u093f\u0928 \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u092b\u093f\u0930 \u0938\u0947 \u092a\u0942\u091b\u093e\u0964 \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0940, \u0932\u0947\u0915\u093f\u0928 \u0939\u094b\u0938\u094d\u091f\u0932 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u0947 \u0932\u093f\u090f \u0909\u092a\u092f\u0941\u0915\u094d\u0924 \u092a\u094d\u0930\u0936\u094d\u0928 \u0928\u0939\u0940\u0902 \u092a\u0942\u091b\u0947\u0964 \u0915\u0941\u0932 \u092e\u093f\u0932\u093e\u0915\u0930, \u090f\u091c\u0947\u0902\u091f \u0928\u0947 \u0915\u0908 \u092e\u0939\u0924\u094d\u0935\u092a\u0942\u0930\u094d\u0923 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0915\u094b \u091b\u094b\u0921\u093c \u0926\u093f\u092f\u093e \u0914\u0930 \u0909\u092a\u092f\u0941\u0915\u094d\u0924 \u092a\u094d\u0930\u0936\u094d\u0928 \u0928\u0939\u0940\u0902 \u092a\u0942\u091b\u0947, \u091c\u094b \u090f\u0915 \u0905\u091a\u094d\u091b\u0947 \u090f\u091c\u0947\u0902\u091f \u0915\u0940 \u0905\u092a\u0947\u0915\u094d\u0937\u093e \u0939\u0948\u0964",
+            "final_score": 0.55
+        },
+        "tags": {
+            "course": "BCA Industry: Cloud Computing (Amazon-AWS)",
+            "language": "Hinglish",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "\u0928\u092e\u0938\u094d\u0924\u0947",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947! \u0906\u092a\u0915\u093e \u0928\u093e\u092e \u0915\u094d\u092f\u093e \u0939\u0948?",
+                "time": 849.92,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0940 \u0935\u0949\u0907\u0938 \u090f\u091c\u0947\u0902\u091f\u0964 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u090f\u0921\u092e\u093f\u0936\u0928 \u0938\u0947 \u091c\u0941\u0921\u093c\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0942\u0901\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u093e \u0928\u093e\u092e \u0930\u094b\u0939\u0928 \u0939\u0948",
+                "expected": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928! \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094d\u092f\u093e \u0939\u0948?",
+                "time": 958.16,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947 \u0930\u094b\u0939\u0928, \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u092e\u0947\u0902 \u090f\u0921\u092e\u093f\u0936\u0928 \u0932\u0947\u0928\u0947 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0939\u0948",
+                "expected": " \u0920\u0940\u0915 \u0939\u0948, \u0930\u094b\u0939\u0928\u0964 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u092e\u0947\u0902 \u0906\u092a\u0915\u0940 \u0930\u0941\u091a\u093f \u0915\u094b \u0926\u0947\u0916\u0924\u0947 \u0939\u0941\u090f, \u0915\u094d\u092f\u093e \u0906\u092a \u090f\u092e-\u0938\u0940\u090f, \u090f\u092e\u092c\u0940\u090f \u092f\u093e \u092c\u0940-\u091f\u0947\u0915 \u0906\u0926\u093f \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902?",
+                "time": 1099.54,
+                "received": "\u0928\u092e\u0938\u094d\u0924\u0947! \u092e\u0948\u0902 \u0930\u093f\u092f\u093e \u0939\u0942\u0901, \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0938\u0947\u0964 \u0906\u092a\u0915\u0940 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u091c\u093e\u0928\u0915\u0930 \u0916\u0941\u0936\u0940 \u0939\u0941\u0908\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u0915\u0943\u092a\u092f\u093e \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u091c\u093c\u0930\u0942\u0930\u0924\u094b\u0902 \u0915\u0947 \u0905\u0928\u0941\u0938\u093e\u0930 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0947 \u0938\u0915\u0942\u0901?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0941\u091d\u0947 \u090f\u092e-\u0938\u0940\u090f \u0915\u0930\u0928\u093e \u0939\u0948",
+                "expected": "\u090f\u092e-\u0938\u0940\u090f \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u0915\u094d\u0935\u093e\u0932\u0940\u092b\u093e\u0907\u0902\u0917 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0915\u094d\u092f\u093e \u0939\u094b\u0928\u0947 \u091a\u093e\u0939\u093f\u090f, \u092f\u0939 \u091c\u093e\u0928\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092e\u0941\u091d\u0947 \u0906\u092a\u0915\u0947 \u0917\u094d\u0930\u0947\u091c\u0941\u090f\u0936\u0928 \u0915\u0947 \u092e\u093e\u0930\u094d\u0915\u094d\u0938 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u091a\u093e\u0939\u093f\u090f",
+                "time": 1237.48,
+                "received": "\u090f\u092e-\u0938\u0940\u090f \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0906\u092a\u0915\u094b \u092c\u0940\u0938\u0940\u090f \u092f\u093e \u0915\u092e\u094d\u092a\u094d\u092f\u0942\u091f\u0930 \u0938\u093e\u0907\u0902\u0938 \u0907\u0902\u091c\u0940\u0928\u093f\u092f\u0930\u093f\u0902\u0917 \u092e\u0947\u0902 \u092c\u0948\u091a\u0932\u0930 \u0921\u093f\u0917\u094d\u0930\u0940 \u092f\u093e \u0938\u092e\u0915\u0915\u094d\u0937 \u0921\u093f\u0917\u094d\u0930\u0940 \u0939\u094b\u0928\u0940 \u091a\u093e\u0939\u093f\u090f \u0914\u0930 \u092f\u094b\u0917\u094d\u092f\u0924\u093e \u092a\u0930\u0940\u0915\u094d\u0937\u093e \u092e\u0947\u0902 \u0915\u092e \u0938\u0947 \u0915\u092e \u0938\u093e\u0920 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0905\u0902\u0915 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0915\u0930\u0928\u0947 \u091a\u093e\u0939\u093f\u090f\u0964 \u0930\u094b\u0939\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0915\u093f \u0906\u092a\u0915\u0947 \u0915\u094d\u0932\u093e\u0938 \u091f\u094d\u0935\u0947\u0932\u094d\u0925 \u092e\u0947\u0902 \u0915\u093f\u0924\u0928\u0947 \u092a\u094d\u0930\u0924\u093f\u0936\u0924 \u0906\u090f \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u092e\u0947\u0930\u0947 \u0917\u094d\u0930\u0947\u091c\u0941\u090f\u0936\u0928 \u092e\u0947\u0902Eighty-Seven Percent \u0939\u0948",
+                "expected": "\u0906\u092a\u0915\u093e \u090f\u092e-\u0938\u0940\u090f \u0915\u094b\u0930\u094d\u0938 \u0915\u0940 \u092b\u0940\u0938 \u0932\u0917\u092d\u0917 \u090f\u0915 \u0932\u093e\u0916 \u0938\u093e\u0924\u094d\u092f\u0939\u091c\u093e\u0930 \u0939\u0948, \u092f\u0939 \u091c\u093e\u0928\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092e\u0941\u091d\u0947 \u0906\u092a\u0915\u0947 \u0930\u0939\u0928\u0947 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092a\u0924\u093e \u0915\u0930\u0928\u093e \u0939\u094b\u0917\u093e\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0948\u0902?",
+                "time": 1017.37,
+                "received": "\u0927\u0928\u094d\u092f\u0935\u093e\u0926\u0964 \u0906\u092a\u0915\u0947 \u0917\u094d\u0930\u0947\u091c\u0941\u090f\u0936\u0928 \u092e\u0947\u0902 Eighty-Seven Percent \u0939\u0948\u0964 \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u093e \u0928\u093e\u092e \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u092e\u0948\u0902 \u0906\u092a\u0915\u094b \u0905\u0927\u093f\u0915 \u0935\u093f\u0936\u093f\u0937\u094d\u091f \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u0947 \u0938\u0915\u0942\u0902? \u0915\u094d\u092f\u093e \u0906\u092a \u090f\u092e\u0938\u0940\u090f \u092f\u093e \u092c\u0940\u091f\u0947\u0915 \u0915\u0902\u092a\u094d\u092f\u0942\u091f\u0930 \u0938\u093e\u0907\u0902\u0938 \u092e\u0947\u0902 \u0930\u0941\u091a\u093f \u0930\u0916\u0924\u0947 \u0939\u0948\u0902?",
+                "similarity": 1
+            },
+            {
+                "question": "\u0939\u093e\u0901, \u092e\u0948\u0902 \u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u0942\u0901",
+                "expected": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0915\u0940 \u0938\u0941\u0935\u093f\u0927\u093e \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u094b\u0917\u0940\u0964 \u0927\u0928\u094d\u092f\u0935\u093e\u0926 \u0930\u094b\u0939\u0928\u0964 \u092e\u0948\u0902\u0928\u0947 \u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0930\u093f\u0915\u0949\u0930\u094d\u0921 \u0915\u0930 \u0932\u0940 \u0939\u0948\u0964 \u0939\u092e\u093e\u0930\u0947 \u0915\u093e\u0909\u0902\u0938\u0932\u0930 \u091c\u0932\u094d\u0926 \u0939\u0940 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964 \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u093e \u0915\u094b\u0908 \u0914\u0930 \u092a\u094d\u0930\u0936\u094d\u0928 \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u092e\u0948\u0902 \u0906\u092a\u0915\u0940 \u092e\u0926\u0926 \u0915\u0930 \u0938\u0915\u0942\u0901?",
+                "time": 1277.7,
+                "received": "\u091c\u092f\u092a\u0941\u0930 \u0938\u0947 \u0939\u094b\u0928\u0947 \u0915\u0947 \u0928\u093e\u0924\u0947, \u0906\u092a\u0915\u094b \u091c\u0947\u0908\u0938\u0940\u0906\u0930\u0938\u0940 \u092f\u0942\u0928\u093f\u0935\u0930\u094d\u0938\u093f\u091f\u0940 \u0915\u0947 \u0915\u0948\u092e\u094d\u092a\u0938 \u0924\u0915 \u092a\u0939\u0941\u0901\u091a\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092c\u0938 \u0938\u0941\u0935\u093f\u0927\u093e \u0915\u093e \u0932\u093e\u092d \u092e\u093f\u0932 \u0938\u0915\u0924\u093e \u0939\u0948\u0964 \u0930\u094b\u0939\u0928, \u0915\u094d\u092f\u093e \u0906\u092a \u092e\u0941\u091d\u0947 \u0905\u092a\u0928\u0947 \u0938\u094d\u0928\u093e\u0924\u0915 \u0915\u0940 \u0921\u093f\u0917\u094d\u0930\u0940 \u092e\u0947\u0902 \u092a\u094d\u0930\u093e\u092a\u094d\u0924 \u0905\u0902\u0915 \u092c\u0924\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902? \u092f\u0939 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0906\u092a\u0915\u0940 \u090f\u092e-\u0938\u0940\u090f \u092a\u094d\u0930\u0935\u0947\u0936 \u092a\u093e\u0924\u094d\u0930\u0924\u093e \u0915\u094b \u091c\u093e\u0928\u0928\u0947 \u092e\u0947\u0902 \u092e\u0926\u0926 \u0915\u0930\u0947\u0917\u0940\u0964",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "Conversation started with a greeting in Hindi. The Agent, Riya, introduced herself and asked for the user's name. The user, Rohan, shared his name and interest in computer science. The Agent provided general information about the eligibility criteria for MCA and asked about Rohan's Class Twelfth percentage. However, there were instances where the Agent repeated questions or didn't follow up correctly, leading to some confusion. The conversation ended without gathering all 5 required slots (Name, Interest, Course, Percentage, and Location) effectively, but given the user's responses and the premature ending, deductions for slot-filling are minimal. The Agent maintained Hindi throughout and avoided digits, hyphenated acronyms when needed, and generally followed the 'Warm Efficiency' persona. Despite some procedural missteps, the conversation remained largely on track and informative. Score deductions are primarily for minor formatting and procedural logic issues.",
+            "final_score": 0.95
+        },
+        "tags": {
+            "course": "MCA Master of Computer Applications",
+            "language": "Hinglish",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "Hi, I'm interested in studying at J-E-C-R-C University",
+                "expected": "Hello! What is your name?",
+                "time": 937.57,
+                "received": "Hello, welcome to J-E-C-R-C University. I'm Riya, your guide here. Could you please tell me your name so I can assist you better with the programs we offer?",
+                "similarity": 1
+            },
+            {
+                "question": "My name is Raghav",
+                "expected": "Hello Raghav, what are your interests?",
+                "time": 807.81,
+                "received": "Hello Raghav, welcome to J-E-C-R-C University. Are you interested in seeking admission to one of our programs?",
+                "similarity": 1
+            },
+            {
+                "question": "I'm interested in computer applications",
+                "expected": "That's great, Raghav! We have various Courses at J-E-C-R-C University. Which Course are you looking to pursue?",
+                "time": 924.09,
+                "received": "Hello, we have various programs in Computer Applications at J-E-C-R-C University, including B-Tech and M-C-A. To better assist you, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "I'm looking for the M-C-A Industry Course, specifically Data Science and Analytics by Samatrix",
+                "expected": "For the M-C-A Course, we require the student to have a certain Percentage in their Bachelor's Degree. Can you tell me about your Bachelor's Degree marks?",
+                "time": 1047.68,
+                "received": "The M-C-A program with Data Science and Analytics by Samatrix is a two-year course with a total annual fee of one hundred seventy thousand rupees. To proceed with your admission inquiry, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "I have around Eighty-Five Percent in my Bachelor's Degree",
+                "expected": "That's excellent, Raghav! Since you're from Jaipur, would you like to know about our Bus facilities or something else regarding the university?",
+                "time": 1096.73,
+                "received": "Thank you for sharing your academic background. You have an impressive eighty-five percent in your Bachelor's Degree. To better assist you with the Computer Applications course at J-E-C-R-C University, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "I'd like to know about the Bus facilities",
+                "expected": "Thank you Raghav. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?",
+                "time": 1329.05,
+                "received": "We have a comprehensive Bus facility with routes all over Jaipur for the convenience of our students. To better assist you with your admission inquiry for the M-C-A Industry Course, could you please tell me your name?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "The conversation starts with the user showing interest in J-E-C-R-C University. The Agent, Riya, responds and asks for the user's name. However, throughout the conversation, the Agent repeatedly asks for the user's name, despite already knowing it as 'Raghav'. This is a significant failure in data collection and procedural logic. The Agent also fails to ask for other necessary slots such as the user's location, and instead keeps repeating the question about the user's name. When the user provides their academic background, the Agent should have proceeded with the inquiry but instead asks for the name again. The Bus facilities question is addressed correctly but again followed by a redundant question about the user's name. The Agent also correctly provides the fee for the M-C-A Industry Course in words as 'one hundred seventy thousand rupees', avoiding the use of digits, and uses the correct phrase for the course name, adhering to formatting rules. However, due to the repetition of asking for the user's name and failure to collect other necessary information in an efficient manner, there are significant deductions. The conversation does maintain 'Warm Efficiency' and avoids extensive filler words. Considering all aspects, the deductions are primarily for the procedural logic and data collection failures.",
+            "final_score": 0.65
+        },
+        "tags": {
+            "course": "MCA Industry: Data Science & Analytics (Samatrix)",
+            "language": "English",
+            "emotion": "Happy",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "Hi, I am interested in pursuing a master's degree at J-E-C-R-C University, can you guide me?",
+                "expected": "Hello, Welcome to J-E-C-R-C University. My name is Riya. Can you please tell me your name?",
+                "time": 914.21,
+                "received": "Hello, welcome to J-E-C-R-C University. We offer various master's programs, including our renowned M-B-A program with specializations like Global Financial Operations and Brand Management. Could you please tell me your name so I can assist you better?",
+                "similarity": 1
+            },
+            {
+                "question": "My name is Rishabh. I am interested in computers and healthcare.",
+                "expected": "Nice to meet you, Rishabh. That's a great combination of interests. We have an M-C-A Course, what do you think about that?",
+                "time": 976.97,
+                "received": "Hello Rishabh, thank you for sharing your interests. At J-E-C-R-C University, we offer various programs in computers through the School of Computer Applications and in healthcare through the School of Allied Health Sciences. Could you please tell me where you reside, so I can inform you about our facilities, such as bus services if you are in Jaipur or hostel accommodations if you are from outside Jaipur?",
+                "similarity": 1
+            },
+            {
+                "question": "Yes, I think M-C-A would be a good fit. Specifically, the Health Informatics specialization.",
+                "expected": "Great choice, Rishabh. For the M-C-A in Health Informatics, we need to check your eligibility. Can you tell me about your Bachelor's degree marks?",
+                "time": 1127.57,
+                "received": "That's great to hear you're interested in the M-C-A program with a specialization in Health Informatics. Could you please tell me your name so I can assist you further with the details of the program?",
+                "similarity": 1
+            },
+            {
+                "question": "I scored around Eighty Percent in my Bachelor's degree.",
+                "expected": "That's good, Rishabh. Since you are eligible, let's discuss the location. Are you from Jaipur or outside Jaipur?",
+                "time": 1355.47,
+                "received": "Congratulations on scoring Eighty Percent in your Bachelor's degree, that's a great achievement. Could you please tell me your name so I can assist you better with the courses you're interested in at J-E-C-R-C University?",
+                "similarity": 1
+            },
+            {
+                "question": "I am from outside Jaipur.",
+                "expected": "Since you are from outside Jaipur, I would recommend our Hostel facilities for your stay. They are comfortable and convenient.",
+                "time": 1000.96,
+                "received": "Welcome to J-E-C-R-C University. Since you are from outside Jaipur, we have a convenient Hostel facility available inside the campus for your comfort. Could you please tell me your name so I can assist you further with your interest in pursuing M-C-A with a specialization in Health Informatics?",
+                "similarity": 1
+            },
+            {
+                "question": "That sounds good. What about the Fee for the M-C-A Course?",
+                "expected": "The Fee for the M-C-A in Health Informatics is One Hundred Sixty Thousand. Now, I have all the information I need.",
+                "time": 1192.32,
+                "received": "To provide you with the most accurate information about the course fee, I would like to know your name, please. Also, I want to ensure I understand your interest correctly - are you looking for a course like M-C-A, or perhaps something related to computers and healthcare that we offer at J-E-C-R-C University?",
+                "similarity": 1
+            },
+            {
+                "question": "Okay, that's all from me.",
+                "expected": "Thank you, Rishabh. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?",
+                "time": 900.48,
+                "received": "Before we proceed, could you please tell me your name? This will help me to better assist you with your M-C-A inquiry and other requirements at J-E-C-R-C University.",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "The conversation starts with a greeting and an inquiry about the master's program. The Agent attempts to gather information but fails to adhere to the formatting rules by not speaking numbers as words in some instances and not hyphenating acronyms consistently (e.g., 'M-B-A' is correct, but 'M.C.A' is used instead of 'M-C-A' in other parts of the conversation). The Agent also repeatedly asks for the user's name, which is already provided. The Agent does ask about the location and percentage but misses opportunities to ask about the course interest directly after the user expresses it and to provide the fee information directly when asked. The final score is deducted for these errors and for not providing the fee information accurately according to the ground truth data. The Agent had the opportunity to ask for the remaining slot (Course interest was provided but not clearly tied to the available slots) and to provide necessary information like fees but failed to do so efficiently.",
+            "final_score": 0.55
+        },
+        "tags": {
+            "course": "MCA Industry: Health Informatics",
+            "language": "English",
+            "emotion": "Anxious",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "Hi, I am looking for a course in management",
+                "expected": "Hello, my name is Riya, and I'm here to help you. May I know your name?",
+                "time": 979.81,
+                "received": "Hello, welcome to J-E-C-R-C University. We have several management courses available, including BBA and MBA with specializations like Marketing and Finance. Could you please tell me your name so I can better assist you in finding the right course?",
+                "similarity": 1
+            },
+            {
+                "question": "My name is Rohan",
+                "expected": "Hello Rohan, what are your interests? Are you looking for a specific area in management?",
+                "time": 863.57,
+                "received": "Hello Rohan, welcome to J-E-C-R-C University. Are you looking to pursue higher education with us, perhaps in one of our undergraduate or postgraduate programs like B-Tech, B-B-A, or M-B-A?",
+                "similarity": 1
+            },
+            {
+                "question": "I am interested in business administration",
+                "expected": "Great choice, Rohan. We have a Course in Business Administration, it's called B-B-A. Are you aware of the Eligibility criteria for it?",
+                "time": 875.46,
+                "received": "Welcome to J-E-C-R-C University. We offer several management courses, including BBA and MBA, tailored to industry demands. Could you please tell me your name so I can assist you better with the course that suits your interests?",
+                "similarity": 1
+            },
+            {
+                "question": "No, I am not aware, can you please tell me",
+                "expected": "For B-B-A, we require the student to have a good Percentage in their Qualifying Exam. Can you please tell me about your Qualifying Exam marks?",
+                "time": 829.98,
+                "received": "Hello Rohan, welcome to J-E-C-R-C University. We offer a variety of programs, including M-B-A, B-Tech, and Ph-D. Are you interested in pursuing admission with us?",
+                "similarity": 1
+            },
+            {
+                "question": "I have Eighty Percent",
+                "expected": "That's great, Rohan. Since you have a good Percentage, you are eligible for our B-B-A Course. The Fee for this Course is One Forty Thousand. Are you from Jaipur or do you plan to come from outside?",
+                "time": 920.69,
+                "received": "You have eighty percent in your Class Twelfth, which is a good score for our management courses. At J-E-C-R-C University, we offer B-B-A and M-B-A programs. Which one of these courses are you interested in, B-B-A or M-B-A?",
+                "similarity": 1
+            },
+            {
+                "question": "I am from outside Jaipur",
+                "expected": "Since you are from outside Jaipur, I would suggest you to opt for our Hostel facility. It's safe and convenient.",
+                "time": 759.9,
+                "received": "Welcome to J-E-C-R-C University. Since you reside outside Jaipur, we offer comfortable hostel facilities inside the campus for your convenience. May I know your name please?",
+                "similarity": 1
+            },
+            {
+                "question": "Okay, that sounds good",
+                "expected": "Thank you Rohan. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?",
+                "time": 2112.23,
+                "received": "That's great to hear you're interested in our management courses. Before we proceed, could you please tell me your name so I can better assist you with the BBA or MBA programs at J-E-C-R-C University?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "The conversation starts with the user inquiring about management courses. The Agent responds by offering various management courses and asking for the user's name. However, in multiple turns, the Agent fails to maintain consistency in its responses, often repeating the same question about the user's name despite already knowing it. This repetition and lack of progression in the conversation flow indicates a failure in procedural logic and data collection efficiency. Furthermore, the Agent does not strictly adhere to the required formatting rules, such as hyphenating acronyms (e.g., using 'J-E-C-R-C' correctly but not consistently applying this rule to other acronyms like 'B-B-A' or 'M-B-A'). The Agent also misses opportunities to ask for other required slots like 'Interest (Stream)' beyond the management courses and 'Location' in a manner that naturally progresses the conversation. Despite the user providing their percentage in Class Twelfth, the Agent does not leverage this information effectively to guide the conversation towards specific course details or fees. Given these observations, the score is deducted for the failures in formatting, knowledge accuracy, and data collection procedural logic. The final score is adjusted based on these deductions.",
+            "final_score": 0.55
+        },
+        "tags": {
+            "course": "BBA Bachelor of Business Administration",
+            "language": "English",
+            "emotion": "Frustrated",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    },
+    {
+        "conversation": [
+            {
+                "question": "Hi, I am interested in studying at J-E-C-R-C University",
+                "expected": "Hello, I'm Riya. May I know your name?",
+                "time": 830.63,
+                "received": "Hello, welcome to J-E-C-R-C University. I'm Riya, your guide here. Could you please tell me your name so I can assist you better with the courses we offer?",
+                "similarity": 1
+            },
+            {
+                "question": "My name is Rishabh",
+                "expected": "Hello Rishabh, what are your interests? Are you looking to pursue a particular Course?",
+                "time": 830.16,
+                "received": "Hello Rishabh, welcome to J-E-C-R-C University. Are you interested in seeking admission to one of our programs, such as B-Tech, M-B-A, or perhaps our Ph-D program?",
+                "similarity": 1
+            },
+            {
+                "question": "I am looking for a Course related to Business and Data",
+                "expected": "We have a B-B-A Course with a specialization in Data Analytics and Visualization by Samatrix. Would you like to know more about it?",
+                "time": 1042.86,
+                "received": "Hello, we have various programs that combine Business and Data, such as our B-B-A and M-B-A courses with specializations like Global Financial Operations and Brand Management. Could you please tell me your name so I can assist you further with the details of these programs?",
+                "similarity": 1
+            },
+            {
+                "question": "Yes, I would like to know more about the B-B-A in Data Analytics and Visualization",
+                "expected": "To be eligible for the B-B-A in Data Analytics and Visualization, can you please tell me about your Class Twelfth marks, specifically your Percentage?",
+                "time": 991.59,
+                "received": "The B-B-A in Data Analytics and Visualization at J-E-C-R-C University is a comprehensive program designed to equip students with skills in data analysis and visualization. To better assist you, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "I scored around Eighty Percent",
+                "expected": "That's great, Rishabh. The Fee for this Course is One Hundred Sixty Thousand. Now, may I know, are you from Jaipur or somewhere else?",
+                "time": 930.32,
+                "received": "Congratulations on scoring around eighty percent in your Class Twelfth. To better assist you with the B-B-A or M-B-A courses, could you please tell me your name?",
+                "similarity": 1
+            },
+            {
+                "question": "I am from outside Jaipur",
+                "expected": "We have a good Hostel facility for outstation students. Would you like to know more about it?",
+                "time": 1253.34,
+                "received": "Welcome to J-E-C-R-C University. Since you are from outside Jaipur, we have a well-equipped hostel facility inside the campus for your convenience. May I know your name please?",
+                "similarity": 1
+            },
+            {
+                "question": "No, that's okay. You have all the information you need, right?",
+                "expected": "Thank you Rishabh. I have recorded your information. Our counselors will reach out to you soon. Do you have any other questions I can help you with?",
+                "time": 1303.97,
+                "received": "Actually, there's one more detail that would be helpful for me to provide you with more personalized information. Could you please tell me your name?",
+                "similarity": 1
+            }
+        ],
+        "final_verdict": {
+            "explanation": "The conversation starts with the user expressing interest in studying at J-E-C-R-C University. The Agent, Riya, responds by asking for the user's name. However, she repeats this question multiple times throughout the conversation, even after the user has already provided their name as 'Rishabh'. This indicates a failure in the Agent's ability to track and utilize the information provided by the user. Furthermore, the Agent does not follow the required formatting rules, such as speaking numbers as words and using hyphenated acronyms. For instance, 'B-Tech' should be spoken as 'B-Tech' but the Agent also refers to 'M-B-A' instead of 'M-B-A' as 'M B A'. The Agent also fails to provide the fee details for the course the user is interested in and does not ask for the user's location in a way that adheres to the 'Opportunity Rule'. Given these issues, significant deductions are necessary for both formatting and knowledge accuracy. The final score is thus significantly reduced due to these repeated failures.",
+            "final_score": 0.35
+        },
+        "tags": {
+            "course": "BBA Industry: Data Analytics & Visualization (Samatrix)",
+            "language": "English",
+            "emotion": "Neutral",
+            "scope": "In-Scope",
+            "length": "Short"
+        }
+    }
+]

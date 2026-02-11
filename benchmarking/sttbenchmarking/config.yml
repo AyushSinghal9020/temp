@@ -1,0 +1,32 @@
+csv-file-path : assets/data.csv
+benchmark-json-path : assets/benchmark.json
+audio-dir : assets/audio_files
+env-path : .env
+
+stt : 
+  groq : 
+
+    model-name : whisper-large-v3-turbo
+    sample-rate : 16000 
+    sample-width : 2 
+    channels : 1
+
+  google : 
+
+    detect-langs : [en-IN , mr-IN , pt-PT]
+    # detect-langs : []
+    sample-rate : 16000
+    sample-width : 2 
+    channels : 1
+    model-name : chirp_3
+
+  deepgram : 
+
+    model-name : nova-3
+    language : multi
+
+    api-version : '1'
+
+    sample-rate : 16000 
+    sample-width : 2 
+    channels : 1

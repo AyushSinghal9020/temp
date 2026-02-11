@@ -1,0 +1,50 @@
+[project]
+name = "call"
+version = "0.1.0"
+description = "A gRPC server for delayed audio echo"
+authors = [
+    { name = "Gemini", email = "gemini@google.com" },
+]
+dependencies = [
+    "grpcio",
+    "grpcio-tools",
+    "protobuf",
+    "fastapi",
+    "uvicorn[standard]",
+    "stt",
+    "tts",
+    "noisereduce>=3.0.3",
+    "plivo>=4.59.3",
+    "python-multipart>=0.0.20",
+    "websockets>=15.0.1",
+    "wsproto>=1.2.0",
+    "python-socketio[standard]>=5.14.3",
+    "deepgram-sdk==5.3.0",
+    "redis>=7.1.0",
+    "sarvamai>=0.1.22",
+    "llm",
+]
+readme = "README.md"
+requires-python = ">=3.10,<=3.13"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.uv]
+dev-dependencies = []
+
+[tool.uv.sources]
+stt = { workspace = true }
+tts = { workspace = true }
+llm = { workspace = true }
+
+[project.scripts]
+call = "call.server:main"

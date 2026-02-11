@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Stream
+        streamTimeout="{stream_timeout}"
+        keepCallAlive="true"
+        bidirectional="true"
+        contentType="{content_type}"
+        statusCallbackUrl="{status_cb_url}">
+        {audio_ws_url}
+    </Stream>
+    <Wait length="3600"/>
+</Response>

@@ -1,0 +1,44 @@
+tts : 
+
+  service : google
+  azure : 
+
+    endpoint : https://southeastasia.api.cognitive.microsoft.com
+    settings : 
+
+      bytes-per-sample : 2000
+      sample-rate : 16000
+      num-channels : 1
+  edge : 
+
+    sample-rate : 8000
+    voice-id : hi-IN-SwaraNeural
+    ffmpeg-command : [
+      'ffmpeg' , 
+      '-i' , 'pipe:0' , 
+      '-f' , 'mulaw' , 
+      '-ar' , '8000' , 
+      '-ac' , '1' , 
+      'pipe:1'
+    ]
+    num-channels : 1
+    bytes-per-sample : 2
+  elevenlabs : 
+
+    voice-id : broqrJkktxd1CclKTudW
+    model-id : eleven_multilingual_v2
+    output-format : ulaw_8000
+    sample-rate : 16000
+    num-channels : 1
+    bytes-per-sample : 2
+  deepgram : 
+
+    model : aura-2-thalia-en
+    encoding : mulaw
+    sample-rate : 8000
+    filename : file.wav
+    chunk-size : 2000
+
+  google : 
+    language : hi-IN
+    name : Achernar

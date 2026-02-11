@@ -1,0 +1,31 @@
+[project]
+name = "vxp-agent-backend"
+version = "1.0.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<=3.13"
+dependencies = []
+
+[project.scripts]
+vxp-agent-backend = "vxp_agent_backend:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.workspace]
+members = [
+    "rag",
+    "stt",
+    "tts",
+    "llm",
+    "agent",
+    "call", 
+    "metadata",
+    "benchmarking/sttbenchmarking",
+    "benchmarking/llmbenchmarking",
+    "benchmarking/ragbenchmarking",
+    "benchmarking/metadatabenchmarking",
+    "benchmarking/ttsbenchmarking",
+    "benchmarking/agenbenchmarking",
+]

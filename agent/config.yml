@@ -1,0 +1,16 @@
+groq :
+
+  model-name : llama-3.3-70b-versatile
+  preprocess :
+
+    dict-converter : json
+
+rephrase-prompt : assets/rephrase.md
+update-prompt : assets/summary.md
+system-prompt : assets/system_prompt.md
+state-prompt : assets/state.md
+
+redis-url : redis://localhost:6379
+vector-db-url : http://localhost:9000/search
+top-k : 5
+timeout : 5
