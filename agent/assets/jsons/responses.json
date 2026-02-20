@@ -1,0 +1,104 @@
+{
+    "responses" : {
+        "normal" : {
+            "course_change_after_regsiteration" : {
+                "hindi" : "Main dekh rahi hoon aap apna course change karna chahte hain. Kya aapne already registration form fill kar diya hai?" , 
+                "english" : "I noticed you'd like to change your course. Have you already filled the registration form with us?"
+            } , 
+            "request_counselor_call" : {
+                "hindi" : "" , 
+                "english" : "I have documented your information. Our admission counselor will reach out to you at the earliest. Thank you for your interest in J-E-C-R-C University!"
+            } , 
+            "non_admission_query" : {
+                "hindi" : "" , 
+                "english" : "I apologize, but I can only assist with admission queries related to J-E-C-R-C University. For other inquiries, please contact the appropriate department. Thank you for your understanding."
+            } , 
+            "hangup" : {
+                "hindi" : "" , 
+                "english" : "Thank you for your time, Our counsellors will reach out to you soon!"
+            }
+        }
+    } , 
+    "hangup" : {
+        "admission_deadline": {
+            "english": "I've noted your details. Regarding the last date of admission, our counselors will connect with you shortly. You can also reach to our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+            "hindi": "Admission की last date के लिए हमारे counselors आपसे जल्द संपर्क करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk पर call भी कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Admission ki last date ke liye hamare counselors aapse jald contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk par call bhi kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "refund_policy": {
+            "english": "For detailed information about refund policy, our counselors will connect with you shortly. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+            "hindi": "Refund policy के बारे में विस्तृत जानकारी के लिए हमारे counselors आपसे शीघ्र संपर्क करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk पर भी संपर्क कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Refund policy ke bare mein detailed information ke liye hamare counselors aapse jaldi contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk par bhi contact kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "lateral_entry": {
+            "english": "For lateral entry and transfer admissions, our counselors will connect with you shortly. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+            "hindi": "Lateral entry aur transfer admissions के लिए हमारे counselors आपको पूर्ण guidance देंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk से संपर्क कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Lateral entry aur transfer admissions ke liye hamare counselors aapko complete guidance denge. Aap subah das baje se shaam chhe baje tak helpdesk se contact kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "gap_year": {
+            "english": "I notice there has been a gap in your academic journey. Our faculty counselors will evaluate your eligibility and connect with you shortly. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+            "hindi": "आपकी academic journey में gap रहा है। हमारे faculty counselors आपकी eligibility evaluate करेंगे और आपसे जल्द संपर्क करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk पर call कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Aapki academic journey mein gap raha hai. Hamare faculty counselors aapki eligibility evaluate karenge aur aapse jald contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk par call kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "low_percentage": {
+            "english": "Thank you for sharing your academic details. Considering your percentage is lower than the required eligibility, our counselors will evaluate your profile and discuss available options with you. You can reach our helpdesk between ten A-M to six P-M. Thank you for calling JECRC University",
+            "hindi": "आपकी academic details share करने के लिए धन्यवाद। आपका percentage required eligibility से कम होने के कारण, हमारे counselors आपकी profile evaluate करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk पर संपर्क कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Aapki academic details share karne ke liye dhanyavaad. Aapka percentage required eligibility se kam hone ke karan, hamare counselors aapki profile evaluate karenge. Aap subah das baje se shaam chhe baje tak helpdesk par contact kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "scholarship_details": {
+            "english": "I've noted your details. For specific scholarship percentages and detailed information, our counselors will connect with you shortly. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+            "hindi": "Specific scholarship percentages aur detailed information के लिए हमारे counselors आपको पूर्ण विवरण देंगे। कृपया सुबह दस बजे से शाम छह बजे तक helpdesk से संपर्क करें। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Specific scholarship percentages aur detailed information ke liye hamare counselors aapko complete details denge. Kripya subah das baje se shaam chhe baje tak helpdesk se contact karein. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "hostel_facilities": {
+            "english": "I've noted your details. Regarding detailed hostel facilities, our counselors will connect with you shortly. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+            "hindi": "Detailed hostel facility information के लिए हमारे counselors आपको अच्छे से guide करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk पर call भी कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Detailed hostel facility information ke liye hamare counselors aapko achhe se guide karenge. Aap subah das baje se shaam chhe baje tak helpdesk par call bhi kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "gd_pi_rounds": {
+            "english": "For G-D and P-I round details, please contact our G-D P-I Coordinator, Ms. Aishwarya ma'am at nine five four nine six five two nine zero zero. Thank you for calling JECRC University",
+            "hindi": "G-D aur P-I round details के लिए, कृपया हमारी G-D P-I Coordinator, Ms. Aishwarya ma'am को nine five four nine six five two nine zero zero पर संपर्क करें। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "G-D aur P-I round details ke liye, kripya hamari G-D P-I Coordinator, Ms. Aishwarya ma'am ko nine five four nine six five two nine zero zero par contact karein. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "seat_availability": {
+            "english": "I've noted your details. Regarding seat availability, our counselors will connect with you shortly with the latest information. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+            "hindi": "Seat availability के बारे में हमारे counselors आपको latest information के साथ जल्द संपर्क करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk से संपर्क कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Seat availability ke bare mein hamare counselors aapko latest information ke saath jald contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk se contact kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "loan_availability": {
+            "english": "I've noted your details. Regarding education loan facilities, our counselors will connect with you shortly to discuss available options. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+            "hindi": "Education loan facilities के बारे में हमारे counselors आपको available options discuss करने के लिए जल्द संपर्क करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk से संपर्क कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Education loan facilities ke bare mein hamare counselors aapko available options discuss karne ke liye jald contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk se contact kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "course_change": {
+            "english": "I've noted your request for course change. Our counselors will connect with you shortly to assist with the process. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+            "hindi": "Course change के लिए आपकी request note कर ली है। हमारे counselors आपको process में assist करने के लिए जल्द संपर्क करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk से संपर्क कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Course change ke liye aapki request note kar li hai. Hamare counselors aapko process mein assist karne ke liye jald contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk se contact kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "payment_link_issue": {
+            "english": "If you've filled the application form but haven't received the payment link, please contact our Admission Manager, Dr. Jitender Kumawat Sir at nine seven seven three three six eight eight five one. Thank you for calling JECRC University",
+            "hindi": "अगर आपने application form fill कर दिया है लेकिन payment link नहीं मिला, तो कृपया हमारे Admission Manager, Dr. Jitender Kumawat Sir को nine seven seven three three six eight eight five one पर संपर्क करें। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Agar aapne application form fill kar diya hai lekin payment link nahi mila, to kripya hamare Admission Manager, Dr. Jitender Kumawat Sir ko nine seven seven three three six eight eight five one par contact karein. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "session_start": {
+            "english": "I've noted your details. Regarding the session start date, our counselors will connect with you shortly. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+            "hindi": "Session start date के बारे में हमारे counselors आपसे जल्द संपर्क करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk पर call कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Session start date ke bare mein hamare counselors aapse jald contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk par call kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "orientation_date": {
+            "english": "I've noted your details. Regarding the orientation program date, our counselors will connect with you shortly. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+            "hindi": "Orientation program date के बारे में हमारे counselors आपसे जल्द संपर्क करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk पर call कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Orientation program date ke bare mein hamare counselors aapse jald contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk par call kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+        },
+        "stream_ineligible": {
+            "english": "Based on your academic background, you may not meet the standard eligibility criteria for this program. Our faculty counselors will evaluate your profile and discuss available options with you. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+            "hindi": "आपके academic background के आधार पर, आप इस program के लिए standard eligibility criteria meet नहीं करते। हमारे faculty counselors आपकी profile evaluate करेंगे और available options discuss करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk पर संपर्क कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+            "hinglish": "Aapke academic background ke aadhar par, aap is program ke liye standard eligibility criteria meet nahi karte. Hamare faculty counselors aapki profile evaluate karenge aur available options discuss karenge. Aap subah das baje se shaam chhe baje tak helpdesk par contact kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+        } , 
+        "request_counselor_call" : {
+            "english" : "I have documented your information. Our admission counselor will reach out to you at the earliest. Thank you for your interest in J-E-C-R-C University!" , 
+            "hindi" : "I have documented your information. Our admission counselor will reach out to you at the earliest. Thank you for your interest in J-E-C-R-C University!" , 
+            "hinglish" : "I have documented your information. Our admission counselor will reach out to you at the earliest. Thank you for your interest in J-E-C-R-C University!"
+        }
+    }
+}

@@ -44,7 +44,7 @@ async def get_summary(
                 system_prompt = system_prompt , 
                 user_input = f'Transcript : {str(transcription)}'
             ) , 
-            model = 'meta-llama/llama-4-maverick-17b-128e-instruct'
+            model = 'openai/gpt-oss-120b'
         )
 
         logger.info(f'Summary time {time.time() - start_time}')
@@ -109,7 +109,7 @@ async def get_keywords(
                     Summary : {summary}
                 '''
             ) , 
-            model = 'meta-llama/llama-4-maverick-17b-128e-instruct'
+            model = 'openai/gpt-oss-120b'
         )
 
         response = response.replace('`' , '').replace('python' , '').replace('json' , '').replace('- ' , '')
@@ -231,7 +231,7 @@ async def analyze_sentiment(
                     Summary : {summary}
                 '''
             ) , 
-            model = 'meta-llama/llama-4-maverick-17b-128e-instruct'
+            model = 'openai/gpt-oss-120b'
         )
 
         response = response.replace('`' , '').replace('python' , '').replace('json' , '').replace('- ' , '')

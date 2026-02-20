@@ -1,11 +1,9 @@
 from logging import Logger 
 import os
 
-
 from deepgram import DeepgramClient
 from asyncio import Queue
 from plivo.base import ResponseObject
-
 
 class ConnectionManager : 
 
@@ -33,7 +31,6 @@ class ConnectionManager :
         self.active_connections[call_uuid]['tts_queue'] = Queue()
         self.active_connections[call_uuid]['speaking'] = False
 
-
         connection = self.deepgram_client.listen.v1.connect(
             model='nova-3',
             encoding="linear16",
@@ -46,7 +43,7 @@ class ConnectionManager :
             #dictation = True , 
             #smart_format = True , 
             diarize = True , 
-            keyterm = 'jaipur, jaipoor, japur, btech, bca, bba, rajasthan, cse'
+            keyterm = 'jaipur, jaipoor, japur, btech, bca, bba, rajasthan'
             # sample_rate = 16000 , 
         )
 

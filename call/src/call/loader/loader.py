@@ -91,7 +91,8 @@ def load_clients() -> Tuple[
         "pl": {
             "connection": {
             "inbound": {
-                "url": "wss://9888-01kesszt4bnsgk9x4ct4ra8cjf.cloudspaces.litng.ai/ws/{call_uuid}/inbound",
+                # "url": "wss://9888-01kesszt4bnsgk9x4ct4ra8cjf.cloudspaces.litng.ai/ws/{call_uuid}/inbound",
+                "url" : "wss://insurance.voicexp.ai/v2/ws/{call_uuid}/inbound" , 
                 "bidirectional": True,
                 "audio-track": "inbound",
                 "stream-timeout": 3600,

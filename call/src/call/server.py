@@ -59,7 +59,9 @@ async def health_check() : return {'status' : 'ok'}
 
 
 @app.post('/answer' , tags = ['webhook'])
-async def answer(request : Request)  : 
+async def answer(request : Request) : 
+
+    print(await request.form())
 
     call_details : tuple = await retreive_form_data(request)
     call_uuid : str = call_details[0]
@@ -88,7 +90,6 @@ async def answer(request : Request)  :
                     file_format = 'wav' , 
                     # callback_url = 'https://insurance.voicexp.ai/v2/recordings'
                     callback_url = 'https://9888-01kesszt4bnsgk9x4ct4ra8cjf.cloudspaces.litng.ai/recordings'
-
                 )
 
                 await state.connection_manager.initialize_connection(

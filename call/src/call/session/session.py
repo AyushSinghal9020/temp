@@ -1,10 +1,8 @@
 import os
-import json
 import time
-import base64
+import json
 import asyncio
 import requests
-import httpx
 import traceback
 
 from uuid import uuid4
@@ -12,14 +10,19 @@ from typing import Any
 from redis import Redis
 from queue import Empty
 from logging import Logger
-from plivo import RestClient 
-from requests import Response
+from threading import Thread
+from plivo import RestClient
 from fastapi import WebSocket
-from sarvamai import AsyncSarvamAI
+from requests import Response 
+from deepgram import DeepgramClient
 
-from asyncio import Queue , Task, create_task
+from asyncio import Queue , Task, create_task, sleep
 
-from sarvamai.speech_to_text_streaming.socket_client import AsyncSpeechToTextStreamingSocketClient
+from deepgram.core.events import EventType
+
+from deepgram.extensions.types.sockets import ListenV1ControlMessage , ListenV1ResultsEvent
+
+from deepgram.extensions.types.sockets.listen_v1_results_event import ListenV1Alternative , ListenV1Channel
 
 from ..event import START_EVENT , MEDIA_EVENT , PLAYED_EVENT , CLEAR_EVENT
 from ..connection import ConnectionManager
@@ -36,7 +39,7 @@ class SESSION :
         stream_id : str , 
         connection_manager : ConnectionManager , 
         call_uuid : str ,
-        redis_client : Redis , 
+        redis_client : Redis ,
         plivo_client : RestClient
     ) : 
 
@@ -49,7 +52,7 @@ class SESSION :
 
         self.user_speaking = False
         self.tts_speaking = False
-        self.silence_packet_counter = 0
+        self.speech_started = False
 
         self.websocket_object : WebSocket = websocket_object
         self.stream_id : str = stream_id
@@ -73,28 +76,22 @@ class SESSION :
 
         self.tasks : list[Task] = []
 
-        self.sarvam_client = AsyncSarvamAI(api_subscription_key = os.environ['SARVAM_API_KEY'])
-
-        self.sarvam_ws : AsyncSpeechToTextStreamingSocketClient
-        self.speech_detected = False
+        self.deepgram_client = DeepgramClient(api_key = os.environ['DEEPGRAM_API_KEY'])
 
         self.redis_client : Redis = redis_client
         self.history_key : str = f"livehistory:{self.call_uuid}"
         self.hangup_status : bool = False
 
         self.last_transcription_time : float = time.time()
-        self.inactivity_timeout : float = 15.0  # 15 seconds
+        self.inactivity_timeout : float = 20.0
         self.inactivity_message : str = "Hello, I didn't hear you for long, do you have any questions?"
+        self.inactivity_counter : int = 0
 
         self.is_connected : bool = True
 
-        self.barge_in_enabled : bool = True
-        self.last_response_word_count : int = 0
-        self.inactivity_counter : int = 0
-
     async def receiver_task(self) : 
 
-        while self.is_connected : 
+        while self.is_connected: 
 
             data = await self.websocket_object.receive()
 
@@ -113,9 +110,8 @@ class SESSION :
                     if 'text' in data : 
 
                         textual_data_str : str = data['text']
-
+                        
                         try : 
-
                             textual_data_dict : dict = json.loads(textual_data_str)
 
                             if 'event' in textual_data_dict : 
@@ -126,7 +122,6 @@ class SESSION :
                                 elif textual_data_dict['event'] == 'media' : 
 
                                     event_obj = MEDIA_EVENT(**textual_data_dict)
-
                                     await self.stream_queue.put(event_obj)
 
                                 elif textual_data_dict['event'] == 'playedStream' : 
@@ -140,6 +135,7 @@ class SESSION :
                                     self.logger.info(f"Barge-in re-enabled after short response ({self.last_response_word_count} words)")
 
                                     if self.hangup_status : 
+
                                         self.plivo_client.calls.hangup(call_uuid = self.call_uuid)
 
                                 elif textual_data_dict['event'] == 'clearedAudio' : 
@@ -162,7 +158,7 @@ class SESSION :
                             self.logger.error(f"Error processing message logic: {e}")
 
                             traceback.print_exc()
-
+                    
                     else : 
                         print(f"Received non-text data: {data}")
 
@@ -227,176 +223,132 @@ class SESSION :
 
     async def vad_task(self) : 
 
-        await self.tts_queue.put('Hello, This is Riya, JECRC University AI Admission Counsellor, may I please know your name and which course you are interested in ?')  
+        await self.tts_queue.put('Hello !!, This is Riya, JECRC University AI Admission Counsellor, may I please know your name and which course you are interested in ?')  
 
-        try : 
+        self.loop = asyncio.get_running_loop()
+        
+        connection = self.connection_manager.get_stt_connection(call_uuid = self.call_uuid)
 
-            async with self.sarvam_client.speech_to_text_streaming.connect(
-                language_code = 'hi-IN' , 
-                model = 'saaras:v3' , 
-                high_vad_sensitivity = True , 
-                vad_signals = True , 
-                # sample_rate = 8000
+        try:
+            with connection as connection : 
 
-            ) as self.sarvam_ws : 
+                create_task(
+                    self._send_keepalive(connection)
+                )
 
-                self.logger.info("Connected to Sarvam AI streaming")
-
-                receive_task = create_task(self._receive_sarvam_transcriptions())
-                send_task = create_task(self._send_audio_to_sarvam())
-
-                try : 
-                    await asyncio.gather(receive_task , send_task)
-
-                except asyncio.CancelledError : 
-
-                    receive_task.cancel()
-                    send_task.cancel()
-
-                    await asyncio.gather(receive_task , send_task , return_exceptions = True)
-
-        except Exception as e : 
-
-            self.logger.error(f"Error in VAD task connection: {e}")
-
-            traceback.print_exc()
-
-        finally : 
-
-            if self.is_connected : 
-
-                self.is_connected = False
-
-                await self.disconnect()
-
-    async def _send_audio_to_sarvam(self) : 
-
-        try : 
-
-            while self.is_connected : 
-
-                try : 
-
-                    data : MEDIA_EVENT = await self.stream_queue.get()
-
-                    if not self.is_connected : 
-                        break
-
-                    audio_base64 = base64.b64encode(data.audio_bytes).decode('utf-8')
-                    
-                    await self.sarvam_ws.transcribe(
-                        audio = audio_base64 , 
-                        encoding = 'audio/wav' ,
-                        sample_rate = 16000
-                    )
-
-                    if data.possiblity : 
-
-                        self.user_speaking = True
-                        self.silence_packet_counter = 0
-
-                        print('\rListening...', end='\n', flush=True)
-
-                    else : 
-
-                        if len(self.transcription) > 3 : 
-
-                            self.silence_packet_counter += 1
-
-                            print(f'\rSilence packet received ({self.silence_packet_counter})', end='', flush=True)
-
-                            if self.silence_packet_counter >= self.config['settings']['max-continous-interruption']:
-
-                                await self.llm_queue.put(self.transcription)
-
-                                self.transcription = ''
-                                self.user_audio_input = bytes()
-                                self.silence_packet_counter = 0
-
-                            else : 
-                                print(f'\rListening... for Silence {self.silence_packet_counter}', end='', flush=True)
-
-                        else : 
-                            print(f'\rBuffer too short, ignoring silence. Length: {len(self.user_audio_input)}', end='', flush=True)
-
-                except asyncio.CancelledError : 
-                    break
-
-                except Exception as e : 
-
-                    self.logger.error(f"Error sending audio to Sarvam: {e}")
-
-                    await asyncio.sleep(0.1)
-                    
-        except Exception as e : 
-            self.logger.error(f"Fatal error in send audio task: {e}")
-
-    async def _receive_sarvam_transcriptions(self) : 
-
-        try : 
-            async for message in self.sarvam_ws : 
-
-                print(message)
-
-                if not self.is_connected : 
-                    break
-
-                try : 
-
+                def on_message(message : ListenV1ResultsEvent) -> None : 
                     if self.barge_in_enabled : 
 
-                        if message.type == 'data' : 
+                        if message.type == 'Results' : 
 
-                            transcript = message.data.transcript
+                            channel_index : list[int] = message.channel_index
+                            duration : float = message.duration
+                            start : float = message.start 
+                            is_final : bool | None = message.is_final 
+                            speech_final : bool | None = message.speech_final
+                            channel : ListenV1Channel = message.channel
 
-                            if transcript and transcript.strip() and transcript != '<nospeech>' : 
+                            alternatives : list[ListenV1Alternative] = channel.alternatives
 
-                                print(f'Transcription ---------------> : {transcript}')
+                            first_alternative : ListenV1Alternative = alternatives[0]
 
+                            transcript : str = first_alternative.transcript
+
+                            print(f'Transcription ---------------> : {transcript}')
+
+                            if len(transcript.strip()) > 0 : 
+
+                                # Update the last transcription time whenever we receive valid transcription
                                 self.last_transcription_time = time.time()
 
-                                if self.tts_speaking and self.barge_in_enabled:
+                                if self.tts_speaking and self.barge_in_enabled : 
 
-                                    self.logger.info(f"Sarvam AI detected speech: '{transcript}'. Stopping AI.")
+                                    print(f"Deepgram detected speech: '{transcript}'. Stopping AI.")
 
-                                    await self.stop_audio()
+                                    asyncio.run_coroutine_threadsafe(self.stop_audio() , self.loop)
 
-                                self.transcription += ' ' + transcript
-
-                        elif hasattr(message , 'data') and hasattr(message.data , 'signal_type') : 
-
-                            signal_type = message.data.signal_type
-
-                            if signal_type == "START_SPEECH" : 
-
-                                self.speech_detected = True
-
-                                self.logger.debug("Speech detected")
-
-                            elif signal_type == "END_SPEECH" : 
-
-                                self.speech_detected = False
-
-                                self.logger.debug("Speech ended")
-
+                            self.transcription += transcript
                     else : 
-                        self.logger.warning('Dropping as barge-in is disabled')
-                except AttributeError : 
-                    self.logger.debug(f"Received message without expected structure: {message}")
+                        self.logger.warning('Dropping speech as barge-in is disabled')
+                connection.on(EventType.OPEN , lambda _ : print("Connection opened"))
+                connection.on(EventType.MESSAGE , on_message)
+                connection.on(EventType.CLOSE , lambda _ : print("Connection closed"))
+                connection.on(EventType.ERROR , lambda error : print(f"Error: {error}"))
+
+                def start_listening() : connection.start_listening()
+
+                listen_thread = Thread(target = start_listening)
+                listen_thread.start()
+
+                try : 
+
+                    while self.is_connected: 
+
+                        try : 
+
+                            data : MEDIA_EVENT = await self.stream_queue.get()
+                            
+                            # Check connection before processing
+                            if not self.is_connected:
+                                break
+
+                            connection.send_media(data.audio_bytes)
+                            if data.possiblity : 
+
+                                self.user_speaking = True 
+                                self.silence_packet_counter = 0 
+                                
+                                print('\rListening...' , end = '\n' , flush = True)
+
+                            else : 
+
+                                if len(self.transcription) > 3 : 
+                                    
+                                    self.silence_packet_counter += 1
+                                    
+                                    print(f'\rSilence packet received ({self.silence_packet_counter})' , end = '' , flush = True)
+                                    
+                                    if self.silence_packet_counter >= self.config['settings']['max-continous-interruption'] : 
+
+                                        await self.llm_queue.put(self.transcription)
+                                        self.transcription = ''
+                                        self.user_audio_input = bytes()
+                                        self.silence_packet_counter = 0 
+
+                                    else : 
+
+                                        print(f'\rListening... for Silence {self.silence_packet_counter}' , end = '' , flush = True)
+                                
+                                else : print(f'\rBuffer too short, ignoring silence. Length: {len(self.user_audio_input)}' , end = '' , flush = True)
+
+                        except asyncio.CancelledError : 
+                            break
+                        except Exception as e : 
+
+                            self.logger.error(f"Error in VAD task for session {self.session_id}: {e}")
+                            await asyncio.sleep(0.1)
 
                 except Exception as e : 
-                    self.logger.error(f"Error processing Sarvam message: {e}")
-
-        except asyncio.CancelledError : 
-            self.logger.info("Sarvam transcription receiver cancelled")
-
-        except Exception as e : 
-
-            self.logger.error(f"Error in receive transcriptions task: {e}")
-
+                    self.logger.error(f"Fatal error in VAD task for session {self.session_id}: {e}")
+                finally:
+                    # Close Deepgram connection when VAD task ends
+                    try:
+                        connection.finish()
+                        self.logger.info("Deepgram connection closed")
+                    except Exception as e:
+                        self.logger.error(f"Error closing Deepgram connection: {e}")
+                        
+        except Exception as e:
+            self.logger.error(f"Error in VAD task connection: {e}")
             traceback.print_exc()
+        finally:
+            # Ensure we trigger disconnect if not already disconnected
+            if self.is_connected:
+                self.is_connected = False
+                await self.disconnect()
 
     async def add_to_history(self, role: str, content: str):
+
         try:
             message = {
                 'role': role,
@@ -404,16 +356,17 @@ class SESSION :
                 'timestamp': time.time()
             }
             
-            # Add to Redis list (use await for async operations)
+            # Add to Redis list
             self.redis_client.rpush(self.history_key, json.dumps(message))
             
             # Optional: Set expiry on the key (e.g., 24 hours)
-            # await self.redis_client.expire(self.history_key, 86400)
+            self.redis_client.expire(self.history_key, 86400)
             
             self.logger.info(f"Added to history [{role}]: {content}...")
             
         except Exception as e:
             self.logger.error(f"Error adding to history: {e}")
+
     async def run_llm(self) : 
 
         while self.is_connected: 
@@ -444,35 +397,29 @@ class SESSION :
             except Exception as e : 
                 self.logger.error(f"Error in LLM task for session {self.session_id}: {e} : {traceback.format_exc()}")
 
-    async def run_ag(self, query: str) -> str:
-        async with httpx.AsyncClient(timeout=30.0) as client:
-            try:
-                response = await client.post(
-                    url=self.config['agent-url'],
-                    json={
-                        'message': query,
-                        'user_id': self.session_id
-                    }
-                )
-                
-                if response.status_code == 200:
-                    data = response.json()
-                    if 'response' in data:
-                        self.hangup_status = data.get('hangup', False)
-                        print(f"Hangup status: {self.hangup_status}")
-                        return data['response']
-                
-                return 'Sorry, we were unable to process your request'
-                
-            except httpx.ConnectError:
-                print(f"Connection refused to {self.config['agent-url']}")
-                return 'Sorry, we were unable to process your request'
-            except httpx.TimeoutException:
-                print("Request timed out")
-                return 'Sorry, we were unable to process your request'
-            except Exception as e:
-                print(f"Error calling agent: {e}")
-                return 'Sorry, we were unable to process your request'
+    async def run_ag(self , query : str) -> str : 
+
+        response : Response = requests.post(
+            url = self.config['agent-url'] , 
+            json = {
+                'message' : query , 
+                'user_id' : self.session_id
+            }
+        )
+
+        if response.status_code == 200 : 
+            if 'response' in response.json() : 
+                self.hangup_status = response.json()['hangup']
+                if self.hangup_status : 
+                    self.barge_in_enabled = False
+
+                print(self.hangup_status , self.barge_in_enabled)
+                llm_response = response.json()['response'].replace('Hons' , 'Honors').replace('hons' , 'Honors')
+
+                return llm_response
+
+        return 'Sorry we were unable to process your resquest'
+
     async def run_tts(self) : 
 
         while self.is_connected: 
@@ -496,8 +443,13 @@ class SESSION :
 
                 else : 
 
-                    self.barge_in_enabled = True
-                    self.logger.info(f"Barge-in enabled for response ({word_count} words)")
+                    if self.hangup_status : 
+                            self.barge_in_enabled = False 
+                            self.logger.info(f'Barge in disabled as final hangup')
+
+                    else : 
+                        self.barge_in_enabled = True
+                        self.logger.info(f"Barge-in enabled for response ({word_count} words)")
 
                 # start_time : float = time.time()
 
@@ -640,9 +592,9 @@ class SESSION :
                 self.is_connected = False
                 await self.disconnect()
 
-    # async def _send_keepalive(self , connection) : 
+    async def _send_keepalive(self , connection) : 
 
-    #     await sleep(5)
-    #     connection.send_control(ListenV1ControlMessage(type = 'KeepAlive'))
+        await sleep(5)
+        connection.send_control(ListenV1ControlMessage(type = 'KeepAlive'))
 
-    #     self.logger.info('Keep Alive Message sent')
+        self.logger.info('Keep Alive Message sent')

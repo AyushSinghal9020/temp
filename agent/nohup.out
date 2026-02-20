@@ -306,7 +306,7 @@ Traceback (most recent call last):
         messages = [
         ^^^^^^^^^^^^
     ...<15 lines>...
-        model = 'moonshotai/kimi-k2-instruct-0905'
+        model = 'meta-llama/llama-4-maverick-17b-128e-instruct'
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     )
     ^
@@ -474,7 +474,7 @@ Traceback (most recent call last):
         messages = [
         ^^^^^^^^^^^^
     ...<15 lines>...
-        model = 'moonshotai/kimi-k2-instruct-0905'
+        model = 'meta-llama/llama-4-maverick-17b-128e-instruct'
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     )
     ^
@@ -1390,7 +1390,7 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/home/vxp-ai-user/vxp-agent-backend/.venv/lib/python3.13/site-packages/groq/_base_client.py", line 1576, in request
     raise self._make_status_error_from_response(err.response) from None
-groq.InternalServerError: Error code: 503 - {'error': {'message': 'moonshotai/kimi-k2-instruct-0905 is currently over capacity. Please try again and back off exponentially. Visit https://groqstatus.com to see if there is an active incident.', 'type': 'internal_server_error'}}
+groq.InternalServerError: Error code: 503 - {'error': {'message': 'meta-llama/llama-4-maverick-17b-128e-instruct is currently over capacity. Please try again and back off exponentially. Visit https://groqstatus.com to see if there is an active incident.', 'type': 'internal_server_error'}}
 Rephrased Query/Hangup: call on hold
 Vector DB Result: {'results': [{'score': 0.7695024013519287, 'context': 'Fee Refund and Payment Policy', 'text': 'The fee deposited by such a candidate shall be refunded as per UGC guidelines applicable for the AY 2026-27. In such cases, the refund of the fee shall be made within one month after the final cutoff date of admission through Cheque/NEFT in favor of the Candidate only and sent to the address for correspondence through recorded delivery.', 'source': '97'}, {'score': 0.7857317924499512, 'context': 'Revocation of Admission', 'text': 'If a student takes admission and withdraws the same but revokes the withdrawal at a later date, the attendance shall be counted from the date of revocation of admission.', 'source': '100'}, {'score': 0.7967523336410522, 'context': 'Refund of Fee Against Withdrawal', 'text': 'No correspondence with respect to refund of fee against withdrawal shall be entertained until and unless it is in reference to acknowledgment No. and Date given by the Deputy Registrar (Academics) at the time of receipt of the Withdrawal Application, along with the original receipt of the fee deposited.', 'source': '97'}, {'score': 0.812444269657135, 'context': 'Fee Submission and Re-Admission', 'text': 'The fee submission and re-admission process for the University is as follows: From the due date, as mentioned above, shall be struck off from the rolls of the University immediately thereafter. However, such students may be re-admitted with the approval from the Dean / Director of the School concerned after they deposit Rs. 5000/- as re admission charges along with the fees and fine of Rs. 5000/-. The period during which the name of the student remains struck off will not be treated as the inactive period for the purpose of calculation of attendance requirement. If the last date of submission of the fee happens to be a holiday, the next working day shall be counted as the last date of submission of the fee for the purpose of a late fee. No separate notice for depositing fees shall be issued, and it shall be the responsibility of the students and their parents to deposit the fees by the specified last date above.', 'source': '98'}, {'score': 0.8130094408988953, 'context': 'Policy for Withdrawal and Refund of Fees', 'text': 'Candidates may withdraw their admission by submitting an Application Form in person along with an original copy of the receipt of the fee deposited to the Office of the Registrar through the Deputy Registrar.', 'source': '96'}]}
 I'm here and ready to assist you whenever you're available. How may I help you with admissions at J-E-C-R-C University?

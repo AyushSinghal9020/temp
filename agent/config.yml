@@ -1,16 +1,41 @@
-groq :
+vector-db-url : 
 
-  model-name : llama-3.3-70b-versatile
-  preprocess :
+manager-model : 
+manager-provider : groq 
 
-    dict-converter : json
+persona-model : moonshotai/kimi-k2-instruct-0905
+persoan-provider : groq 
 
-rephrase-prompt : assets/rephrase.md
-update-prompt : assets/summary.md
-system-prompt : assets/system_prompt.md
-state-prompt : assets/state.md
+critical-slots : [Name , Course , Percentage , City]
+optional-slots : [Preference , StreamSubjects , PassingYear]
 
-redis-url : redis://localhost:6379
-vector-db-url : http://localhost:9000/search
-top-k : 5
-timeout : 5
+manager-prompt-file : 
+query-rephraser-prompt-file : assets/prompts/query_rephraser.md
+persona-prompt-file : 
+
+hangpup-responses-file : assets/jsons/hangup_responses.json
+
+manager : 
+  prompt : assets/prompts/manager.md
+  model : llama-3.3-70b-versatile
+  provider : groq 
+  temperature : 0
+
+persona : 
+  prompt : assets/prompts/persona.md
+  model : gpt-4.1-2025-04-14
+  # model : gpt-5-nano-2025-08-07
+  provider : openai
+  temperature : 0
+
+rephraser : 
+  prompt : assets/prompts/query_rephraser.md
+  model : llama-3.3-70b-versatile
+  provider : groq
+  temperature : 1
+
+
+responses : assets/jsons/responses.json
+
+vector-db : 
+  url : http://localhost:9000/search

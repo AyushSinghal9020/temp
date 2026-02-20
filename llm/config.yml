@@ -1,7 +1,7 @@
 llm : 
   groq :
 
-    model-name : moonshotai/kimi-k2-instruct-0905
+    model-name : llama-3.3-70b-versatile
     preprocess :
 
       dict-converter : json

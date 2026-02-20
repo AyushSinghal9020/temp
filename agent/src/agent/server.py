@@ -17,11 +17,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 REDIS_URL = "redis://localhost:6379"
-# VECTOR_DB_URL = "http://host.docker.internal:9000/search"
 VECTOR_DB_URL = "http://localhost:9000/search"
-# VECTOR_DB_URL = "https://9000-01kesszt4bnsgk9x4ct4ra8cjf.cloudspaces.litng.ai/search"
 MANAGER_MODEL = "llama-3.3-70b-versatile"
 PERSONA_MODEL = "moonshotai/kimi-k2-instruct-0905"
+
 # Critical slots that must be collected
 CRITICAL_SLOTS = ["Name", "Course", "Percentage", "City"]
 OPTIONAL_SLOTS = ["Preference"]
@@ -37,6 +36,7 @@ redis_conn = Redis(
     ssl=False,
     ssl_cert_reqs=None
 )
+
 # =========================
 # PROMPTS
 # =========================
@@ -86,13 +86,21 @@ TASKS
     - Detect if course is UG (B.Tech, BCA, BBA, etc.) or PG (M.Tech, MBA, MCA, etc.) or PhD
     - Set program_level accordingly
 12. Specific Hangup Conditions Detection:
-    - Withdrawal policy → hangup_type="withdrawal_policy"
-    - Lateral entry/transfer → hangup_type="lateral_entry"
-    - Student gap/drop year → hangup_type="gap_year"
-    - Last date of admission/provisional admission → hangup_type="admission_deadline"
-    - 12th or UG percentage less than 60% → hangup_type="low_percentage"
-    - Exact scholarship percentage → hangup_type="scholarship_details"
-    - Hostel facilities (except fees) → hangup_type="hostel_facilities"
+    - HANGUP: Withdrawal policy → hangup_type="withdrawal_policy"
+    - HANGUP: Lateral entry/transfer → hangup_type="lateral_entry"
+    - HANGUP: Student gap/drop year → hangup_type="gap_year"
+    - HANGUP: Payment Link Issue -> hangup_type="payment_link_issue"
+    - HANGUP: Orientation Data -> hangup_type="orientation_date"
+    - HANGUP: 12th or UG percentage less than 60% → hangup_type="low_percentage"
+    - HANGUP: Session start date / when does college start → hangup_type="session_start"
+    - HANGUP: GD/PI rounds, interview dates, what to prepare for GD → hangup_type="gd_pi_rounds"
+    - HANGUP: Education loan availability → hangup_type="loan_availability"
+
+    - NO HANGUP: Last date of admission → set soft_redirect="admission_deadline"
+    - NO HANGUP: Scholarship amount / exact scholarship percentage → set soft_redirect="scholarship_details"
+    - NO HANGUP: Hostel fees or course fees → do NOT set soft_redirect, let RAG answer naturally
+    - NO HANGUP: Hostel room types, amenities, AC/non-AC, food, facilities beyond fees → set soft_redirect="hostel_facilities"
+    - NO HANGUP: Seat availability → set soft_redirect="seat_availability"
 
 END CONDITIONS
 --------------
@@ -117,8 +125,10 @@ OUTPUT (STRICT JSON)
   "non_admission_query": false,
   "hangup_reason": null,
   "hangup_type": null,
+  "soft_redirect": null,
   "user_cannot_provide": {{}},
-  "already_provided": false
+  "already_provided": false, 
+"course_change_after_registration": false
 }}
 
 EXTRACTION EXAMPLES:
@@ -148,13 +158,37 @@ User: "Tell me about IIT Delhi admissions"
 → non_admission_query: true, hangup_reason: "non_admission_intent"
 
 User: "What is the last date for admission?"
-→ hangup_type: "admission_deadline"
+→ soft_redirect: "admission_deadline"  (NO hangup)
+
+User: "How much scholarship will I get?"
+→ soft_redirect: "scholarship_details"  (NO hangup)
+
+User: "What are the hostel fees?"
+→ no soft_redirect (RAG answers)
+
+User: "What facilities are available in hostel?" or "Is the hostel AC?"
+→ soft_redirect: "hostel_facilities"  (NO hangup)
+
+User: "Are seats still available?"
+→ soft_redirect: "seat_availability"  (NO hangup)
 
 User: "I scored 55% in 12th"
 → Percentage: "55", hangup_type: "low_percentage"
 
-User: "What are the hostel facilities?"
-→ hangup_type: "hostel_facilities"
+User: "When does college start?"
+→ hangup_type: "session_start"
+
+User: "What should I prepare for GD?"
+→ hangup_type: "gd_pi_rounds"
+
+User: "I already filled form but want to change my course"(only trigger hangup and course_change_after_regsiteration once the user onfirms that they have registered the course or have filled the fomr, not when they normally say that they want to change the course)
+→ course_change_after_registration: true, hangup_type: "course_change"
+
+User: "Can I get an education loan?"
+→ hangup_type: "loan_availability"
+
+User: "I have a diploma, can I get direct second year admission?"
+→ hangup_type: "lateral_entry"
 
 """
 
@@ -175,18 +209,23 @@ RULES:
 
 HANGUP DETECTION:
 If user says goodbye, bye, thanks and done, no more questions, or indicates conversation end, or gets abusive:
-if user asks related to withdrawal policy.
-⁠if user asks related to lateral entry /transfer <hangup>.
-if user asks ⁠student took drop or has gap then also please <hangup>.
-if user asks related to last date of admission or provisional admission.
-if user asks related to what's the exact scholarship percentage.
-if user asks related to hostel facilities except the fees.
+- If user asks related to withdrawal policy → <hangup>
+- If user asks related to lateral entry/transfer → <hangup>
+- If user took a drop or has a gap year → <hangup>
+- If user asks when does college start or session start date → <hangup>
+- If user asks what to prepare for GD/PI or about interview rounds → <hangup>
+- If user asks about education loan availability → <hangup>
 
 - Output ONLY: <hangup>
 
-IMPORTANT: Do NOT trigger <hangup> just because user mentions a percentage value (e.g., "I scored 55%"). The manager will handle low percentage detection separately. Only trigger <hangup> for the specific conditions listed above.
+DO NOT trigger <hangup> for:
+- User mentions a percentage value (e.g., "I scored 55%") — manager handles low percentage separately
+- User asks about last date of admission — respond normally, manager handles soft redirect
+- User asks about scholarship amount — respond normally, manager handles soft redirect
+- User asks about seat availability — respond normally, manager handles soft redirect
+- User asks about hostel fees or course fees — respond normally, RAG will answer
+- User asks about hostel room types, amenities, or facilities beyond fees — respond normally, manager handles soft redirect
 
-Note: If user is asking about hostel fees or course fees, do NOT output <hangup>.
 OTHERWISE:
 - Output ONLY the rewritten search query (no extra text, no JSON, just the query)
 
@@ -211,12 +250,34 @@ You are Riya (रिया), a FEMALE virtual admission counsellor for JECRC Uni
 === LANGUAGE HANDLING (CRITICAL) ===
 User Language: {language}
 
+If the course requirement, have gd or pi round, than do not mention that there will be direct admission, and mention the requirements
+
 Response Language Rules:
 - Match {language} exactly:
   * "English" → English ONLY
   * "Hindi"/"Hinglish" → Hinglish with female forms (मैं बता रही हूँ, मुझे)
 - NEVER switch languages mid-conversation
 - Accept and process ANY input language (STT may hallucinate), but respond in conversation language
+
+=== SOFT REDIRECT HANDLING (CRITICAL - NO HANGUP) ===
+Soft Redirect Type: {soft_redirect}
+
+These situations must NEVER trigger a hangup. Respond gracefully and retain the conversation:
+
+IF soft_redirect = "scholarship_details":
+  → Respond: "Our counselors will be able to provide you with complete scholarship details. Could you please share your city and state for our records?"
+  → If city already collected: "Our counselors will reach out with the complete scholarship details shortly. Is there anything else I may assist you with?"
+
+IF soft_redirect = "hostel_facilities":
+  → Respond: "Our counselors will reach out with comprehensive hostel details. Is there anything else I may assist you with?"
+
+NOTE on hostel and course fees: If user asks about hostel fees or course fees, answer directly from the Knowledge Base. Only use soft_redirect when user asks about room types, amenities, food, AC, or facility details beyond fees.
+
+IF soft_redirect = "admission_deadline":
+  → Respond: "Our counselors will reach out with the most accurate and updated admission timeline. Is there anything else I may assist you with?"
+
+IF soft_redirect = "seat_availability":
+  → Respond: "Our counselors will reach out and provide you with complete details regarding seat availability. Is there anything else I may assist you with?"
 
 === SCENARIO-BASED CONVERSATION FLOW ===
 Current State:
@@ -228,6 +289,7 @@ Current State:
 - Counselor Mentioned: {counselor_mentioned}
 - Facility Mentioned: {facility_mentioned}
 - Requesting Call: {requesting_counselor_call}
+- Soft Redirect: {soft_redirect}
 
 **CRITICAL: FLOW COMPLETION CHECK**
 Before proceeding, check if critical information is collected:
@@ -293,7 +355,6 @@ Engineering, Management, Commerce, Sciences, Law, Design, English, Economics, Ps
 - NO B.Tech + M.Tech integrated program
 - If course doesn't exist → "I couldn't find that course at J-E-C-R-C University, but our counselors can help you explore similar options"
 
-
 **STAGE 3: ELIGIBILITY (PERCENTAGE) - PROGRAM-AWARE**
 IF Percentage is null AND user_cannot_provide["Percentage"] is FALSE:
   
@@ -315,11 +376,12 @@ IF user says "I don't have", "not yet", "haven't completed", "I don't know", "no
 IF {show_scholarship_alert} = TRUE AND not announced yet:
   → Acknowledge score professionally and enthusiastically
   → **MUST announce:** "you qualify for our merit-based scholarship program"
+  → **IMMEDIATELY FOLLOW WITH:** "Our counselors will share the exact scholarship amount during your personalized counseling session"
   → Then request location: "Could you please share your city and state for our records?"
   
   Examples based on {program_level}:
-  - UG: "That is an excellent academic achievement [use name if available]. With [number] percent in Class Twelfth, you qualify for our merit based scholarship program. Could you please share your city and state for our records?"
-  - PG: "Congratulations on your impressive academic performance [use name if available]. With [number] percent in your graduation, you qualify for our merit based scholarship program. May I have your city and state details?"
+  - UG: "That is an excellent academic achievement [use name if available]. With [number] percent in Class Twelfth, you qualify for our merit based scholarship program. Our counselors will share the exact scholarship details. Could you please share your city and state for our records?"
+  - PG: "Congratulations on your impressive academic performance [use name if available]. With [number] percent in your graduation, you qualify for our merit based scholarship program. Our counselors will share the exact scholarship details. May I have your city and state details?"
 
 **STAGE 5: CITY + STATE COLLECTION**
 IF City is null:
@@ -329,9 +391,9 @@ IF City is null:
 **STAGE 6: FACILITY MENTION (AFTER CITY)**
 IF {facility_mentioned} = FALSE AND City just collected:
   → Check City value and mention professionally:
-    * Contains "Jaipur" → "I would like to inform you that we provide comprehensive bus transport facilities for students within Jaipur and surrounding areas"
-    * Outside Jaipur → "For students from outside Jaipur, we offer well-equipped hostel facilities with all modern amenities"
-  → Then offer assistance: "I would be happy to address any questions you may have regarding our academic programs, facilities, campus life, or the admission process. How may I further assist you?"
+    * Contains "Jaipur" → "I would like to inform you that we provide bus transport facilities for students within Jaipur. Our counselors can share complete transport details."
+    * Outside Jaipur → "For students from outside Jaipur, we offer hostel facilities on campus. Our counselors can share complete hostel details with you."
+  → Then offer assistance: "I would be happy to address any questions you may have regarding our academic programs, campus life, or the admission process. How may I further assist you?"
 
 **STAGE 7: OPEN Q&A MODE (AFTER FLOW COMPLETE)**
 Once Name + Course + City collected:
@@ -386,7 +448,7 @@ Context: {context_data}
 
 5. **When information is unavailable:**
    - First occurrence: "Our admission counselors will provide comprehensive details on this aspect"
-   - Subsequently: Continue assisting professionally without repetitive counselor mentions
+   - Subsequently: "You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday, for immediate assistance"
 
 === FACTUAL CONSTRAINTS ===
 - JECRC location: Jaipur, Rajasthan ONLY
@@ -428,6 +490,8 @@ Context: {context_data}
 Current Instruction: {instruction}
 
 Generate natural response following the scenario-based conversation flow:
+
+If the course requirement, have gd or pi round or screening, than do not mention that there will be direct admission, and mention the requirements
 """
 
 # =========================
@@ -435,40 +499,55 @@ Generate natural response following the scenario-based conversation flow:
 # =========================
 
 HANGUP_RESPONSES = {
-    "admission_deadline": {
-        "English": "I’ve noted your details. Regarding the last date of admission, our counselors will connect with you shortly. You can also reach our helpdesk between 10 AM and 6 PM, Monday to Saturday, for immediate assistance.Thank you",
-        "Hindi": "Admission की last date के लिए हमारे counselors आपसे जल्द संपर्क करेंगे। आप सुबह 10 बजे से शाम 6 बजे तक Helpdesk पर call भी कर सकते हैं। धन्यवाद्",
-        "Hinglish": "Admission ki last date ke liye hamare counselors aapse jald contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk par call bhi kar sakte hain.Dhanyawwad"
-    },
     "withdrawal_policy": {
-        "English": "For detailed information about withdrawal policy, our counselors will connect with you shortly. You can also reach our helpdesk between 10 AM and 6 PM, Monday to Saturday, for immediate assistance. Thank you",
-        "Hindi": "Withdrawal policy के बारे में विस्तृत जानकारी के लिए हमारे counselors आपसे शीघ्र संपर्क करेंगे। आप सुबह 10 बजे से शाम 6 बजे तक helpdesk पर भी संपर्क कर सकते हैं। धन्यवाद्",
-        "Hinglish": "Withdrawal policy ke bare mein detailed information ke liye hamare counselors aapse jaldi contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk par bhi contact kar sakte hain.Dhanyawwad"
+        "English": "For detailed information about withdrawal policy, our counselors will connect with you shortly. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday, for immediate assistance. Thank you for calling J-E-C-R-C University",
+        "Hindi": "Withdrawal policy के बारे में विस्तृत जानकारी के लिए हमारे counselors आपसे शीघ्र संपर्क करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk पर भी संपर्क कर सकते हैं। JECRC University को call करने के लिए धन्यवाद" ,
+        "Hinglish": "Withdrawal policy ke bare mein detailed information ke liye hamare counselors aapse jaldi contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk par bhi contact kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
     },
     "lateral_entry": {
-        "English": "For lateral entry and transfer admissions, our counselors will connect with you shortly. You can also reach our helpdesk between 10 AM and 6 PM, Monday to Saturday, for immediate assistance. Thank you",
-        "Hindi": "Lateral entry aur transfer admissions के लिए हमारे counselors आपको पूर्ण guidance देंगे। आप सुबह 10 बजे से शाम 6 बजे तक helpdesk से संपर्क कर सकते हैं। धन्यवाद्",
-        "Hinglish": "Lateral entry aur transfer admissions ke liye hamare counselors aapko complete guidance denge. Aap subah das baje se shaam chhe baje tak helpdesk se contact kar sakte hain.Dhanyawwad"
+        "English": "For lateral entry and transfer admissions, our counselors will connect with you shortly. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday, for immediate assistance. Thank you for calling J-E-C-R-C University",
+        "Hindi": "Lateral entry aur transfer admissions के लिए हमारे counselors आपको पूर्ण guidance देंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk से संपर्क कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+        "Hinglish": "Lateral entry aur transfer admissions ke liye hamare counselors aapko complete guidance denge. Aap subah das baje se shaam chhe baje tak helpdesk se contact kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+    },
+    "course_change": {
+        "English": "I've noted your request for course change. Our counselors will connect with you shortly to assist with the process. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+        "Hindi": "Course change के लिए आपकी request note कर ली है। हमारे counselors आपको process में assist करने के लिए जल्द संपर्क करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk से संपर्क कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+        "Hinglish": "Course change ke liye aapki request note kar li hai. Hamare counselors aapko process mein assist karne ke liye jald contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk se contact kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
     },
     "gap_year": {
-        "English": "Regarding gap years and academic breaks, our counselors will connect with you shortly. You can also reach our helpdesk between 10 AM and 6 PM, Monday to Saturday, for immediate assistance. Thank you",
-        "Hindi": "Gap years aur academic breaks के संबंध में हमारे counselors आपकी विशिष्ट स्थिति पर चर्चा करेंगे। कृपया सुबह 10 बजे से शाम 6 बजे तक helpdesk पर call करें। धन्यवाद्",
-        "Hinglish": "Gap years aur academic breaks ke sambandh mein hamare counselors aapki specific situation par charcha karenge. Kripya subah das baje se shaam chhe baje tak helpdesk par call karein.Dhanyawwad"
+        "English": "Regarding gap years and academic breaks, our counselors will connect with you shortly to evaluate your profile. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling J-E-C-R-C University",
+        "Hindi": "Gap years aur academic breaks के संबंध में हमारे counselors आपकी profile evaluate करेंगे। कृपया सुबह दस बजे से शाम छह बजे तक helpdesk पर call करें। JECRC University को call करने के लिए धन्यवाद",
+        "Hinglish": "Gap years aur academic breaks ke sambandh mein hamare counselors aapki profile evaluate karenge. Kripya subah das baje se shaam chhe baje tak helpdesk par call karein. JECRC University ko call karne ke liye Dhanyavaad"
     },
     "low_percentage": {
-            "English": "Thank you for sharing your academic details. Considering your percentage is lower than the required eligibility, our counselors will evaluate your profile and discuss available options with you. You can reach our helpdesk between 10 AM to 6 PM. Thank you",
-            "Hindi": "आपकी academic details share करने के लिए धन्यवाद। आपका percentage required eligibility से कम होने के कारण, हमारे counselors आपकी profile evaluate करेंगे और उपलब्ध options पर आपके साथ चर्चा करेंगे। आप सुबह 10 बजे से शाम 6 बजे तक helpdesk पर संपर्क कर सकते हैं। धन्यवाद्",
-            "Hinglish": "Aapki academic details share karne ke liye dhanyavaad. Aapka percentage required eligibility se kam hone ke karan, hamare counselors aapki profile evaluate karenge aur available options par aapke saath charcha karenge. Aap subah das baje se shaam chhe baje tak helpdesk par contact kar sakte hain.Dhanyawwad"
-        },
-    "scholarship_details": {
-        "English": "I’ve noted your details. For specific scholarship percentages and detailed information, our counselors will connect with you shortly. You can also reach our helpdesk between 10 AM and 6 PM, Monday to Saturday, for immediate assistance. Thank you",
-        "Hindi": "Specific scholarship percentages aur detailed information के लिए हमारे counselors आपको पूर्ण विवरण देंगे। कृपया सुबह 10 बजे से शाम 6 बजे तक helpdesk से संपर्क करें। धन्यवाद्",
-        "Hinglish": "Specific scholarship percentages aur detailed information ke liye hamare counselors aapko complete details denge. Kripya subah das baje se shaam chhe baje tak helpdesk se contact karein.Dhanyawwad"
+        "English": "Thank you for sharing your academic details. Considering your percentage is lower than the required eligibility, our counselors will evaluate your profile and discuss available options with you. You can reach our helpdesk between ten A-M and six P-M. Thank you for calling J-E-C-R-C University",
+        "Hindi": "आपकी academic details share करने के लिए धन्यवाद। आपका percentage required eligibility से कम होने के कारण, हमारे counselors आपकी profile evaluate करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk पर संपर्क कर सकते हैं। JECRC University को call करने के लिए धन्यवाद",
+        "Hinglish": "Aapki academic details share karne ke liye dhanyavaad. Aapka percentage required eligibility se kam hone ke karan, hamare counselors aapki profile evaluate karenge aur available options par aapke saath charcha karenge. Aap subah das baje se shaam chhe baje tak helpdesk par contact kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
     },
-    "hostel_facilities": {
-        "English": " I’ve noted your details. Regarding the hostel details, our counselors will connect with you shortly. You can also reach our helpdesk between 10 AM and 6 PM, Monday to Saturday, for immediate assistance. Thank you",
-        "Hindi": "Detailed hostel facility information के लिए हमारे counselors आपको अच्छे से guide करेंगे। आप सुबह 10 बजे से शाम 6 बजे तक helpdesk पर call भी कर सकते हैं। धन्यवाद्",
-        "Hinglish": "Detailed hostel facility information ke liye hamare counselors aapko achhe se guide karenge. Aap subah das baje se shaam chhe baje tak helpdesk par call bhi kar sakte hain. Dhanyawwad"
+    "session_start": {
+        "English": "Session commencement dates are confirmed closer to admission completion. Our counselors will connect with you shortly and inform you of the exact joining date. Thank you for calling J-E-C-R-C University",
+        "Hindi": "Session start date के बारे में हमारे counselors आपसे जल्द संपर्क करेंगे और exact joining date बताएंगे। JECRC University को call करने के लिए धन्यवाद",
+        "Hinglish": "Session start date ke bare mein hamare counselors aapse jald contact karenge aur exact joining date batayenge. JECRC University ko call karne ke liye Dhanyavaad"
+    },
+    "gd_pi_rounds": {
+        "English": "For G-D and P-I round details including dates, preparation guidance, and the complete process, please reach out to our G-D P-I Coordinator at nine five four nine six five two nine zero zero. Thank you for calling J-E-C-R-C University",
+        "Hindi": "G-D aur P-I round details, preparation guidance aur complete process ke liye, kripya hamare G-D P-I Coordinator ko nine five four nine six five two nine zero zero par contact karein. JECRC University को call करने के लिए धन्यवाद",
+        "Hinglish": "G-D aur P-I round details, preparation guidance aur complete process ke liye, kripya hamare G-D P-I Coordinator ko nine five four nine six five two nine zero zero par contact karein. JECRC University ko call karne ke liye Dhanyavaad"
+    },
+    "payment_link_issue": {
+        "English": "If you've filled the application form but haven't received the payment link, please contact our Admission Manager, at nine seven seven three three six eight eight five one. Thank you for calling JECRC University",
+        "Hindi": "अगर आपने application form fill कर दिया है लेकिन payment link नहीं मिला, तो कृपया हमारे Admission Manager, को nine seven seven three three six eight eight five one पर संपर्क करें। JECRC University को call करने के लिए धन्यवाद",
+        "Hinglish": "Agar aapne application form fill kar diya hai lekin payment link nahi mila, to kripya hamare Admission Manager, ko nine seven seven three three six eight eight five one par contact karein. JECRC University ko call karne ke liye JECRC University ko call karne ke liye Dhanyavaad"
+    },
+    "orientation_date": {
+        "English": "I've noted your details. Regarding the orientation program date, our counselors will connect with you shortly. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling JECRC University",
+        "Hindi": "Orientation program date के बारे में हमारे counselors आपसे जल्द संपर्क करेंगे। आप सुबह दस बजे से शाम छह बजे तक helpdesk पर call कर सकते हैं। JECRC University को call करने के लिए JECRC University को call करने के लिए धन्यवाद",
+        "Hinglish": "Orientation program date ke bare mein hamare counselors aapse jald contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk par call kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
+    },
+    "loan_availability": {
+        "English": "For education loan and financial assistance options, our counselors will connect with you shortly to discuss the available facilities. You can also reach our helpdesk between ten A-M and six P-M, Monday to Saturday. Thank you for calling J-E-C-R-C University",
+        "Hindi": "Education loan aur financial assistance ke liye hamare counselors aapko available options discuss karne ke liye jald contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk se contact kar sakte hain. JECRC University को call करने के लिए धन्यवाद",
+        "Hinglish": "Education loan aur financial assistance ke liye hamare counselors aapko available options discuss karne ke liye jald contact karenge. Aap subah das baje se shaam chhe baje tak helpdesk se contact kar sakte hain. JECRC University ko call karne ke liye Dhanyavaad"
     }
 }
 
@@ -504,21 +583,18 @@ def detect_program_level(course):
 
     course_lower = course.lower()
 
-    # UG indicators
     ug_keywords = ["b.tech", "btech", "bca", "bba", "b.com", "bcom", "ba ", "bsc", "b.des", "bva", "llb"]
     if any(keyword in course_lower for keyword in ug_keywords):
         return "UG"
 
-    # PG indicators
     pg_keywords = ["m.tech", "mtech", "mca", "mba", "llm", "ma ", "msc", "m.des", "mva", "m.com", "mcom"]
     if any(keyword in course_lower for keyword in pg_keywords):
         return "PG"
 
-    # PhD
     if "phd" in course_lower:
         return "PhD"
 
-    return "UG"  # Default
+    return "UG"
 
 def determine_next_critical_slot(slots, cannot_provide):
     """Determine next critical slot to collect, respecting user constraints"""
@@ -532,14 +608,11 @@ def is_flow_complete(slots):
     name_filled = slots.get("Name") not in (None, "", "null")
     course_filled = slots.get("Course") not in (None, "", "null")
     city_filled = slots.get("City") not in (None, "", "null")
-
-    # Flow is complete when Name + Course + City are filled
     return name_filled and course_filled and city_filled
 
 def get_hangup_response(hangup_type, language):
     """Get appropriate hangup response based on type and language"""
     if hangup_type in HANGUP_RESPONSES:
-        # Normalize language
         if language in ["Hindi", "Hinglish"]:
             return HANGUP_RESPONSES[hangup_type].get(language, HANGUP_RESPONSES[hangup_type]["English"])
         return HANGUP_RESPONSES[hangup_type]["English"]
@@ -557,7 +630,6 @@ async def get_manager_decision(history, slots, user_msg):
             last_bot = h["content"]
             break
 
-    # Get recent conversation context
     conv_history = "\n".join(
         f"{h['role']}: {h['content']}" for h in history[-6:]
     ) or "None"
@@ -632,7 +704,6 @@ async def search_vector_db(query):
 def check_counselor_mentioned(history):
     """Check if counselor was already mentioned"""
     counselor_keywords = ["counselor will confirm", "counselor will reach", "counsellor", "counselors will"]
-
     for msg in history:
         if msg["role"] == "assistant":
             if any(keyword in msg["content"].lower() for keyword in counselor_keywords):
@@ -642,7 +713,6 @@ def check_counselor_mentioned(history):
 def check_facility_mentioned(history):
     """Check if facility was already mentioned"""
     facility_keywords = ["hostel facilities", "bus transport facilities", "hostel facility", "bus transport"]
-
     for msg in history:
         if msg["role"] == "assistant":
             if any(keyword in msg["content"].lower() for keyword in facility_keywords):
@@ -683,9 +753,9 @@ async def chat(request: ChatRequest):
     # Increment query count
     query_count += 1
 
-    # Get manager decision first to check for hangup conditions
+    # Get manager decision first to check for hangup / soft redirect conditions
     manager = await get_manager_decision(history, slots, user_input)
-    
+
     # Get language for hangup responses
     language = manager.get("language", "English")
 
@@ -696,20 +766,20 @@ async def chat(request: ChatRequest):
     # Merge slots FIRST (to capture data even if hangup is triggered)
     slots = secure_merge_slots(slots, manager.get("extracted_slots", {}), user_cannot_provide)
 
-    # Check for specific hangup types from manager
+    # =========================================================
+    # HARD HANGUPS — End the call
+    # =========================================================
     hangup_type = manager.get("hangup_type")
-    
+
     if hangup_type:
-        # Get appropriate hangup response
         bot_msg = get_hangup_response(hangup_type, language)
-        
+
         if bot_msg:
             history.extend([
                 {"role": "user", "content": user_input},
                 {"role": "assistant", "content": bot_msg}
             ])
 
-            # Save state WITH UPDATED SLOTS
             await asyncio.gather(
                 redis_conn.set(hist_key, json.dumps(history[-10:]), ex=3600),
                 redis_conn.set(slot_key, json.dumps(slots), ex=3600),
@@ -728,7 +798,6 @@ async def chat(request: ChatRequest):
             {"role": "assistant", "content": bot_msg}
         ])
 
-        # Save state
         await asyncio.gather(
             redis_conn.set(hist_key, json.dumps(history[-10:]), ex=3600),
             redis_conn.set(slot_key, json.dumps(slots), ex=3600),
@@ -747,7 +816,6 @@ async def chat(request: ChatRequest):
             {"role": "assistant", "content": bot_msg}
         ])
 
-        # Save state
         await asyncio.gather(
             redis_conn.set(hist_key, json.dumps(history[-10:]), ex=3600),
             redis_conn.set(slot_key, json.dumps(slots), ex=3600),
@@ -757,21 +825,21 @@ async def chat(request: ChatRequest):
 
         return ChatResponse(response=bot_msg, slots=slots, hangup=True)
 
-    # Get rephrased query or hangup detection
+    # =========================================================
+    # REPHRASER — also catches bye/abusive hangups
+    # =========================================================
     vector_query = await rephrase_query(history, user_input, query_count)
 
-    # Check for standard hangup (bye/thanks/done)
     is_hangup = "<hangup>" in vector_query.lower()
 
     if is_hangup:
-        bot_msg = "Thank you for your time, Our counsellors will reach out to you soon!"
+        bot_msg = "Thank you for your time. Our counsellors will reach out to you soon! You can also reach our helpdesk between ten A-M and six P-M from Monday to Saturday. Thank you for calling J-E-C-R-C University"
 
         history.extend([
             {"role": "user", "content": user_input},
             {"role": "assistant", "content": bot_msg}
         ])
 
-        # Save state
         await asyncio.gather(
             redis_conn.set(hist_key, json.dumps(history[-10:]), ex=3600),
             redis_conn.set(slot_key, json.dumps(slots), ex=3600),
@@ -780,6 +848,11 @@ async def chat(request: ChatRequest):
         )
 
         return ChatResponse(response=bot_msg, slots=slots, hangup=True)
+
+    # =========================================================
+    # SOFT REDIRECTS — Retain conversation, no hangup
+    # =========================================================
+    soft_redirect = manager.get("soft_redirect")
 
     # Detect program level
     program_level = manager.get("program_level") or detect_program_level(slots.get("Course"))
@@ -794,7 +867,6 @@ async def chat(request: ChatRequest):
     instruction = "Provide professional and informative responses to the user's inquiries."
 
     if not flow_complete and next_slot:
-        # Still in collection phase
         if next_slot == "Name":
             instruction += " Subsequently, courteously request their name for personalized assistance."
         elif next_slot == "Course":
@@ -804,10 +876,9 @@ async def chat(request: ChatRequest):
         elif next_slot == "City":
             instruction += " Then request their city and state information for our records."
     else:
-        # Flow complete - Q&A mode
         instruction += " Continue providing professional assistance without requesting previously collected information."
 
-    # Get context from vector DB (only if not hangup)
+    # Get context from vector DB
     context_data = await search_vector_db(vector_query)
 
     # Check flags
@@ -827,6 +898,7 @@ async def chat(request: ChatRequest):
         counselor_mentioned=counselor_mentioned,
         facility_mentioned=facility_mentioned,
         requesting_counselor_call=manager.get("requesting_counselor_call", False),
+        soft_redirect=soft_redirect,
         context_data=context_data,
         name_filled=slots.get("Name") not in (None, "", "null"),
         course_filled=slots.get("Course") not in (None, "", "null"),
@@ -852,7 +924,6 @@ async def chat(request: ChatRequest):
         {"role": "assistant", "content": bot_msg}
     ])
 
-    # Save state (keep last 10 messages to include initial greeting)
     await asyncio.gather(
         redis_conn.set(hist_key, json.dumps(history[-10:]), ex=3600),
         redis_conn.set(slot_key, json.dumps(slots), ex=3600),
